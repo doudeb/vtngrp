@@ -1,0 +1,39 @@
+<?php
+	$model	=	Mage::getModel('catalog/category');
+	$rootCategoryId = Mage::app()->getStore()->getRootCategoryId();
+	$category = $model->load($rootCategoryId);	
+	$curId = $this->getRequest()->getParam('cat');
+	
+	$_helper    = $this->helper('catalog/output');
+	$conf = Mage::helper('em0067settings');
+	$cate	= $conf->getCategoriesCustom($category,$curId)->addAttributeToSelect('*');
+	//echo $conf->get_featured_cate_width();	
+	//$w 	= $conf->get_featured_cate_width();
+	//$h 	= $conf->get_featured_cate_height();
+	$w = 100;
+	$h = 100;
+?>
+
+<div class="home_featured_category">
+	<div class="featured_category_top">
+		<h2><?php echo $this->__("Popular Categories") ?></h2>
+	</div>
+	<div class="featured_category_content">
+		<div class="slideshow-box">
+			<ul class="category-grid row" id="slideshow_featured_category">
+				<?php foreach($cate as $_cate): ?>
+					<?php if ($_helper->categoryAttribute($_cate, $_cate->getName(), 'name')!="MostPopular"):  ?>
+						<li class="item span3">
+							<?php if(Mage::getModel('catalog/category')->load($_cate->getId())->getThumbnail() != "") : ?>
+								<a href="<?php echo $_cate->getUrl() ?>" title="<?php echo $_helper->categoryAttribute($_cate, $_cate->getName(), 'name') ?>"><img  src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'catalog/category/'.Mage::getModel('catalog/category')->load($_cate->getId())->getThumbnail(); ?>" alt="<?php echo $_helper->categoryAttribute($_cate, $_cate->getName(), 'name') ?>" width="<?php echo $w ?>" height="<?php echo $h ?>" /></a>	
+							<?php endif ?>
+							<div class="cate_info">
+								<h2><a href="<?php echo $_cate->getUrl() ?>" title="<?php echo $_helper->categoryAttribute($_cate, $_cate->getName(), 'name') ?>"><?php echo $_helper->categoryAttribute($_cate, $_cate->getName(), 'name') ?></a></h2>							
+							</div>
+						</li>
+					<?php endif;?>
+				<?php endforeach ?>					
+			</ul>			
+		</div>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+<?php
+	$thumnailWidth = Mage::getStoreConfig('blog/info/recent_thumbnail_width');
+    $thumnailHeight = Mage::getStoreConfig('blog/info/recent_thumbnail_height');
+?>
+<?php if(Mage::getStoreConfig('blog/menu/show_recent_post')):?>
+<div class="block em_block-recent-post">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('From Blog'); ?></span></strong>
+    </div>
+    <div class="block-content">
+        <ol>
+            <?php $i=0; foreach ($this->getRecentPost() as $p): $i++; ?>
+                <li class="item">
+                	<?php if($p->getImage()):?>
+						<a class="img-blog" href="<?php echo $p->getPostUrl();?>">
+							<img src="<?php echo Mage::helper('blog')->resizeImage($p->getImage(),$thumnailWidth,$thumnailHeight,"emblog/post",'thumbnail');?>" alt=""/>
+						</a>
+					<?php endif;?>
+					<div class="content-blog">
+						<a class="post-title" href="<?php echo $p->getPostUrl();?>" ><?php echo $p->getTitle();?></a>
+						<p><a href="<?php echo $p->getPostUrl();?>"><span>Read more</span></a></p>
+					</div>
+                </li>
+            <?php if($i==4) break; endforeach; ?>
+        </ol>
+    </div>
+</div>
+<?php endif;?>

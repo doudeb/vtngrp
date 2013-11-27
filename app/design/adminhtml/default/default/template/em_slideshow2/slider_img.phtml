@@ -1,0 +1,316 @@
+<div style="" id="slideshow2_tabs_form_general_images">
+	<div class="entry-edit custom-options">
+		<div class="entry-edit-head">
+			<h4 class="icon-head head-edit-form fieldset-legend">Images</h4>
+			<div class="form-buttons"></div>
+			<div class="right">
+				<button onclick="return add_img();" class="scalable add" type="button" title="Add New Image">
+					<span><span><span>Add New Image</span></span></span>
+				</button>
+			</div>
+		</div>
+		<div id="slideshow2_images" class="fieldset">
+			<div class="images_content">
+				<div class="ele_num" style="display:none" ><?php if($count == 0) echo 1;else echo $count ?></div>
+				<textarea class="deloldimg" name="deloldimg" style="display:none">0</textarea>
+				<div class="content">
+					<div class="item">
+					</div>
+				<?php if($count == 0): ?>
+					<div class="item num_1 option-box">
+						<div class="col_first">
+							<label>Image : </label><input type="file" class="input-file ele_1" value="" name="files[1]" />&nbsp;&nbsp;
+							<label>Transition : </label><div class="show_trans"></div><select name="images[1][trans]" class="sel_trans"><option value="demo">Various Transitions</option><option value="boxslide">Box Mask</option><option value="boxfade">Box Mask Mosaic</option><option value="slotzoom-horizontal">Slot Zoom Horizontal</option><option value="slotslide-horizontal">Slot Slide Horizontal</option><option value="slotfade-horizontal">Slot Fade Horizontal</option><option value="slotzoom-vertical">Slot Zoom Vertical</option><option value="slotslide-vertical">Slot Slide Vertical</option><option value="slotfade-vertical">Slot Fade Vertical</option><option value="curtain-1">Curtain One</option><option value="curtain-2">Curtain Two</option><option value="curtain-3">Curtain Three</option><option value="slideleft">Slide Left</option><option value="slideright">Slide Right</option><option value="slideup">Slide Up</option><option value="slidedown">Slide Down</option><option value="fade">Fade</option></select>&nbsp;&nbsp;
+							<div class="right">
+								<button onclick="return add_text(1);" class="scalable add" type="button" title="Add Text">
+									<span><span><span>Add Text</span></span></span>
+								</button>
+								<button onclick="return del_img(1);" class="btn_del scalable delete" type="button" title="Delete Image">
+									<span><span><span>Delete Image</span></span></span>
+								</button>
+							</div>
+						</div>
+						<label>Slot Amount : </label><input type="text" class="input-text" value="7" name="images[1][slotamount]" size=3 />&nbsp;&nbsp;
+						<label>Link : </label><input type="text" class="input-text" value="" name="images[1][link]" />&nbsp;&nbsp;
+						<label>Position : </label><input type="text" name="images[1][position]" class="input-text" size=3 value="0"/>						
+						<div class="text_num" style="display:none" >0</div>
+						<table cellspacing="0" cellpadding="0" class="option-header">
+							<thead>
+								<tr>
+									<th class="opt-text">Text/Html </th>
+									<th class="opt-type">Class</th>
+									<th class="opt-start">Start</th>
+									<th class="opt-x" style="text-align:center">X</th>
+									<th class="opt-y" style="text-align:center">Y</th>
+									<th class="opt-easing">Easing</th>
+									<th class="opt-speed">Speed(ms)</th>
+									<th class="opt-action">&nbsp;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr></tr>
+								<tr class="text_1_0">
+									<td><textarea name="images[1][info][0][text]" rows="3" cols="110" ></textarea></td>
+									<td><input type="text" name="images[1][info][0][class]" class="input-text" /></td>
+									<td><input type="text" name="images[1][info][0][start]"  class="input-text" value="2000" /></td>
+									<td><input type="text" name="images[1][info][0][data_x]" class="input-text" value="0" /></td>
+									<td><input type="text" name="images[1][info][0][data_y]" class="input-text" value="0" /></td>
+									<td>
+										<select name="images[1][info][0][easing]" >
+											<option value="easeOutBack">easeOutBack</option><option value="easeInQuad">easeInQuad</option><option value="easeOutQuad">easeOutQuad</option><option value="easeInOutQuad">easeInOutQuad</option><option value="easeInCubic">easeInCubic</option><option value="easeOutCubic">easeOutCubic</option><option value="easeInOutCubic">easeInOutCubic</option><option value="easeInQuart">easeInQuart</option><option value="easeOutQuart">easeOutQuart</option><option value="easeInOutQuart">easeInOutQuart</option><option value="easeInQuint">easeInQuint</option><option value="easeOutQuint">easeOutQuint</option><option value="easeInOutQuint">easeInOutQuint</option><option value="easeInSine">easeInSine</option><option value="easeOutSine">easeOutSine</option><option value="easeInOutSine">easeInOutSine</option><option value="easeInExpo">easeInExpo</option><option value="easeOutExpo">easeOutExpo</option><option value="easeInOutExpo">easeInOutExpo</option><option value="easeInCirc">easeInCirc</option><option value="easeOutCirc">easeOutCirc</option><option value="easeInOutCirc">easeInOutCirc</option><option value="easeInElastic">easeInElastic</option><option value="easeOutElastic">easeOutElastic</option><option value="easeInOutElastic">easeInOutElastic</option><option value="easeInBack">easeInBack</option><option value="easeInOutBack">easeInOutBack</option><option value="easeInBounce">easeInBounce</option><option value="easeOutBounce">easeOutBounce</option><option value="easeInOutBounce">easeInOutBounce</option>
+										</select>
+									</td>
+									<td><input type="text" name="images[1][info][0][speed]" size="10" value="300" /></td>
+									<td>
+										<button onclick="return del_text(1,0);" class="scalable delete" type="button" title="Delete Text">
+											<span><span><span>Delete Text</span></span></span>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				<?php else : ?>
+					<?php $i=1;foreach($data	as $key=>$value) : ?>
+						<div class="item num_<?php echo $i?> option-box">
+							<div class="col_first">
+								<label>Image : </label>
+									<input class="oldurl" type="hidden" name="images[<?php echo $i?>][url]" value="<?php echo $value['url'] ?>" />
+									<img src="<?php echo $this->getResizeImage($value['url'],55,55); ?>" style="width:55px;height:45px;"/>
+									<input type="file" class="input-file ele_<?php echo $i?>" value="" name="files[<?php echo $i?>]" />&nbsp;&nbsp;
+								<label>Transition : </label><div class="show_trans"></div>
+								<select name="images[<?php echo $i?>][trans]" class="sel_trans">
+									<option value="demo" <?php if($value['trans'] == 'demo') echo 'selected'; ?>>Various Transitions</option>
+									<option value="boxslide" <?php if($value['trans'] == 'boxslide') echo 'selected'; ?>>Box Mask</option>
+									<option value="boxfade" <?php if($value['trans'] == 'boxfade') echo 'selected'; ?>>Box Mask Mosaic</option>
+									<option value="slotzoom-horizontal" <?php if($value['trans'] == 'slotzoom-horizontal') echo 'selected'; ?>>Slot Zoom Horizontal</option>
+									<option value="slotslide-horizontal" <?php if($value['trans'] == 'slotslide-horizontal') echo 'selected'; ?>>Slot Slide Horizontal</option>
+									<option value="slotfade-horizontal" <?php if($value['trans'] == 'slotfade-horizontal') echo 'selected'; ?>>Slot Fade Horizontal</option>
+									<option value="slotzoom-vertical" <?php if($value['trans'] == 'slotzoom-vertical') echo 'selected'; ?>>Slot Zoom Vertical</option>
+									<option value="slotslide-vertical" <?php if($value['trans'] == 'slotslide-vertical') echo 'selected'; ?>>Slot Slide Vertical</option>
+									<option value="slotfade-vertical" <?php if($value['trans'] == 'slotfade-vertical') echo 'selected'; ?>>Slot Fade Vertical</option>
+									<option value="curtain-1" <?php if($value['trans'] == 'curtain-1') echo 'selected'; ?>>Curtain One</option>
+									<option value="curtain-2" <?php if($value['trans'] == 'curtain-2') echo 'selected'; ?>>Curtain Two</option>
+									<option value="curtain-3" <?php if($value['trans'] == 'curtain-3') echo 'selected'; ?>>Curtain Three</option>
+									<option value="slideleft" <?php if($value['trans'] == 'slideleft') echo 'selected'; ?>>Slide Left</option>
+									<option value="slideright" <?php if($value['trans'] == 'slideright') echo 'selected'; ?>>Slide Right</option>
+									<option value="slideup" <?php if($value['trans'] == 'slideup') echo 'selected'; ?>>Slide Up</option>
+									<option value="slidedown" <?php if($value['trans'] == 'slidedown') echo 'selected'; ?>>Slide Down</option>
+									<option value="fade" <?php if($value['trans'] == 'fade') echo 'selected'; ?>>Fade</option>
+								</select>&nbsp;&nbsp;
+								<div class="right">
+									<button onclick="return add_text(<?php echo $i?>);" class="scalable add" type="button" title="Add Text">
+										<span><span><span>Add Text</span></span></span>
+									</button>&nbsp;&nbsp;
+									<?php if($count > 1): ?>
+									<button onclick="return del_img(<?php echo $i?>);" class="btn_del scalable delete" type="button" title="Delete Image">
+										<span><span><span>Delete Image</span></span></span>
+									</button>
+									<?php endif ?>
+								</div>
+							</div>
+							<label>Slot Amount : </label><input type="text" class="input-text" value="<?php echo $value['slotamount'] ?>" name="images[<?php echo $i?>][slotamount]" size=3 />&nbsp;&nbsp;
+							<label>Link : </label><input type="text" class="input-text" value="<?php echo $value['link'] ?>" name="images[<?php echo $i?>][link]" />&nbsp;&nbsp;
+							<label>Position : </label><input type="text" name="images[<?php echo $i?>][position]" class="input-text" size=3 value="<?php echo $value['position'] ?>"/>
+							<?php $sub	=	$this->getSub($value['info']); ?>
+							<div class="text_num" style="display:none" ><?php echo $sub['count'] ?></div>
+							<table cellspacing="0" cellpadding="0" class="option-header">
+								<thead>
+									<tr>
+										<th class="opt-text">Text/Html </th>
+										<th class="opt-type">Class</th>
+										<th class="opt-start">Start</th>
+										<th class="opt-x" style="text-align:center">X</th>
+										<th class="opt-y" style="text-align:center">Y</th>
+										<th class="opt-easing">Easing</th>
+										<th class="opt-speed">Speed(ms)</th>
+										<th class="opt-action">&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr></tr>
+								<?php if($sub['count'] == 0): ?>
+									<tr class="text_1_0">
+										<td><textarea name="images[<?php echo $i?>][info][0][text]" rows="3" cols="110" ></textarea></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][0][class]" class="input-text" /></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][0][start]"  class="input-text" value="2000" /></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][0][data_x]" class="input-text" value="0" /></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][0][data_y]" class="input-text" value="0" /></td>
+										<td>
+											<select name="images[<?php echo $i?>][info][0][easing]" >
+												<option value="easeOutBack">easeOutBack</option><option value="easeInQuad">easeInQuad</option><option value="easeOutQuad">easeOutQuad</option><option value="easeInOutQuad">easeInOutQuad</option><option value="easeInCubic">easeInCubic</option><option value="easeOutCubic">easeOutCubic</option><option value="easeInOutCubic">easeInOutCubic</option><option value="easeInQuart">easeInQuart</option><option value="easeOutQuart">easeOutQuart</option><option value="easeInOutQuart">easeInOutQuart</option><option value="easeInQuint">easeInQuint</option><option value="easeOutQuint">easeOutQuint</option><option value="easeInOutQuint">easeInOutQuint</option><option value="easeInSine">easeInSine</option><option value="easeOutSine">easeOutSine</option><option value="easeInOutSine">easeInOutSine</option><option value="easeInExpo">easeInExpo</option><option value="easeOutExpo">easeOutExpo</option><option value="easeInOutExpo">easeInOutExpo</option><option value="easeInCirc">easeInCirc</option><option value="easeOutCirc">easeOutCirc</option><option value="easeInOutCirc">easeInOutCirc</option><option value="easeInElastic">easeInElastic</option><option value="easeOutElastic">easeOutElastic</option><option value="easeInOutElastic">easeInOutElastic</option><option value="easeInBack">easeInBack</option><option value="easeInOutBack">easeInOutBack</option><option value="easeInBounce">easeInBounce</option><option value="easeOutBounce">easeOutBounce</option><option value="easeInOutBounce">easeInOutBounce</option>
+											</select>
+										</td>
+										<td><input type="text" name="images[<?php echo $i?>][info][0][speed]" size="10" value="300" /></td>
+										<td>
+											<button onclick="return del_text(1,0);" class="scalable delete" type="button" title="Delete Text">
+												<span><span><span>Delete Text</span></span></span>
+											</button>
+										</td>
+									</tr>
+								<?php else : ?>
+									<?php $j=0;foreach($sub['info'] as $skey=>$sval): ?>									
+									<tr class="text_<?php echo $i.'_'.$j ?>">
+										<td><textarea name="images[<?php echo $i?>][info][<?php echo $j?>][text]" rows="3" cols="110" ><?php echo $sval['text']?></textarea></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][<?php echo $j?>][class]" class="input-text" value="<?php echo $sval['class']?>" /></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][<?php echo $j?>][start]"  class="input-text" value="<?php echo $sval['start']?>" /></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][<?php echo $j?>][data_x]" class="input-text" value="<?php echo $sval['data_x']?>" /></td>
+										<td><input type="text" name="images[<?php echo $i?>][info][<?php echo $j?>][data_y]" class="input-text" value="<?php echo $sval['data_y']?>" /></td>
+										<td>
+											<select name="images[<?php echo $i?>][info][<?php echo $j?>][easing]" >
+												<option value="easeOutBack" <?php if($sval['easing'] == 'easeOutBack') echo 'selected'; ?>>easeOutBack</option>
+												<option value="easeInQuad" <?php if($sval['easing'] == 'easeInQuad') echo 'selected'; ?>>easeInQuad</option>
+												<option value="easeOutQuad" <?php if($sval['easing'] == 'easeOutQuad') echo 'selected'; ?>>easeOutQuad</option>
+												<option value="easeInOutQuad" <?php if($sval['easing'] == 'easeInOutQuad') echo 'selected'; ?>>easeInOutQuad</option>
+												<option value="easeInCubic" <?php if($sval['easing'] == 'easeInCubic') echo 'selected'; ?>>easeInCubic</option>
+												<option value="easeOutCubic" <?php if($sval['easing'] == 'easeOutCubic') echo 'selected'; ?>>easeOutCubic</option>
+												<option value="easeInOutCubic" <?php if($sval['easing'] == 'easeInOutCubic') echo 'selected'; ?>>easeInOutCubic</option>
+												<option value="easeInQuart" <?php if($sval['easing'] == 'easeInQuart') echo 'selected'; ?>>easeInQuart</option>
+												<option value="easeOutQuart" <?php if($sval['easing'] == 'easeOutQuart') echo 'selected'; ?>>easeOutQuart</option>
+												<option value="easeInOutQuart" <?php if($sval['easing'] == 'easeInOutQuart') echo 'selected'; ?>>easeInOutQuart</option>
+												<option value="easeInQuint" <?php if($sval['easing'] == 'easeInQuint') echo 'selected'; ?>>easeInQuint</option>
+												<option value="easeOutQuint" <?php if($sval['easing'] == 'easeOutQuint') echo 'selected'; ?>>easeOutQuint</option>
+												<option value="easeInOutQuint" <?php if($sval['easing'] == 'easeInOutQuint') echo 'selected'; ?>>easeInOutQuint</option>
+												<option value="easeInSine" <?php if($sval['easing'] == 'easeInSine') echo 'selected'; ?>>easeInSine</option>
+												<option value="easeOutSine" <?php if($sval['easing'] == 'easeOutSine') echo 'selected'; ?>>easeOutSine</option>
+												<option value="easeInOutSine" <?php if($sval['easing'] == 'easeInOutSine') echo 'selected'; ?>>easeInOutSine</option>
+												<option value="easeInExpo" <?php if($sval['easing'] == 'easeInExpo') echo 'selected'; ?>>easeInExpo</option>
+												<option value="easeOutExpo" <?php if($sval['easing'] == 'easeOutExpo') echo 'selected'; ?>>easeOutExpo</option>
+												<option value="easeInOutExpo" <?php if($sval['easing'] == 'easeInOutExpo') echo 'selected'; ?>>easeInOutExpo</option>
+												<option value="easeInCirc" <?php if($sval['easing'] == 'easeInCirc') echo 'selected'; ?>>easeInCirc</option>
+												<option value="easeOutCirc" <?php if($sval['easing'] == 'easeOutCirc') echo 'selected'; ?>>easeOutCirc</option>
+												<option value="easeInOutCirc" <?php if($sval['easing'] == 'easeInOutCirc') echo 'selected'; ?>>easeInOutCirc</option>
+												<option value="easeInElastic" <?php if($sval['easing'] == 'easeInElastic') echo 'selected'; ?>>easeInElastic</option>
+												<option value="easeOutElastic" <?php if($sval['easing'] == 'easeOutElastic') echo 'selected'; ?>>easeOutElastic</option>
+												<option value="easeInOutElastic" <?php if($sval['easing'] == 'easeInOutElastic') echo 'selected'; ?>>easeInOutElastic</option>
+												<option value="easeInBack" <?php if($sval['easing'] == 'easeInBack') echo 'selected'; ?>>easeInBack</option>
+												<option value="easeInOutBack" <?php if($sval['easing'] == 'easeInOutBack') echo 'selected'; ?>>easeInOutBack</option>
+												<option value="easeInBounce" <?php if($sval['easing'] == 'easeInBounce') echo 'selected'; ?>>easeInBounce</option>
+												<option value="easeOutBounce" <?php if($sval['easing'] == 'easeOutBounce') echo 'selected'; ?>>easeOutBounce</option>
+												<option value="easeInOutBounce" <?php if($sval['easing'] == 'easeInOutBounce') echo 'selected'; ?>>easeInOutBounce</option>
+											</select>
+										</td>
+										<td><input type="text" name="images[<?php echo $i?>][info][<?php echo $j?>][speed]" size="10" value="<?php echo $sval['speed']?>" /></td>
+										<td>
+											<button onclick="return del_text(<?php echo $i ?>,<?php echo $j ?>);" class="scalable delete" type="button" title="Delete Text">
+												<span><span><span>Delete Text</span></span></span>
+											</button>
+										</td>
+									</tr>
+									<?php $j++;endforeach ?>
+								<?php endif ?>
+								</tbody>
+							</table>
+						</div>
+					<?php $i++;endforeach ?>	
+				<?php endif ?>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function add_img(){
+		var num	=	jQuery('.ele_num').html();
+		var i = parseInt(num)+1;
+		
+		var html ="";
+		html +=	'<div class="item num_'+i+' option-box">';
+		html +=	  '<div class="col_first">';
+		html +=		'<label>Image :</label><input type="file" class="input-file ele_'+i+'" value="" name="files['+i+']" />&nbsp;&nbsp;';
+		html +=		'<label>Transition : </label><div class="show_trans demo"></div><select name="images['+i+'][trans]" class="sel_trans"><option value="demo">Various Transitions</option><option value="boxslide">Box Mask</option><option value="boxfade">Box Mask Mosaic</option><option value="slotzoom-horizontal">Slot Zoom Horizontal</option><option value="slotslide-horizontal">Slot Slide Horizontal</option><option value="slotfade-horizontal">Slot Fade Horizontal</option><option value="slotzoom-vertical">Slot Zoom Vertical</option><option value="slotslide-vertical">Slot Slide Vertical</option><option value="slotfade-vertical">Slot Fade Vertical</option><option value="curtain-1">Curtain One</option><option value="curtain-2">Curtain Two</option><option value="curtain-3">Curtain Three</option><option value="slideleft">Slide Left</option><option value="slideright">Slide Right</option><option value="slideup">Slide Up</option><option value="slidedown">Slide Down</option><option value="fade">Fade</option></select>&nbsp;&nbsp;';
+		html +=		'<div class="right">';
+		html +=			'<button onclick="return add_text('+i+');" class="scalable add" type="button" title="Add Text">';
+		html +=				'<span><span><span>Add Text</span></span></span>';
+		html +=			'</button>&nbsp;&nbsp;';
+		html +=			'<button onclick="return del_img('+i+');" class="btn_del scalable delete" type="button" title="Delete Image">';
+		html +=				'<span><span><span>Delete Image</span></span></span>';
+		html +=			'</button>';
+		html +=		'</div>';
+		html +=	  '</div>';
+		html +=		'<label>Slot Amount : </label><input type="text" class="input-text" value="7" name="images['+i+'][slotamount]" size=3 />&nbsp;&nbsp;';
+		html +=		'<label>Link : </label><input type="text" class="input-text" value="" name="images['+i+'][link]" />&nbsp;&nbsp;';
+		html +=		'<label>Position : </label><input type="text" name="images['+i+'][position]" class="input-text" value="0" size=3 />';
+		html +=		'<div class="text_num" style="display:none" >0</div>';
+		html +=		'<table cellspacing="0" cellpadding="0" class="option-header">';
+		html +=			'<thead>';
+		html +=				'<tr>';
+		html +=					'<th class="opt-text">Text/Html </th>';
+		html +=					'<th class="opt-type">Class</th>';
+		html +=					'<th class="opt-start">Start</th>';
+		html +=					'<th class="opt-x" style="text-align:center">X</th>';
+		html +=					'<th class="opt-y" style="text-align:center">Y</th>';
+		html +=					'<th class="opt-easing">Easing</th>';
+		html +=					'<th class="opt-speed">Speed(ms)</th>';
+		html +=				'</tr>';
+		html +=			'</thead>';
+		html +=			'<tbody>';
+		html +=				'<tr>';
+		html +=					'<td><textarea name="images['+i+'][info][0][text]" rows="3" cols="110" ></textarea></td>';
+		html +=					'<td><input type="text" name="images['+i+'][info][0][class]" class="input-text" /></td>';
+		html +=					'<td><input type="text" name="images['+i+'][info][0][start]"  class="input-text" value="2000" /></td>';
+		html +=					'<td><input type="text" name="images['+i+'][info][0][data_x]" class="input-text" value="0" /></td>';
+		html +=					'<td><input type="text" name="images['+i+'][info][0][data_y]" class="input-text" value="0" /></td>';
+		html +=					'<td>';
+		html +=						'<select name="images['+i+'][info][0][easing]" >';
+		html +=							'<option value="easeOutBack">easeOutBack</option><option value="easeInQuad">easeInQuad</option><option value="easeOutQuad">easeOutQuad</option><option value="easeInOutQuad">easeInOutQuad</option><option value="easeInCubic">easeInCubic</option><option value="easeOutCubic">easeOutCubic</option><option value="easeInOutCubic">easeInOutCubic</option><option value="easeInQuart">easeInQuart</option><option value="easeOutQuart">easeOutQuart</option><option value="easeInOutQuart">easeInOutQuart</option><option value="easeInQuint">easeInQuint</option><option value="easeOutQuint">easeOutQuint</option><option value="easeInOutQuint">easeInOutQuint</option><option value="easeInSine">easeInSine</option><option value="easeOutSine">easeOutSine</option><option value="easeInOutSine">easeInOutSine</option><option value="easeInExpo">easeInExpo</option><option value="easeOutExpo">easeOutExpo</option><option value="easeInOutExpo">easeInOutExpo</option><option value="easeInCirc">easeInCirc</option><option value="easeOutCirc">easeOutCirc</option><option value="easeInOutCirc">easeInOutCirc</option><option value="easeInElastic">easeInElastic</option><option value="easeOutElastic">easeOutElastic</option><option value="easeInOutElastic">easeInOutElastic</option><option value="easeInBack">easeInBack</option><option value="easeInOutBack">easeInOutBack</option><option value="easeInBounce">easeInBounce</option><option value="easeOutBounce">easeOutBounce</option><option value="easeInOutBounce">easeInOutBounce</option>';
+		html +=						'</select>';
+		html +=					'</td>';
+		html +=					'<td><input type="text" name="images['+i+'][info][0][speed]" size="10" value="300" /></td>';
+		html +=				'</tr>';
+		html +=			'</tbody>';
+		html +=		'</table>';
+		html +=	'</div>';
+
+		jQuery(".ele_num").html(i);	
+		jQuery("#slideshow2_images .content .item").last().after(html);change_transaction();
+	}
+	
+	function del_img(id){
+		var r=confirm("Are you sure to delete ?");
+		if (r==true){
+			var oldurl	=	jQuery("#slideshow2_images .content .num_"+id+" .oldurl").val();
+			var delitem	=	jQuery("#slideshow2_images .deloldimg");
+			delitem.html(delitem.html()+"_!_"+oldurl);
+			jQuery(".num_"+id).remove();
+			var count	=	jQuery("#slideshow2_images .item").length;
+			if(count <= 1 )
+				jQuery(".btn_del").remove();
+		}
+	}
+	
+	function add_text(id){
+		var num	=	jQuery('.num_'+id+' .text_num').html();
+		var i = parseInt(num)+1;		
+		var html = "";
+		html +=				'<tr class="text_'+id+'_'+i+'">';
+		html +=					'<td><textarea name="images['+id+'][info]['+i+'][text]" rows="3" cols="110" ></textarea></td>';
+		html +=					'<td><input type="text" name="images['+id+'][info]['+i+'][class]" class="input-text" /></td>';
+		html +=					'<td><input type="text" name="images['+id+'][info]['+i+'][start]"  class="input-text" value="2000" /></td>';
+		html +=					'<td><input type="text" name="images['+id+'][info]['+i+'][data_x]" class="input-text" value="0" /></td>';
+		html +=					'<td><input type="text" name="images['+id+'][info]['+i+'][data_y]" class="input-text" value="0" /></td>';
+		html +=					'<td>';
+		html +=						'<select name="images['+id+'][info]['+i+'][easing]" >';
+		html +=							'<option value="easeOutBack">easeOutBack</option><option value="easeInQuad">easeInQuad</option><option value="easeOutQuad">easeOutQuad</option><option value="easeInOutQuad">easeInOutQuad</option><option value="easeInCubic">easeInCubic</option><option value="easeOutCubic">easeOutCubic</option><option value="easeInOutCubic">easeInOutCubic</option><option value="easeInQuart">easeInQuart</option><option value="easeOutQuart">easeOutQuart</option><option value="easeInOutQuart">easeInOutQuart</option><option value="easeInQuint">easeInQuint</option><option value="easeOutQuint">easeOutQuint</option><option value="easeInOutQuint">easeInOutQuint</option><option value="easeInSine">easeInSine</option><option value="easeOutSine">easeOutSine</option><option value="easeInOutSine">easeInOutSine</option><option value="easeInExpo">easeInExpo</option><option value="easeOutExpo">easeOutExpo</option><option value="easeInOutExpo">easeInOutExpo</option><option value="easeInCirc">easeInCirc</option><option value="easeOutCirc">easeOutCirc</option><option value="easeInOutCirc">easeInOutCirc</option><option value="easeInElastic">easeInElastic</option><option value="easeOutElastic">easeOutElastic</option><option value="easeInOutElastic">easeInOutElastic</option><option value="easeInBack">easeInBack</option><option value="easeInOutBack">easeInOutBack</option><option value="easeInBounce">easeInBounce</option><option value="easeOutBounce">easeOutBounce</option><option value="easeInOutBounce">easeInOutBounce</option>';
+		html +=						'</select>';
+		html +=					'</td>';
+		html +=					'<td><input type="text" name="images['+id+'][info]['+i+'][speed]" size="10" value="300" /></td>';
+		html +=					'<td>';
+		html +=						'<button onclick="return del_text('+id+','+i+');" class="scalable delete" type="button" title="Delete Text">';
+		html +=							'<span><span><span>Delete Text</span></span></span>';
+		html +=						'</button>';
+		html +=					'</td>';
+		html +=				'</tr>';
+		jQuery('.num_'+id+' .text_num').html(i);
+		jQuery('.num_'+id+' tbody tr').last().after(html);
+	}
+	
+	function del_text(num,text){
+		var r=confirm("Are you sure to delete ?");
+		if (r==true){
+			jQuery('.num_'+num+' tr.text_'+num+'_'+text).remove();
+		}
+	}
+	
+</script>

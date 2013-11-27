@@ -1,0 +1,29 @@
+.item .show_trans{width:65px;height:35px; display:inline-block;vertical-align:middle;}
+.item .demo{background-image:url(../images/transaction/demo.png);}
+.item .boxslide{background-image:url(../images/transaction/boxslide.png);}
+.item .boxfade{background-image:url(../images/transaction/boxfade.png);}
+.item .slotzoom-horizontal{background-image:url(../images/transaction/slotzoom-horizontal.png);}
+.item .slotslide-horizontal{background-image:url(../images/transaction/slotslide-horizontal.png);}
+.item .slotfade-horizontal{background-image:url(../images/transaction/slotfade-horizontal.png);}
+.item .slotzoom-vertical{background-image:url(../images/transaction/slotzoom-vertical.png);}
+.item .slotslide-vertical{background-image:url(../images/transaction/slotslide-vertical.png);}
+.item .slotfade-vertical{background-image:url(../images/transaction/slotfade-vertical.png);}
+.item .curtain-1{background-image:url(../images/transaction/curtain-1.png);}
+.item .curtain-2{background-image:url(../images/transaction/curtain-2.png);}
+.item .curtain-3{background-image:url(../images/transaction/curtain-3.png);}
+.item .slideleft{background-image:url(../images/transaction/slideleft.png); }
+.item .slideright{background-image:url(../images/transaction/slideright.png);}
+.item .slideup{background-image:url(../images/transaction/slideup.png);}
+.item .slidedown{background-image:url(../images/transaction/slidedown.png);}
+.item .fade{background-image:url(../images/transaction/fade.png);}
+
+.item .col_first{ display:block; padding-bottom:15px;}
+.item .col_first img{ vertical-align:middle;}
+.item .col_first .right{ margin-top:13px;}
+.option-header textarea{ width:360px;}
+
+#slideshow2_tabs_form_general_content #slideshow2_general3 table{width:100%;}
+#slideshow2_tabs_form_general_content #slideshow2_general3 table tbody{float:left;}
+#slideshow2_tabs_form_general_content #slideshow2_general3 table tbody tr{float:left;width:40%}
+#slideshow2_tabs_form_general_content table tbody tr td{width:150px}
+#slideshow2_tabs_form_general_content table tbody tr td label{width:100px}

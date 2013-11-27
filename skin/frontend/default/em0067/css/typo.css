@@ -1,0 +1,95 @@
+font:/*BEGIN:general_font*/12px/1.35 Arial, Helvetica, sans-serif/*END:general_font*/;
+font:/*BEGIN:h1_font*/normal 28px/1.35 helvetica,arial,sans-serif/*END:h1_font*/; 
+font:/*BEGIN:h2_font*/normal 24px/1.35 helvetica,arial,sans-serif/*END:h2_font*/;
+font:/*BEGIN:h3_font*/normal 20px/1.35 helvetica,arial,sans-serif/*END:h3_font*/;
+font:/*BEGIN:h4_font*/normal 16px/1.35 helvetica,arial,sans-serif/*END:h4_font*/;
+font:/*BEGIN:h5_font*/normal 14px/1.35 helvetica,arial,sans-serif/*END:h5_font*/; 
+/*for menu*/
+
+
+color:/*BEGIN:primary_color*/#005cb9/*END:primary_color*/; /*Xanh duong*/
+color:/*BEGIN:general_color*/#202020/*END:general_color*/; /*Den content*/
+color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;/*do Price*/
+color:/*BEGIN:negative_color*/#ffffff/*END:negative_color*/; 
+
+/*BEGIN:line_color*/#d6d6d6/*END:line_color*/ -> line table
+/*BEGIN:line_secondary_color*/#bcbcbc/*END:line_secondary_color*/ -> line input
+/*BEGIN:line_third_color*/#e1e1e1/*END:line_third_color*/ -> line home, blog, boder top cart, dropdown /*Chua doi*/
+
+
+background-color:/*BEGIN:primary_bgcolor*/#ffffff/*END:primary_bgcolor*/;
+background:/*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; /*Backgound footer va decs cua main slideshow*/
+background:/*BEGIN:third_bgcolor*/#d90000/*END:third_bgcolor*/; /*Menu*/
+background:/*BEGIN:fourth_bgcolor*/#b40000/*END:fourth_bgcolor*/; /*Background main slideshow*/
+background:/*BEGIN:fifth_bgcolor*/#f30000/*END:fifth_bgcolor*/; /*Menu hover*/
+
+
+/*BEGIN:button1*/background:#005cb9; border:1px solid #005cb9; color:#ffffff;/*END:button1*/
+/*BEGIN:button2*/background:#f1f1f1; border:1px solid #dcdcdc; color:#202020;/*END:button2*/
+/*BEGIN:button3*/background:#d90000; border:1px solid #d90000; color:#ffffff;/*END:button3*/ /*Checkout*/
+
+box-shadow:/*BEGIN:box_shadow*/4px 4px 7px #ccc/*END:box_shadow*/;
+border-radius:/*BEGIN:rounded_corner*/0/*END:rounded_corner*/;
+
+/*=========================== Store Black ===================================*/
+color:/*BEGIN:primary_color*/#6fbd00/*END:primary_color*/; /*Xanh duong*/
+color:/*BEGIN:general_color*/#202020/*END:general_color*/; /*Den content*/
+color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;/*do Price*/
+color:/*BEGIN:negative_color*/#ffffff/*END:negative_color*/; 
+
+/*BEGIN:line_color*/#d6d6d6/*END:line_color*/ -> line table
+/*BEGIN:line_secondary_color*/#bcbcbc/*END:line_secondary_color*/ -> line input
+/*BEGIN:line_third_color*/#e1e1e1/*END:line_third_color*/ -> line home, blog, boder top cart, dropdown /*Chua doi*/
+
+
+background-color:/*BEGIN:primary_bgcolor*/#ffffff/*END:primary_bgcolor*/;
+background:/*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; /*Backgound footer va decs cua main slideshow*/
+background:/*BEGIN:third_bgcolor*/#6fbd00/*END:third_bgcolor*/; /*Menu*/
+background:/*BEGIN:fourth_bgcolor*/#202020/*END:fourth_bgcolor*/; /*Background main slideshow*/
+background:/*BEGIN:fifth_bgcolor*/#5ea000/*END:fifth_bgcolor*/; /*Menu hover*/
+
+
+/*BEGIN:button1*/background:#005cb9; border:1px solid #005cb9; color:#ffffff;/*END:button1*/
+/*BEGIN:button2*/background:#f1f1f1; border:1px solid #dcdcdc; color:#202020;/*END:button2*/
+/*BEGIN:button3*/background:#d90000; border:1px solid #d90000; color:#ffffff;/*END:button3*/ /*Checkout*/
+
+/*=========================== Store Blue ===================================*/
+color:/*BEGIN:negative_color*/#00305f/*END:negative_color*/; 
+
+/*BEGIN:line_color*/#d6d6d6/*END:line_color*/ -> line table
+/*BEGIN:line_secondary_color*/#bcbcbc/*END:line_secondary_color*/ -> line input
+/*BEGIN:line_third_color*/#e1e1e1/*END:line_third_color*/ -> line home, blog, boder top cart, dropdown /*Chua doi*/
+
+
+background-color:/*BEGIN:primary_bgcolor*/#ffffff/*END:primary_bgcolor*/;
+background:/*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; /*Backgound footer va decs cua main slideshow*/
+background:/*BEGIN:third_bgcolor*/#f4d444/*END:third_bgcolor*/; /*Menu*/
+background:/*BEGIN:fourth_bgcolor*/#0055aa/*END:fourth_bgcolor*/; /*Background main slideshow*/
+background:/*BEGIN:fifth_bgcolor*/#ffe56e/*END:fifth_bgcolor*/; /*Menu hover*/
+
+
+/*BEGIN:button1*/background:#005cb9; border:1px solid #005cb9; color:#ffffff;/*END:button1*/
+/*BEGIN:button2*/background:#f1f1f1; border:1px solid #dcdcdc; color:#202020;/*END:button2*/
+/*BEGIN:button3*/background:#d90000; border:1px solid #d90000; color:#ffffff;/*END:button3*/ /*Checkout*/
+
+/*=========================== Store Orange ===================================*/
+color:/*BEGIN:primary_color*/#e84200/*END:primary_color*/; /*Xanh duong*/
+color:/*BEGIN:general_color*/#202020/*END:general_color*/; /*Den content*/
+color:/*BEGIN:secondary_color*/#6fbd00/*END:secondary_color*/;/*do Price*/
+color:/*BEGIN:negative_color*/#ffffff/*END:negative_color*/; 
+
+/*BEGIN:line_color*/#d6d6d6/*END:line_color*/ -> line table
+/*BEGIN:line_secondary_color*/#bcbcbc/*END:line_secondary_color*/ -> line input
+/*BEGIN:line_third_color*/#e1e1e1/*END:line_third_color*/ -> line home, blog, boder top cart, dropdown /*Chua doi*/
+
+
+background-color:/*BEGIN:primary_bgcolor*/#ffffff/*END:primary_bgcolor*/;
+background:/*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; /*Backgound footer va decs cua main slideshow*/
+background:/*BEGIN:third_bgcolor*/#ff9000/*END:third_bgcolor*/; /*Menu*/
+background:/*BEGIN:fourth_bgcolor*/#e84200/*END:fourth_bgcolor*/; /*Background main slideshow*/
+background:/*BEGIN:fifth_bgcolor*/#ff6c00/*END:fifth_bgcolor*/; /*Menu hover*/
+
+
+/*BEGIN:button1*/background:#005cb9; border:1px solid #005cb9; color:#ffffff;/*END:button1*/
+/*BEGIN:button2*/background:#f1f1f1; border:1px solid #dcdcdc; color:#202020;/*END:button2*/
+/*BEGIN:button3*/background:#d90000; border:1px solid #d90000; color:#ffffff;/*END:button3*/ /*Checkout*/
