@@ -43,73 +43,73 @@ implements Mage_Widget_Block_Interface
 		}
 		return parent::_toHtml();
 	}
-    
+
     public function getColumnCount(){
 		return $this->getData('column_count');
 	}
-        
+
 	public function getLimitCount(){
 		return $this->getData('limit_count');
 	}
-    
-    public function getCacheLifeTime(){		
+
+    public function getCacheLifeTime(){
 	   return $this->getData('cache_lifetime');
 	}
-    
+
     public function getThumbnailWidth(){
         $tempwidth = $this->getData('thumbnail_width');
         if (!(is_numeric($tempwidth)))
             $tempwidth = 150;
         return $tempwidth;
 	}
-    
+
     public function getThumbnailHeight(){
         $tempheight = $this->getData('thumbnail_height');
         if (!(is_numeric($tempheight)))
             $tempheight = 150;
         return $tempheight;
 	}
-    
+
     public function getFrontendTitle(){
         return $this->getData('frontend_title');
 	}
-    
+
     public function showThumb(){
         return $this->getData('show_thumbnail');
 	}
-    
+
     public function getAltImg(){
         return $this->getData('alt_img');
 	}
-    
+
     public function showProductName(){
         return $this->getData('show_product_name');
 	}
-    
+
     public function show_Price(){
         return $this->getData('show_price');
 	}
-    
+
     public function show_AddtoCart(){
         return $this->getData('show_addtocart');
 	}
-    
+
     public function show_Addto(){
         return $this->getData('show_addto');
 	}
-    
+
     public function show_Label(){
         return $this->getData('show_label');
-	}  
-	
+	}
+
 	//Product collection trong truong hop khong loc theo categories
 	public function getProductCollection(){
 		$_items_reviews = $this->getReviewsCollection_By_Collection_Filter_By_Categories();
 		$_temp_productIds = array();
-		$count=0; 
+		$count=0;
 		$limit = $this->getData('limit_count');
 		foreach ($_items_reviews as $_review){
-			
+
 			if(in_array($_review['entity_pk_value'],$_temp_productIds))
 			{
 				continue;
@@ -128,8 +128,8 @@ implements Mage_Widget_Block_Interface
 			->addAttributeToFilter('status', array('neq' => Mage_Catalog_Model_Product_Status::STATUS_DISABLED))
 		    ->addAttributeToFilter('visibility',array("neq"=>1))
 			->addAttributeToFilter('entity_id',array('in' => $_temp_productIds))
-			->addAttributeToSelect('*'); 
-		return $products;	
+			->addAttributeToSelect('*');
+		return $products;
 	}
 
 	public function getReviewsCollection()
@@ -140,7 +140,7 @@ implements Mage_Widget_Block_Interface
 		->addAttributeToFilter('visibility',array("neq"=>1));
 		//Filter by categories
 		$config1 = $this->getData('new_category');
-		
+
 		if($config1)
 		{
 			$result = array();
@@ -169,12 +169,12 @@ implements Mage_Widget_Block_Interface
 		$str_product_ids = implode($arr_product_ids,',');
 		$limit = $this->getData('limit_count');
 		$start_page =1;
-		
+
 		//Get recent review collection
 		$result = Mage::getModel('review/review')->getCollection()
 		->addStoreFilter(Mage::app()->getStore()->getId())
 		->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
-		->addFieldToFilter('main_table.entity_pk_value', array('in' => $str_product_ids )) 
+		->addFieldToFilter('main_table.entity_pk_value', array('in' => $str_product_ids ))
 		->setOrder('created_at', 'desc')
 		->setPageSize($limit)
 		->setCurPage($start_page)
@@ -182,7 +182,7 @@ implements Mage_Widget_Block_Interface
 		return $result;
 	}
 
-	public function getProduct_Review_Collection() 
+	public function getProduct_Review_Collection()
 	{
 
 		//Get list categories
@@ -211,7 +211,7 @@ implements Mage_Widget_Block_Interface
 			$products->distinct(true);
 		}
 		$arr_product_ids = null;
-		foreach ($products as $_product) 
+		foreach ($products as $_product)
 		{
 			$arr_product_ids  []= $_product->getId();
 		}
@@ -223,7 +223,7 @@ implements Mage_Widget_Block_Interface
 		$result = Mage::getModel('review/review')->getCollection()
 		->addStoreFilter(Mage::app()->getStore()->getId())
 		->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
-		->addFieldToFilter('main_table.entity_pk_value', array('in' => $str_product_ids )) 
+		->addFieldToFilter('main_table.entity_pk_value', array('in' => $str_product_ids ))
 		->setOrder('created_at', 'desc')
 		->setPageSize($limit)
 		->setCurPage($start_page)
@@ -252,7 +252,7 @@ implements Mage_Widget_Block_Interface
 	}
 
 
-	public function getReviewsCollection_By_Querry_Filter_By_Categories() 
+	public function getReviewsCollection_By_Querry_Filter_By_Categories()
 	{
 
 		//Get Categories:
@@ -281,7 +281,7 @@ implements Mage_Widget_Block_Interface
 			$products->distinct(true);
 		}
 		$arr_product_ids = null;
-		foreach ($products as $_product) 
+		foreach ($products as $_product)
 		{
 			$arr_product_ids  []= $_product->getId();
 		}
@@ -299,7 +299,7 @@ implements Mage_Widget_Block_Interface
 		$dir 		= "DESC";
 		$write 		= Mage::getSingleton('core/resource')->getConnection('core_write');
 		$result 	= $write->query("
-		
+
 			SELECT  `main_table` . * ,  `detail`.`detail_id` ,  `detail`.`title` ,  `detail`.`detail` ,  `detail`.`nickname` ,  `detail`.`customer_id`
 			FROM ".$reviewTable ." AS  `main_table`
 			INNER JOIN  ".$rdetailTable." AS  `detail` ON main_table.review_id = detail.review_id
@@ -318,18 +318,18 @@ implements Mage_Widget_Block_Interface
 			and (main_table.status_id=".Mage_Review_Model_Review::STATUS_APPROVED.") and (store.store_id=$storeId)
 			)
 			order by $sortBy $dir
-			LIMIT 0 , ".$listLimit."				
+			LIMIT 0 , ".$listLimit."
 		");
-			
+
 		return $result;
 
 	}
 
-	public function getReviewsCollection_By_Collection_Show() 
+	public function getReviewsCollection_By_Collection_Show()
 	{
 		$limit = $this->getData('limit_count');
 		$start_page =1;
-			
+
 		$result = Mage::getModel('review/review')->getCollection()
 		->addStoreFilter(Mage::app()->getStore()->getId())
 		->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
@@ -343,7 +343,7 @@ implements Mage_Widget_Block_Interface
 	{
 		$limit = $this->getData('limit_count');
 		$start_page =1;
-			
+
 		$result = Mage::getModel('review/review')->getCollection()
 		->addStoreFilter(Mage::app()->getStore()->getId())
 		->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
@@ -355,7 +355,7 @@ implements Mage_Widget_Block_Interface
 		return $result;
 
 	}
-	
+
 	public function getReviewsCollection_By_Collection_Filter_By_Categories()
 	{
 		//Get Categories:
@@ -398,8 +398,8 @@ implements Mage_Widget_Block_Interface
 		->addFieldToFilter('entity_pk_value', array('in' => $arr_product_ids )) ;
 		return $result;
 	}
-	
-	public function getReviewsCollection_By_Collection_Filter_By_Categories_Show() 
+
+	public function getReviewsCollection_By_Collection_Filter_By_Categories_Show()
 	{
 		//Get Categories:
 		$products= Mage::getModel('catalog/product')->getCollection()
@@ -440,11 +440,11 @@ implements Mage_Widget_Block_Interface
 		$result = Mage::getModel('review/review')->getCollection()
 		->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
 		->setOrder('created_at', 'desc')
-		->addFieldToFilter('entity_pk_value', array('in' => $arr_product_ids )) 
+		->addFieldToFilter('entity_pk_value', array('in' => $arr_product_ids ))
 		->setPageSize($limit)
 		->setCurPage($start_page);
 		return $result;
 	}
-	
-	
+
+
 }

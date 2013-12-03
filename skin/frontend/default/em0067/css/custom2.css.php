@@ -11,7 +11,7 @@
 
 $vars = array();
 
-# overwrite style of 'button1' 
+# overwrite style of 'button1'
 // $vars['button1'] = <<<EOB
 // 	background: #262626; /* Old browsers */
 // 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -23,15 +23,14 @@ $vars = array();
 // 	background: -ms-linear-gradient(top,  #262626 0%,#555b5b 50%,#0a0e0a 51%,#0a0809 100%); /* IE10+ */
 // 	background: linear-gradient(to bottom,  #262626 0%,#555b5b 50%,#0a0e0a 51%,#0a0809 100%); /* W3C */
 // 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', endColorstr='#0a0809',GradientType=0 ); /* IE6-8 */
-// 	
+//
 // 	color:#ffffff;
 // 	border-radius:5px;
 // 	border:0;
 // EOB;
-
 $vars['button1:prefix'] = $vars['button2:prefix'] = $vars['button3:prefix'] = <<<EOB
 	background:url(../images/bkg_nav.png) center center repeat-x;
 	box-shadow:0 -3px 8px rgba(0,0,0,0.08) inset;
 EOB;
-
+die('pouet');
 return $vars;

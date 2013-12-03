@@ -30,7 +30,6 @@ foreach ($files as $fn) {
 	if ($custom && file_exists("$custom.css.php")) $vars = array_merge(_include("$custom.css.php"), $vars);
 	if ($custom && file_exists("$custom.css")) $css .= "\n".file_get_contents("$custom.css");
 }
-
 $css = preg_replace_callback('/\/\*BEGIN:([a-zA-Z0-9_]+)\*\/(.*)\/\*END:(\1)\*\//U', 'replacer', $css);
 
 # relace rgba to rgb on IE8
