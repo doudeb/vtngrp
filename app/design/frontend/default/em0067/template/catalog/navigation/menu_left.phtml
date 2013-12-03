@@ -51,7 +51,7 @@
     </div>
 </div>
 <?php endif ?>
-<script type="text/javascript"> 
+<script type="text/javascript">
 	var lis=$$('#nav1 li.parent');
 	lis.each(function(li) {
 
@@ -66,12 +66,12 @@
 	});
 	 jQuery('#nav1 li.parent dd ul ').hide();
 	  jQuery('#nav1 dt a').click(function()  {
-		
+
         jQuery('.td_active').removeClass('td_active');
         var node = jQuery(this).parent().next().find('ul').first();
-        
+
         var i = (node.css('display')=="block");
-      
+
 		var string = jQuery(this).parent().parent().parent().parent().parent().attr('class');
 		if(string.indexOf('parent')!=-1)
 		{
@@ -83,12 +83,12 @@
 		{
 			jQuery('#nav1 li.parent dd ul:visible').slideUp('slow');
 		}
-        jQuery(this).parent().parent().addClass('td_active');    
-        if (i != true) 	
+        jQuery(this).parent().parent().addClass('td_active');
+        if (i != true)
         {
         	jQuery(this).parent().next().find('ul').first().slideDown('slow');
-        	
-        }	
+
+        }
 		//if(jQuery(this).parent().parent().find('ul').css('display')=='block')
 		//{
 		//	  jQuery(this).parent().parent().removeClass('td_active');
@@ -96,6 +96,6 @@
 		//jQuery(this).parent().parent().children().children(':first-child').css("display","block");
         return false;
     });
-	
-	
-</script> 
+
+
+</script>
