@@ -4,7 +4,11 @@
 .products-grid li.item {/* padding:15px; margin:0 22px 0 0;*/ -webkit-transition:box-shadow 0.2s linear; margin-bottom:10px;text-align: center}
 li.item button.button.btn-cart span{font-size:14px; }
 
-.sidebar {padding: 0px; border-right: 1px solid /*BEGIN:general_color*/#202020/*END:general_color*/}
+.sidebar {padding: 2px; border: 1px solid /*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/}
 .block-layered-nav .block-content {padding:0px}
 .block-layered-nav .block-content dt {background-color: /*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; padding: 2px}
 .block-layered-nav .block-content dd {padding: 2px}
+.toolbar {padding: 2px; border: 1px solid /*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; height: 30px}
+.btn-remove { background-size: 20px 20px}
+#nav li a.level-top {border-right: 1px solid;}
+#nav li.last a.level-top {border-right: 0px;}
