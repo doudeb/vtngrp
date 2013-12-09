@@ -15,8 +15,15 @@ li.item button.button.btn-cart span{font-size:14px; }
 .header .header-top-right .toolbar-switch { padding-top: 2px;}
 .block-cart-top .block-title a {background-position: 4px -43px;}
 .header {padding: 0px 0px 0px 0px}
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 100%; padding: 0px 5px 0px 5px}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 99%; padding: 0px 5px 0px 5px}
 
 a { color:/*BEGIN:general_color*/#202020/*END:general_color*/; -webkit-transition:color 0.2s linear }
 a:hover{color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;}
-.header .logo {margin-top: -10px}
+@media (min-width: 768px) {
+.header .logo {position: absolute;padding-top: 3px;}
+.header .welcome-msg { padding-left: 130px;padding-top: 15px;font-weight: bold}
+}
+@media (max-width: 768px) {
+.header .logo {position: relative;padding-top: 3px;overflow: hidden}
+.header .welcome-msg {display: none}
+}

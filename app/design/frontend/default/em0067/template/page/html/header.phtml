@@ -31,7 +31,7 @@
     <div class="header">
     	<div class="header-top">
     		<div class="header-top-left">
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+    			<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
     		</div>
     		<div class="header-top-right">
 				<?php echo $this->getChildHtml('em0067_header_contact') ?>
@@ -45,7 +45,7 @@
     	</div>
         <div class="quick-access row">
 			<div class = "span7">
-				<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
 			</div>
             <div class="header-search span10"><?php echo $this->getChildHtml('topSearch') ?></div>
             <div class="header-cart span7"><?php echo $this->getChildHtml('cart_sidebar') ?></div>
