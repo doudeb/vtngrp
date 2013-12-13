@@ -9,15 +9,16 @@ li.item button.button.btn-cart span{font-size:14px; }
 .block-layered-nav .block-content dt {background-color: /*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; padding: 2px}
 .block-layered-nav .block-content dd {padding: 2px}
 .toolbar {padding: 2px; border: 1px solid /*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; height: 30px}
-.btn-remove { background-size: 20px 20px}
-#nav li a.level-top {border-right: 1px solid;}
+.btn-remove { background-size: 20px 20px;}
+#narrow-by-list .btn-remove {margin-top: 4px}
+#nav li a.level-top {border-right: 1px solid; color: /*BEGIN:primary_color*/#005cb9/*END:primary_color*/; font-weight: bold}
 #nav li.last a.level-top {border-right: 0px;}
 .header .header-top-right .toolbar-switch { padding-top: 2px;}
 .block-cart-top .block-title a {background-position: 4px -43px;}
 .header {padding: 0px 0px 0px 0px}
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 99%; padding: 0px 5px 0px 5px}
 
-a { color:/*BEGIN:general_color*/#202020/*END:general_color*/; -webkit-transition:color 0.2s linear }
+a { color:/*BEGIN:primary_color*/#005cb9/*END:primary_color*/; -webkit-transition:color 0.2s linear }
 a:hover{color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;}
 @media (min-width: 768px) {
 .header .logo {position: absolute;padding-top: 3px;}

@@ -377,8 +377,14 @@
                 <span class="price-label"><?php echo $_specialPriceStoreLabel ?></span>
                 <span class="price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php echo $_coreHelper->currency($_finalPrice, true, false) ?>
+
                 </span>
             </p>
+                <?php if (!is_null($_product->special_to_date)): ?>
+                <div class="special-price-desc box">
+                    <?php echo sprintf($this->__('Special price description'), Mage::helper('core')->formatDate($_product->special_from_date,'short'), Mage::helper('core')->formatDate($_product->special_to_date,'short'), (int) Mage::getModel('cataloginventory/stock_item')->loadByProduct($_product)->getQty()) ?>
+                </div>
+                <?php endif; ?>
             <?php endif; ?>
         <?php endif; ?>
 

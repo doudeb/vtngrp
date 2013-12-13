@@ -28,6 +28,7 @@
 <div class="breadcrumbs">
     <ul>
         <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
+            <?php $_crumbInfo['label'] = $this->__($_crumbInfo['label']) ?>
 			<?php if($_crumbName == 'home'):?>
 				<?php $_crumbInfo['link'] = Mage::getBaseUrl(); ?>
 			<?php endif;?>

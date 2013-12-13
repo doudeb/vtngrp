@@ -1,0 +1,10 @@
+.svn
+app/etc/local.xml
+app/etc/config.xml
+var/cache/*
+var/session
+media/catalog
+media/em_slideshow
+media/em_layerednavigation
+var/log/*
+var/locks
