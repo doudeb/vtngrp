@@ -63,3 +63,20 @@
 <?php echo $this->getChildHtml() ?>
 <?php echo $this->helper('core/js')->getTranslatorScript() ?>
 <?php echo $this->getIncludes() ?>
+
+<script type="text/javascript">
+//<![CDATA[
+(function($) {
+	$.countdown.regional['mage'] = {
+		labels: ['<?php echo $this->__('Years');?>', '<?php echo $this->__('Months');?>', '<?php echo $this->__('Weeks');?>', '<?php echo $this->__('Days');?>', '<?php echo $this->__('Hours');?>', '<?php echo $this->__('Minutes');?>', '<?php echo $this->__('Seconds');?>'],
+		labels1: ['<?php echo $this->__('Year');?>', '<?php echo $this->__('Months');?>', '<?php echo $this->__('Week');?>', '<?php echo $this->__('Day');?>', '<?php echo $this->__('Hour');?>', '<?php echo $this->__('Minute');?>', '<?php echo $this->__('Second');?>'],
+		compactLabels: ['a', 'm', 's', 'j'],
+		whichLabels: function(amount) {
+            return (amount > 1 ? 0 : 1);
+        },
+		digits: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+		timeSeparator: ':', isRTL: false};
+	$.countdown.setDefaults($.countdown.regional['mage']);
+})(jQuery);
+//]]>
+</script>
