@@ -16,7 +16,7 @@ li.item button.button.btn-cart span{font-size:14px; }
 .header .header-top-right .toolbar-switch { padding-top: 2px;}
 .block-cart-top .block-title a {background-position: 4px -43px;}
 .header {padding: 0px 0px 0px 0px}
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 99%; padding: 0px 5px 0px 5px}
+/*.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 99%; padding: 0px 5px 0px 5px}*/
 
 a { color:/*BEGIN:primary_color*/#005cb9/*END:primary_color*/; -webkit-transition:color 0.2s linear }
 a:hover{color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;}
@@ -81,3 +81,4 @@ a:hover{color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;}
 }
 
 .defaultCountdown { max-width: 200px; height: 40px; }
+div.std h2 {display: block}
