@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Boxtale_Envoimoinscher>
+      <active>true</active>
+      <codePool>local</codePool>
+      <depends>
+        <Mage_Adminhtml />
+        <Mage_Shipping/> 
+      </depends>
+    </Boxtale_Envoimoinscher>
+  </modules>
+</config>  
