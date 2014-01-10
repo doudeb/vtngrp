@@ -11,7 +11,7 @@ li.item button.button.btn-cart span{font-size:14px; }
 .toolbar {padding: 2px; border: 1px solid /*BEGIN:secondary_bgcolor*/#f1f1f1/*END:secondary_bgcolor*/; height: 30px}
 .btn-remove { background-size: 20px 20px;}
 #narrow-by-list .btn-remove {margin-top: 4px}
-#nav li a.level-top {border-right: 1px solid; color: /*BEGIN:primary_color*/#005cb9/*END:primary_color*/; font-weight: bold}
+#nav li a.level-top {border-right: 1px solid;font-weight: bold}
 #nav li.last a.level-top {border-right: 0px;}
 .header .header-top-right .toolbar-switch { padding-top: 2px;}
 .block-cart-top .block-title a {background-position: 4px -43px;}
@@ -81,4 +81,4 @@ a:hover{color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;}
 }
 
 .defaultCountdown { max-width: 200px; height: 40px; }
-div.std h2 {display: block}
+.tab_content .box-collateral div.std h2 {display: block}

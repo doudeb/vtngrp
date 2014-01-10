@@ -136,6 +136,10 @@ class Mage_Customer_AccountController extends Mage_Core_Controller_Front_Action
      */
     public function loginPostAction()
     {
+        // generate form_key if missing or invalid
+         if (!($formKey = $this->getRequest()->getParam('form_key', null)) || $formKey != Mage::getSingleton('core/session')->getFormKey()) {
+         $this->getRequest()->setParams(array('form_key' =>Mage::getSingleton('core/session')->getFormKey()));
+         }  
         if (!$this->_validateFormKey()) {
             $this->_redirect('*/*/');
             return;
