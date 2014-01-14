@@ -48,7 +48,7 @@ switch ($pageLayout){
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
-<div class="product-view">
+<div itemscope itemtype="http://schema.org/Product" class="product-view">
     <div class="product-essential">
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
         <?php echo $this->getBlockHtml('formkey') ?>
@@ -74,7 +74,7 @@ switch ($pageLayout){
 			<?php endif; ?>
 
             <div class="product-name">
-                <h2><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h2>
+                <h2 itemprop="name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h2>
             </div>
 
             <?php if ($this->canEmailToFriend()): ?>

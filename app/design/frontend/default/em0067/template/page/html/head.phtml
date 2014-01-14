@@ -26,14 +26,14 @@
 ?>
 <meta http-equiv="Content-Type" content="<?php echo $this->getContentType() ?>" />
 <title><?php echo $this->getTitle() ?></title>
-<meta name="description" content="<?php echo htmlspecialchars($this->getDescription()) ?>" />
+<meta name="description" content="<?php echo $this->stripTags(htmlspecialchars_decode($this->getDescription())) ?>" />
 <meta name="keywords" content="<?php echo htmlspecialchars($this->getKeywords()) ?>" />
 <meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>" />
 <link rel="icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
 <link rel="shortcut icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta property="og:site_name" content="<?php echo Mage::app()->getStore()->getGroup()->getName(); ?>" />
-<meta property="og:description" content="<?php echo strip_tags(htmlspecialchars($this->getDescription())) ?>" />
+<meta property="og:description" content="<?php echo $this->stripTags(htmlspecialchars_decode($this->getDescription())) ?>" />
 <?php if (!in_array(Mage::app()->getFrontController()->getAction()->getFullActionName(), array('cms_index_noRoute', 'cms_index_defaultNoRoute'))) {
      $currentUrl = Mage::helper('core/url')->getCurrentUrl();
  }?>
@@ -49,7 +49,7 @@
  <?php endif;?>
  <?php if (Mage::registry('current_product')) : ?>
    <?php $ogTitle = Mage::registry('current_product')->getName();?>
- <meta property="og:image" content="<?php echo Mage::helper('catalog/image')->init(Mage::registry('current_product'), 'small_image')->resize(200,200);?>" />
+ <meta property="og:image" content="<?php echo Mage::helper('catalog/image')->init(Mage::registry('current_product'), 'small_image')->resize(500,500);?>" />
  <?php endif;?>
  <meta property="og:title" content="<?php echo $ogTitle ?>" />
 

@@ -63,7 +63,7 @@
 		<?php
 			$w = $setting->getImageProduct_BaseImageWidth(360);
 			$h = $setting->getImageProduct_BaseImageHeight() ? $setting->getImageProduct_BaseImageHeight() : null;
-			$_img = '<img id="image" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize($w, $h).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
+			$_img = '<img  itemprop="image" id="image" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize($w, $h).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
 			echo $_helper->productAttribute($_product, $_img, 'image');
 		?>
 		</a>
@@ -88,7 +88,7 @@
 	    Event.observe(window, 'load', function() {
 	        product_zoom = new Product.Zoom('image', 'track', 'handle', 'zoom_in', 'zoom_out', 'track_hint');
 	    });
-	    
+
 	//]]>
 	</script>
 	<?php endif ?>
@@ -96,7 +96,7 @@
 <p class="product-image">
     <?php
         $_img = '<img src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(
-			$setting->getImageProduct_BaseImageWidth(360), 
+			$setting->getImageProduct_BaseImageWidth(360),
 			$setting->getImageProduct_BaseImageHeight()).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
         echo $_helper->productAttribute($_product, $_img, 'image');
     ?>
@@ -110,7 +110,7 @@
     <?php foreach ($this->getGalleryImages() as $_image): ?>
         <li style="width:<?php echo $setting->getImageProduct_ThumbBaseWidth(108) ?>px">
 			<?php $_img = $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile()); ?>
-			
+
 			<?php if ($viewmode == 'cloudzoom'): ?>
 			<?php
 				$_img_thumb = (string)$_img->resize(null);
@@ -136,7 +136,7 @@
 				<?php $_img_thumb = (string)$_img->resize($setting->getImageProduct_ThumbBaseWidth(108), $setting->getImageProduct_ThumbBaseHeight()); ?>
 				<a rel="lightbox[em_lightbox]"  href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile()); ?>"  title="<?php echo $this->escapeHtml($_image->getLabel()) ?>">
 					<img src="<?php echo $_img_thumb; ?>" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
-				</a>			
+				</a>
 
 			<?php else: ?>
 				<?php $_img_thumb = (string)$_img->resize($setting->getImageProduct_ThumbBaseWidth(108), $setting->getImageProduct_ThumbBaseHeight()); ?>

@@ -82,3 +82,4 @@ a:hover{color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;}
 
 .defaultCountdown { max-width: 200px; height: 40px; }
 .tab_content .box-collateral div.std h2 {display: block}
+.sidebar { border: 0px }
