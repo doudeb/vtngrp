@@ -9,3 +9,4 @@ media/em_layerednavigation
 var/log/*
 var/locks
 sitemap.xml
+downloader/.cache
