@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+        <lengow translate="label" module="sync">
+            <label>Lengow</label>
+            <sort_order>210</sort_order>
+        </lengow>
+    </tabs>
+	<sections>
+		<sync translate="label" module="sync">
+			<label>Manage Orders</label>
+			<tab>lengow</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>110</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<orders translate="label" module="sync">
+					<label>Manage Orders</label>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<sort_order>1</sort_order>
+					<fields>
+						<period>
+							<label>Import orders from x days</label>						
+							<sort_order>21</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Choose period for Sync order</comment>
+						</period>
+						<cron>
+							<label>Auto import</label>			
+                            <frontend_type>select</frontend_type>			
+							<sort_order>22</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>Enable import every 30 minutes</comment>
+						</cron>
+                        <title>
+                            <label>Import with product's title from Lengow</label>
+                            <comment>Import an order with the product's name from marketplace</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>23</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </title>
+						<debug>
+							<label>Debug mode</label>				
+                            <frontend_type>select</frontend_type>		
+							<sort_order>24</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+							<comment>Only for preproduction's mode : no sync orders with Lengow, import orders every time</comment>
+						</debug>
+					</fields>
+				</orders>
+			</groups>
+		</sync>
+	</sections>
+</config>
