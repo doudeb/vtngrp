@@ -6,6 +6,8 @@ var/session
 media/catalog
 media/em_slideshow
 media/em_layerednavigation
+media/export
+media/import
 var/log/*
 var/locks
 sitemap.xml

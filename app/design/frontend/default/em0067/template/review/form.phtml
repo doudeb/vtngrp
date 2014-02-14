@@ -29,10 +29,11 @@
     <h2><?php echo $this->__('Write Your Own Review') ?></h2>
     <?php if ($this->getAllowWriteReviewFlag()): ?>
     <form action="<?php echo $setting->getActionReview(); ?>" method="post" id="review-form">
+        <?php echo $this->getBlockHtml('formkey'); ?>
         <fieldset>
             <?php echo $this->getChildHtml('form_fields_before')?>
             <h3><?php echo $this->__("You're reviewing:"); ?> <span><?php echo $this->escapeHtml($this->getProductInfo()->getName()) ?></span></h3>
-			
+
 			<ul class="form-list">
                     <li>
                         <label for="nickname_field" class="required"><em>*</em><?php echo $this->__('Nickname') ?></label>
@@ -53,7 +54,7 @@
                         </div>
                     </li>
                 </ul>
-			
+
             <?php if( $this->getRatings() && $this->getRatings()->getSize()): ?>
                 <h4><?php echo $this->__('How do you rate this product?') ?> <em class="required">*</em></h4>
                 <span id="input-message-box"></span>
@@ -88,7 +89,7 @@
                 <input type="hidden" name="validate_rating" class="validate-rating" value="" />
                 <script type="text/javascript">decorateTable('product-review-table')</script>
             <?php endif; ?>
-                
+
             </fieldset>
             <div class="buttons-set">
                 <button type="submit" title="<?php echo $this->__('Submit Review') ?>" class="button"><span><span><?php echo $this->__('Submit Review') ?></span></span></button>
@@ -103,18 +104,18 @@
                     var trs = $('product-review-table').select('tr');
                     var inputs;
                     var error = 1;
-    
+
                     for( var j=0; j < trs.length; j++ ) {
                         var tr = trs[j];
                         if( j > 0 ) {
                             inputs = tr.select('input');
-    
+
                             for( i in inputs ) {
                                 if( inputs[i].checked == true ) {
                                     error = 0;
                                 }
                             }
-    
+
                             if( error == 1 ) {
                                 return false;
                             } else {
