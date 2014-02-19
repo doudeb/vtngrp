@@ -85,3 +85,4 @@ a:hover{color:/*BEGIN:secondary_color*/#e50000/*END:secondary_color*/;}
 .sidebar { border: 0px }
 h3.product-name {height: 30px}
 .box {padding : 5px; margin-bottom: 0px}
+.std {border : 1px solid #b7aea5; border-radius: 3px; padding: 10px; margin: 3px}
