@@ -18,7 +18,7 @@
 					<?php endif;?>
 					<div class="content-blog">
 						<a class="post-title" href="<?php echo $p->getPostUrl();?>" ><?php echo $p->getTitle();?></a>
-						<p><a href="<?php echo $p->getPostUrl();?>"><span>Read more</span></a></p>
+						<p><a href="<?php echo $p->getPostUrl();?>"><span><?php echo $this->__('Read more'); ?></span></a></p>
 					</div>
                 </li>
             <?php if($i==4) break; endforeach; ?>

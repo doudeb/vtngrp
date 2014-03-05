@@ -10,5 +10,6 @@ media/export
 media/import
 var/log/*
 var/locks
+var/report/
 sitemap.xml
 downloader/.cache
