@@ -146,13 +146,13 @@ class LaPoste_ExpeditorINet_ExportController extends Mage_Adminhtml_Controller_A
                 /* street address, on 4 fields */
                 /* street number */
                 preg_match('/\d{1,4}/', $address->getStreet(1),$street_number);
-                $content = $this->_addFieldToCsv($content, $delimiter, trim(str_replace($street_number[0], '', $address->getStreet(1))));
+                $content = $this->_addFieldToCsv($content, $delimiter, trim(str_replace($street_number[0], '', preg_replace("/[^A-Za-z0-9 ]/", '',$address->getStreet(1)))));
                 $content .= $separator;
-                $content = $this->_addFieldToCsv($content, $delimiter, $address->getStreet(2));
+                $content = $this->_addFieldToCsv($content, $delimiter, preg_replace("/[^A-Za-z0-9 ]/", '',$address->getStreet(2)));
                 $content .= $separator;
                 $content = $this->_addFieldToCsv($content, $delimiter, $street_number[0]);
                 $content .= $separator;
-                $content = $this->_addFieldToCsv($content, $delimiter, trim(str_replace($street_number[0], '', $address->getStreet(1))));
+                $content = $this->_addFieldToCsv($content, $delimiter, trim(str_replace($street_number[0], '', preg_replace("/[^A-Za-z0-9 ]/", '',$address->getStreet(1)))));
                 $content .= $separator;
                 $content = $this->_addFieldToCsv($content, $delimiter, '');
                 $content .= $separator;
