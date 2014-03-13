@@ -138,7 +138,7 @@ class LaPoste_ExpeditorINet_ExportController extends Mage_Adminhtml_Controller_A
                 $content = $this->_addFieldToCsv($content, $delimiter, $order->getSocoCivility());
                 $content .= $separator;
                 /* customer first name */
-                $content = $this->_addFieldToCsv($content, $delimiter, $address->getFirstname());
+                $content = $this->_addFieldToCsv($content, $delimiter, ($address->getCompany()!=""?"":$address->getFirstname()));
                 $content .= $separator;
                 /* customer last name */
                 $content = $this->_addFieldToCsv($content, $delimiter, $address->getLastname());
@@ -168,7 +168,7 @@ class LaPoste_ExpeditorINet_ExportController extends Mage_Adminhtml_Controller_A
                 $total_weight = 0;
                 $items = $order->getAllItems();
                 foreach ($items as $item) {
-                    $total_weight += $item['row_weight'];
+                    $total_weight += round($item['row_weight']*1000);
                 }
                 $content = $this->_addFieldToCsv($content, $delimiter, $total_weight);
                 $content .= $separator;
