@@ -1,0 +1,279 @@
+<?php
+
+class PSC_Backoffice_Model_Standard extends Mage_Payment_Model_Method_Abstract
+{
+    protected $_code  = "backoffice_standard";
+ 
+    protected $_isInitializeNeeded      = true;
+    protected $_canUseInternal          = false;
+    protected $_canUseForMultishipping  = false;
+
+    protected $_order = null;
+    protected $_config = null;
+    protected $_pscFormData = array();
+
+    public function setConfig(Mage_Paypsc_Model_Config $config){
+        $this->_config = $config;
+        return $this;
+    }
+
+    public function setPSCFormData(array $data){
+		
+		foreach($_REQUEST as $key => $value){
+			$txt[] = " $key : $value";
+		}
+		
+		
+		$data['Submit'] = 'Annuler';
+	
+		$data['id_client'] = '2';
+		$data['langue'] = 'fr';
+		$data['ref'] = '2';
+		$data['wait'] = '';
+		
+       $divers =  base64_decode($data['divers']);
+	   $divers = explode("&",$divers);
+	   $invoice = $divers[count($divers)-1];
+	   $invoice = explode("=",$invoice);
+	   $invoice = $invoice[count($invoice)-1];
+	   $entity = $divers[0];
+	   $entity = explode("=",$entity);
+	   $entity = $entity[count($entity)-1];
+
+		$this->_pscFormData = $data;
+		$this->_pscFormData['invoice'] = $invoice;
+		$this->_pscFormData['entity'] = $entity;
+        return $this;
+    }
+    
+    public function getPSCFormData($key = null){
+        if (null === $key) {
+            return $this->_pscFormData;
+        }
+        return isset($this->_pscFormData[$key]) ? $this->_pscFormData[$key] : null;
+    }
+
+    public function getOrderPlaceRedirectUrl(){
+        return Mage::getUrl('backoffice/standard/redirect', array('_secure' => true));
+    }
+
+    public function getStandardCheckoutFormFields(){
+
+		$config	= Mage::getStoreConfig("payment/backoffice_standard");
+		$quote	= $this->getQuote();
+		$order  = $this->_getOrder();
+	
+		$result['test']		= $config['psc_testmode'];
+		$result['devise']	= Mage::app()->getStore()->getBaseCurrencyCode(); 
+		$result['montant']	= $order->getBaseGrandTotal();
+		$result['id_client']	= $order->_data['customer_id']; 
+		$result['site']		= $config['psc_idsite'];
+	   
+		 $result['email']	= $order->getCustomerEmail(); 	
+		
+		$result['divers']	= base64_encode('entity='.$order->_data['entity_id'].'&invoice='.($this->getCheckout()->getLastRealOrderId())); 
+		
+		$result['debug'] = $config['psc_debugmode'];
+		$locale = Mage::app()->getLocale()->getLocaleCode();
+		list($lg,) = explode("_",$locale);
+		$result['lang'] = $lg;
+		$result['langue'] = $lg;
+		$result['ref'] = $order->_data['customer_id'];
+       return $result;
+    }
+    
+    public function getCheckout(){
+		
+        return Mage::getSingleton('checkout/session');
+    }
+    
+    public function getQuote(){
+		$quote	= $this->getCheckout()->getQuote();
+		return $quote;
+    }
+    
+    public function getConfig()
+    {
+        if (null === $this->_config) {
+            $params = array($this->_code);
+            if ($this->getStore()) {
+                $params[] = (int)$this->getStore();
+            }
+            $this->_config = Mage::getModel('backoffice/config', $params);
+        }
+        return $this->_config;
+    }
+    
+    protected function _getOrder(){
+		
+        if (empty($this->_order)) {
+            $id = ($this->getPSCFormData('invoice'))?$this->getPSCFormData('invoice'):$this->getCheckout()->getLastRealOrderId();
+			
+            $order = Mage::getModel('sales/order');
+            $order->loadByIncrementId($id);
+            if (!$order->getId()) {
+                throw new Exception(Mage::helper('backoffice')->__('Wrong Order ID (%s) specified.', $id));
+            }
+            $this->_order = $order;
+            $this->_config = Mage::getModel('backoffice/config', array($order->getPayment()->getMethod()));
+            $this->_verifyOrder($order);
+        }
+		
+        return $this->_order;
+    }
+    
+    protected function _verifyOrder(Mage_Sales_Model_Order $order){
+    }
+    
+    
+    public function processPSCRequest()
+    {
+        if (!$this->_pscFormData) {
+            return;
+        }
+		$this->processPSCVerified();
+    }
+    
+    public function processPSCVerified(){
+        $paymentStatus = $this->getPSCFormData('etat');
+		$type = $this->getPSCFormData('type');
+		
+		$txt[] ="paymentStatus : ". $paymentStatus ;
+		$txt[] = "type : ".$type ;
+		
+		$debug = '';
+		foreach($_REQUEST as $key =>  $value){
+			$debug .= "$key : '".$value."',\n";
+		}
+		// file_put_contents('debug_paysite.txt',$debug);
+		
+		
+		$this->langue = $_REQUEST['langue'];
+		
+		if($paymentStatus == "ok"){
+			switch($type){
+			case 0:
+					$this->_registerPaymentCapture();
+					break;
+			case 7:
+					$this->_registerPaymentPending();
+					break;
+			}
+		}else if($paymentStatus == "refund"){
+			switch($type){
+			case 0:
+					$this->_registerPaymentRefund();
+					break;
+			case 7:
+					$this->_registerPaymentPending();
+					break;
+			}
+		}else if($paymentStatus == "chargeback"){
+			switch($type){
+			case 0:
+					$this->_registerPaymentChargeback();
+					break;
+			case 7:
+					$this->_registerPaymentPending();
+					break;
+			}
+		}else if($paymentStatus == "ko"){
+			$this->_registerPaymentFailed();
+		}
+    }
+    
+    protected function _createPSCComment($comment = '', $addToHistory = true){
+        $paymentStatus = $this->getPSCFormData('payment_status');
+        $message = Mage::helper('backoffice')->__('%s.', $paymentStatus);
+        if ($comment) {
+            $message .= ' ' . $comment;
+        }
+        if ($addToHistory) {
+            $message = $this->_getOrder()->addStatusHistoryComment($message);
+            $message->setIsCustomerNotified(null);
+        }
+        return $message;
+    }
+    
+    protected function _registerPaymentCapture(){
+		$order = $this->_getOrder();
+		$parent_id = $this->getPSCFormData('invoice')."-".$this->getPSCFormData('email');
+        $payment = $order->getPayment()
+	    ->setTransactionId($this->getPSCFormData('id_trans'))
+	    ->setParentTransactionId($parent_id)
+	    ->setShouldCloseParentTransaction(1)
+            ->setIsTransactionClosed(0)
+            ->registerCaptureNotification($this->getPSCFormData('montant_org'));
+
+	// $order->setStatus("complete_psc");
+		$config	= Mage::getStoreConfig("payment/backoffice_standard");
+		$order->setStatus($config['success_order_status']);
+        $order->save();
+        $payment->save();
+		
+		
+		$locale = Mage::app()->getLocale()->getLocaleCode();
+		if($this->langue!='fr') $this->langue = 'en';
+		$config	= Mage::getStoreConfig("payment/backoffice_standard");
+
+		$order->sendNewOrderEmail();
+   
+    }
+    
+    protected function _registerPaymentRefund(){
+		$order = $this->_getOrder();
+		$parent_id = $this->getPSCFormData('invoice')."-".$this->getPSCFormData('email');
+		$payment = $order->getPayment()
+				->setTransactionId($this->getPSCFormData('id_trans'))
+			->setParentTransactionId($parent_id)
+			->setIsTransactionClosed(1)
+				->registerRefundNotification(-1 * $this->getPSCFormData('montant_org'));
+		$order->setStatus("closed");
+		 $order->cancel()->save();
+        $payment->save();
+    }
+
+    protected function _registerPaymentChargeback(){
+		$order = $this->_getOrder();
+		$parent_id = $this->getPSCFormData('invoice')."-".$this->getPSCFormData('email');
+		$payment = $order->getPayment()
+				->setTransactionId($this->getPSCFormData('id_trans'))
+			->setParentTransactionId($parent_id)
+			->setIsTransactionClosed(1)
+				->registerRefundNotification(-1 * $this->getPSCFormData('montant_org'));
+		$order->setStatus("pending");
+        $order->save();
+        $payment->save();
+
+    }
+
+
+    protected function _registerPaymentFailed(){
+		$order = $this->_getOrder();
+		$payment = $order->getPayment()
+	    ->setPreparedMessage($this->_createPSCComment('An error occurred while trying to pay', false))
+	    ->setParentTransactionId($this->getPSCFormData('id_trans'));
+	// $order->setStatus("holded_psc");
+      	
+	   	$order->cancel();
+		$order->setStatus("failed");
+		$order->save();
+        $payment->save();
+		die(var_dump($_POST));
+    }
+
+    protected function _registerPaymentPending(){
+		$order = $this->_getOrder();
+	// $order->setStatus("pending_psc");
+     	$order->setStatus("pending");
+	    $order->save();
+    }
+    
+    protected function _registerPaymentFailure($explanationMessage = ''){
+        $order = $this->_getOrder();
+        $order->registerCancellation($this->_createPSCComment($explanationMessage, false), false)
+            ->save();
+    }
+}
+
+?>

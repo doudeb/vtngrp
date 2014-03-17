@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Mage_Sales_Community>
+            <version>0.1.2</version>
+        </Mage_Sales_Community>
+    </modules>
+    <global>
+        <sales>
+            <order>
+                <statuses>
+                    <!--Pending Status Descriptions-->
+					<pending_psc translate="label"><label>[PSC]Pending</label></pending_psc>
+                    <!--Processing Status Descriptions-->                    
+					<processing_psc translate="label"><label>[PSC]Processing</label></processing_psc>
+					<failed_psc translate="label"><label>[PSC]Failed</label></failed_psc>
+                    <!--Complete Status Descriptions-->                    
+					<complete_psc translate="label"><label>[PSC]Complete</label></complete_psc>
+                    <!--On Hold Status Descriptions-->					
+		                        <holded_psc translate="label"><label>[PSC]Error</label></holded_psc>					
+                    <!--Refund Status Descriptions-->					
+		                        <refund_psc translate="label"><label>[PSC]Refund</label></refund_psc>					
+                   				
+		                        <canceled_psc translate="label"><label>[PSC]Canceled</label></canceled_psc>					
+                </statuses>
+                <states>
+                    <new translate="label">
+                        <label>New</label>
+                        <statuses>
+	                    <pending_psc/>
+			    <holded_psc/>
+                            <processing_psc/>
+			    <complete_psc/>
+                        </statuses>
+                        <visible_on_front/>
+                    </new>
+		    <pending translate="label">
+                        <label>[PSC]Pending</label>
+                        <statuses>
+	                    <pending_psc/>
+			    <complete_psc/>
+                        </statuses>
+                        <visible_on_front/>						
+                    </pending> 					
+                    <processing translate="label">
+                        <label>[PSC]Processing</label>
+                        <statuses>
+                            <processing_psc/>
+			    <complete_psc/>
+                        </statuses>
+                        <visible_on_front/>
+                    </processing>
+					
+					<failed translate="label">
+                        <label>[PSC]failed</label>
+                        <statuses>
+                            <failed_psc/>
+			    			<complete_psc/>
+                        </statuses>
+                        <visible_on_front/>
+                    </failed>
+					
+                    <complete translate="label">
+                        <label>[PSC]Complete</label>
+                        <statuses>
+			    <complete_psc/>
+                        </statuses>
+                        <visible_on_front/>
+                    </complete>
+                    <holded translate="label">
+                        <label>[PSC]Error</label>
+                        <statuses>
+                            <holded_psc/>
+			    <complete_psc/>
+                        </statuses>
+                        <visible_on_front/>
+                    </holded>
+                    
+                    <canceled translate="label">
+                        <label>[PSC]Canceled</label>
+                        <statuses>
+                            <canceled_psc/>
+                        </statuses>
+                        <visible_on_front/>
+                    </canceled>
+                </states>
+            </order>
+        </sales>
+    </global>
+</config> 

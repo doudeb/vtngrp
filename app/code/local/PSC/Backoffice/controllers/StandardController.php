@@ -1,0 +1,85 @@
+<?php
+
+class PSC_Backoffice_StandardController extends Mage_Core_Controller_Front_Action{
+	public function indexAction(){
+		Mage::setIsDeveloperMode(true);
+		ini_set('display_errors', 1);
+		
+		Mage::getModel('backoffice/standard')
+                ->setPSCFormData($this->getRequest()->getPost())
+                ->processPSCRequest();
+	}
+		
+	public function cancelledAction(){
+		$id = Mage::getSingleton('checkout/session')->getLastRealOrderId();
+		$order = Mage::getModel('sales/order');
+		$order->loadByIncrementId($id);
+		$order->setStatus("canceled");
+		$order->cancel()->save();
+		$this->_redirect('checkout/cart');
+	}
+	
+	public function successAction(){
+		$standard = Mage::getModel('backoffice/standard');
+		$id = Mage::getSingleton('checkout/session')->getLastRealOrderId();
+		$order = Mage::getModel('sales/order');
+		$order->loadByIncrementId($id);
+		if($order->getStatus()=='failed'){
+			$this->_redirect('checkout/onepage');
+		}else{
+			foreach( $standard->getQuote()->getItemsCollection() as $item ){
+				Mage::getSingleton('checkout/cart')->removeItem( $item->getId() )->save();
+			}
+			$this->_redirect('checkout/onepage/success');
+		}
+		
+		
+	}
+	
+	public function redirectAction(){
+		$standard = Mage::getModel('backoffice/standard');
+		
+		$form = new Varien_Data_Form();
+		$form->setAction($standard->getConfig()->getPSCUrl())
+		->setId('backoffice_from')
+		->setName('backoffice_from_name')
+		->setMethod('POST')
+		->setUseContainer(true);
+        
+	    foreach ($standard->getStandardCheckoutFormFields() as $field=>$value) {
+            $form->addField($field, 'hidden', array('name'=>$field, 'value'=>$value));
+            }
+	
+		$locale = Mage::app()->getLocale()->getLocaleCode();
+		$psc_title[$locale."_PSC"] = "You will be redirected to Paysite-cash in a few seconds";
+		$psc_title[$locale."_EP"] = "You will be redirected to Easy-pay in a few seconds ";
+		$psc_title["fr_FR_PSC"] = "Vous serez redirigé vers Paysite-cash dans quelques secondes";
+		$psc_title["fr_FR_EP"] = "Vous serez redirigé vers Easy-pay dans quelques secondes";
+		
+		$Redirect[$locale."_Redirect"] = "... or do it manually";
+		$Redirect["fr_FR_Redirect"] = "... Redirection manuelle";
+		
+		$action = $standard->getConfig()->getPSCUrl();
+		if(trim($action)=="https://billing.paysite-cash.biz"){
+			$plateform = 'PSC';
+		}else{
+			$plateform = 'EP';
+		}
+		
+	    $form->addField("do_redirect", 'submit', array('name'=>"value", 'value'=>$Redirect["".$locale."_Redirect"]));
+		
+		$html = '<html><body>';
+		$html.= $psc_title["".$locale."_".$plateform.""];
+		$html.= $form->toHtml();
+		$html.= '<script type="text/javascript">document.backoffice_from_name.submit();</script>';
+		$html.= '</body></html>';
+		echo $html;
+	    
+		/*foreach( $standard->getQuote()->getItemsCollection() as $item ){
+			Mage::getSingleton('checkout/cart')->removeItem( $item->getId() )->save();
+		}*/
+
+	}
+}
+
+?>

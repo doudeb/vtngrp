@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <PSC_Backoffice>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Payment />
+            </depends>
+        </PSC_Backoffice>
+    </modules>
+</config>

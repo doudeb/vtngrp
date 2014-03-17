@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+    <name>PSCMagento_v_1_8</name>
+    <version>1.0.4</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Magento extension for Paysite-cash</summary>
+    <description>This payment module allows you to process credit card transactions through Paysite-cash.com payment solution.&#xD;
+It contains all the Paysite Cash featuressuch as IPN (Instant Payment Notification),&#xD;
+multi-currency, payment cascade,etc. Paysite Cash is one of the leading payment solutions in Europe.&#xD;
+We canoffer to our Merchants a large number of anti-fraud tools that will helpthem reduce their chargeback&#xD;
+rate and a lot of interesting options. Our payment page can be completely customized with the design of your&#xD;
+websiteand our payment platform is translated in the main European languages. Our teams can offer assistance&#xD;
+for the cardholders in English, French, Italian, Russian, Ukrainian, Romanian or Estonian.&#xD;
+&#xD;
+We can be reached by email at sales_us@paysite-cash.com&#xD;
+Extension developed by http://www.paysite-cash.com/</description>
+    <notes>Release 1.0.4</notes>
+    <authors><author><name>awb360</name><user>auto-converted</user><email>sales@paysite-cash.com</email></author></authors>
+    <date>2014-03-07</date>
+    <time>17:56:59</time>
+    <contents><target name="magelocal"><dir name="PSC"><dir name="Backoffice"><dir name="Helper"><file name="Data.php" hash="08af4703653fe75f51d08f9393281ed1"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Pscprocess.php" hash="ea92626f6341a3e817e421c92e8c8a1e"/></dir></dir></dir></dir><file name="Config.php" hash="4f6383670f63fd31d938ad02aaeddad4"/><file name="Session.php" hash="21220d578cf3d4f697b07857b0be5a0d"/><file name="Standard.php" hash="7cd59f325171089a28095aef5c98e47d"/><file name="Standard.php.bak" hash="df1e0b500dabda48053a82be1bc5baa2"/></dir><dir name="controllers"><dir name="Checkout"><file name="OnepageController.php" hash="daf774cc57329c7843c4186e154dc46f"/></dir><file name="IndexController.php" hash="ecd4d7c6b3e6f44ecff4eb92de9c2498"/><file name="StandardController.php" hash="a16175cf94fc37f0dc9a081e3981e6ca"/><file name="StandardController.php.bak" hash="3d9967a65018a67e75a50782c84dc331"/><file name="new_install.txt" hash="65323115b64d65b157ca906eaa484d8b"/></dir><dir name="etc"><file name="config.xml" hash="5597afc510cf33331bf2f6234d8b9c39"/><file name="system.xml" hash="f4092482784b3fcafe51faa117614e28"/></dir></dir><dir name="Status"><file name="Default.php" hash="b78b5fc2471f70a4a2a18be5d4d10cc4"/><dir name="etc"><file name="config.xml" hash="6410ae420083e4592cb778ee47382f7c"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="methods2.xml" hash="ec6022f2a65ba1ee3793ca5f6702d769"/></dir><dir name="template"><dir name="checkout"><dir name="onepage"><dir name="payment"><file name="methods2.phtml" hash="8a55cfdd50b398389f65a75a0d960f98"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="images"><file name="cards_en_US.png" hash="e6976a3bcea796599c37db92fbe7e3de"/><file name="cards_fr_FR.png" hash="5ae28068fc3d3e7f776c2ea42904b5f5"/><file name="paysite-cash_en_US.png" hash="0b30d23c4df983f1bb594ff166bd4580"/><file name="paysite-cash_fr_FR.png" hash="e419b13f479fffb8134eac0150a165ec"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="PSC_Backoffice.xml" hash="036c3c3fa4fd8aea990e62af6ce7aa0d"/><file name="PSC_Status.xml" hash="ca04e4763a349c71cdefcab1505d4d37"/></dir></target><target name="magelocale"><dir name="fr_FR"><file name="PSC_Backoffice.csv" hash="2868c41593d7402978c03b9b10b60ee5"/></dir><dir name="fr_CA"><file name="PSC_Backoffice.csv" hash="1f9b849f9670382b01e7553e466f073f"/></dir></target><target name="mage"><dir name="app"><dir name="code"><dir name="local"><dir name="PSC"><dir name="Backoffice"><dir name="controllers"><file name="new_install.txt" hash="65323115b64d65b157ca906eaa484d8b"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

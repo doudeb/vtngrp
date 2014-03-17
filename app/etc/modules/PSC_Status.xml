@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <PSC_Status>
+      <active>true</active>
+      <codePool>local</codePool>
+    </PSC_Status>
+  </modules>
+</config> 

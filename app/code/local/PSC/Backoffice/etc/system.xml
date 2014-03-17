@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <backoffice_standard translate="label" module="backoffice">
+                    <label>Paysite-cash (Credit Card/Carte Bancaire)</label>
+                    <sort_order>102</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+					<expanded>1</expanded>
+					<include>1</include>
+					<comment><![CDATA[<div class="main_psc config-heading"><style>tr#row_payment_backoffice_standard_order_status{display:none;}.main_psc .credit_card{	float: right;    position: relative;    right: 18px;    top: -18px;}#psc_configure,#psc_close{	font-size:14px;		width:83px;}.main_psc {    height: 90px;}.main_psc .after_logo_psc {    margin-left: 15px;}.main_psc .button-container {    position: relative;    top: -15px;}</style><img src="http://www.paysite-cash.fr/v2/images/paysite-cash.png" width="152" /><label class="after_logo_psc  trad fr_FR fr_CA"><b>Carte Bancaire - </b> <a href="http://www.paysite-cash.com" target="_blank">En savoir plus</a></label><label class="after_logo_psc trad  en_US en_AU en_CA en_IE en_NZ  en_GB " ><b>Credit Card - </b> <a href="http://www.paysite-cash.com"  target="_blank">Learn more</a></label> <span class=" trad fr_FR fr_CA" style="display:block; width:80%; "> Acceptez les paiements par carte bancaire sur votre site et bénéficiez d’une page de paiement responsive et personnalisable.</span> <span class=" trad  en_US en_AU en_CA en_IE en_NZ  en_GB " style="display:block; width:80%; "> Accept credit card payments with a responsive and customizable design billing page</span>  <button   style="float:right;" id="psc_configure" class="button psc_configure" type="button"> <span class=" trad  fr_FR fr_CA state-closed"> Configurer</span> <span class=" trad   en_US en_AU en_CA en_IE en_NZ  en_GB  state-closed"> Configure</span> </button><button  style="float:right;display:none;" id="psc_close" class="button psc_close" type="button"> <span class=" trad  fr_FR fr_CA state-closed"> Fermer</span> <span class="  trad  en_US en_AU en_CA en_IE en_NZ  en_GB  state-closed"> Close</span> </button><input type="hidden" id="current_lang" name="current_lang"> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script> <script> 	jQuery.noConflict(); 	jQuery(document).ready(function(e) {			jQuery("#payment_backoffice_standard table").hide(); 		jQuery('.section-config:last').insertAfter('.entry-edit .section-config:first');		jQuery('#psc_configure').wrap('<div class="button-container"></div>');		jQuery('#psc_close').appendTo('.main_psc .button-container');		jQuery(".trad").hide();		jQuery("#interface_locale option").each(function(){						var lang = jQuery(this).val();						if(jQuery(this).attr('selected')=='selected'){				var local = jQuery(this).val();						jQuery("#current_lang").val(local);				jQuery(".main_psc ."+local).show();							}		});				var lang = jQuery("#current_lang").val().split('_');				lang = lang[0];		if(lang!="fr") {			lang='en';			jQuery(".main_psc .en_US").show();		}								var root_site = BLANK_IMG.replace("/js/spacer.gif","");		jQuery("img.trad.credit_card").each(function(index, element) {			jQuery(this).attr('src',root_site+jQuery(this).attr('src'));		});							}); /*end document ready*/	jQuery("#psc_close").click(function(){			jQuery("#psc_close").hide(); 		jQuery("#psc_configure").show(); 		jQuery("#payment_backoffice_standard table").hide(); 	}); 		jQuery("#psc_configure").click(function(){			jQuery("#payment_backoffice_standard table").show(); 		jQuery("#psc_configure").hide(); 		jQuery("#psc_close").show();	}); </script> <img class=" trad credit_card fr_FR fr_CA" src="/skin/frontend/default/default/images/cards_fr_FR.png"><img class=" trad credit_card  en_US en_AU en_CA en_IE en_NZ  en_GB " src="/skin/frontend/default/default/images/cards_en_US.png"></div>]]></comment>
+					<fields>
+							<active translate="label">
+								<label>Enabled</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>1</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>0</show_in_store>
+							</active>
+							<portal translate="label">
+								<label>Payment Gateway</label>
+								<frontend_type>select</frontend_type>
+								<source_model>backoffice/adminhtml_system_config_source_pscprocess</source_model>
+								<sort_order>4</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>0</show_in_store>
+							</portal>
+							<success_order_status translate="label">
+								<label>Order status for successful transaction</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_order_status_newprocessing</source_model>
+								<sort_order>4</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>0</show_in_store>
+							</success_order_status>
+							
+							<order_status translate="label">
+								<label>New order status</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_order_status_newprocessing</source_model>
+								<sort_order>3</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>0</show_in_store>
+							</order_status>
+							
+						<title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </title>
+							
+							
+							<psc_idsite translate="label comment">
+								<label>Site ID</label>
+								<sort_order>5</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>0</show_in_store>
+							</psc_idsite>
+						<psc_testmode translate="label">
+								<label>Activate test mode</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>10</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>0</show_in_store>
+							</psc_testmode>
+							
+							<psc_debugmode translate="label">
+								<label>Activate debug mode</label>
+								<frontend_type>select</frontend_type>
+								<source_model>adminhtml/system_config_source_yesno</source_model>
+								<sort_order>11</sort_order>
+								<show_in_default>1</show_in_default>
+								<show_in_website>1</show_in_website>
+								<show_in_store>0</show_in_store>
+							</psc_debugmode>
+						</fields>
+						
+				  </backoffice_standard>	
+            </groups>
+        </payment>
+        
+    </sections>
+</config>
