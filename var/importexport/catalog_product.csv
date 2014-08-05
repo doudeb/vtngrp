@@ -1,35 +1,950 @@
-"sku";"websites";"name";"ean";"qty";"is_in_stock";"price";"special_from_date";"special_to_date";"special_price"
-"0000012";"base";"iPhone 5 16 Go - blanc";"";"48.0000";"1";"750.0000";"2013-12-18 00:00:00";"2013-12-25 00:00:00";"699.0000"
-"0000013";"base";"HTC One Silver 32GB";"4718487630493";"47.0000";"1";"467.0000";"";"";""
-"0000014";"base";"HTC Desire 200 (102e) Black";"4710937385793";"20.0000";"1";"95.0000";"";"";""
-"0000015";"base";"HTC One Max (803s) Silver";"4718487639755";"35.0000";"1";"564.0000";"";"";""
-"0000016";"base";"Apple Iphone 5C blanc 16GB";"3305912509380";"15.0000";"1";"525.0000";"";"";""
-"EB-L1G6LLU";"base";"Batterie d'origine Samsung Galaxy S3/I9300 EB-L1G6LLU";"5711045448560";"497.0000";"1";"20.0000";"";"";""
-"EB-F1A2GBU";"base";"Batterie galaxy S2 (GT-i9200) EB-F1A2GBU";"8806071517919";"50.0000";"0";"20.0000";"";"";""
-"EB494358VU";"base";"Batterie samsung galaxy ACE (GT- S5850)  1350 mAh";"8806071410173";"200.0000";"1";"20.0000";"";"";""
-"0000017";"base";"BlackBerry Z10 4G LTE Noir";"0802975663712";"23.0000";"1";"256.0000";"";"";""
-"0000018";"base";"BlackBerry Z30 Noir";"0802975053506";"59.0000";"1";"463.0000";"";"";""
-"0000019";"base";"Nokia Lumia 920 Rouge";"6438158528505";"0.0000";"0";"335.0000";"";"";""
-"0000020";"base";"Nokia Lumia 1020 Blanc";"6438158606999";"47.0000";"1";"499.0000";"";"";""
-"0000021";"base";"Nokia Lumia 1020 Noir";"6438158606920";"50.0000";"1";"499.0000";"";"";""
-"0000022";"base";"Nokia Lumia 1520 Noir";"6438158622067";"42.0000";"1";"510.0000";"";"";""
-"0000023";"base";"Samsung Galaxy S4 Mini 3G Noir (i9190)";"5055147594863";"50.0000";"1";"309.0000";"";"";""
-"0000024";"base";"Samsung Galaxy S4 Blanc (i9500)";"8806085562042";"60.0000";"1";"465.0000";"";"";""
-"0000025";"base";"Samsung Galaxy S3 4G Gris (i9305)";"";"50.0000";"1";"328.0000";"";"";""
-"0000026";"base";"C6903 Xperia Z1 4G Noir";"7311271437581";"50.0000";"1";"501.0000";"";"";""
-"0000027";"base";"C6903 Xperia Z1 4G Blanc";"7311271439141";"50.0000";"1";"501.0000";"";"";""
-"0000028";"base";"N9005 32GB Galaxy Note 3 LTE Gris";"8806085759121";"300.0000";"1";"560.0000";"";"";""
-"0000029";"base";"iPhone 3G 16Go reconditionné";"885909362059";"50.0000";"1";"99.0000";"";"";""
-"0000030";"base";"iPad Mini WiFi 16Go blanc";"0885909667581";"50.0000";"1";"278.0000";"";"";""
-"0000031";"base";"iPad Air WiFi 16Go noir";"0885909464517";"100.0000";"1";"458.0000";"";"";""
-"0000032";"base";"iPad Air 4G 16Go Noir";"0885909657957";"100.0000";"1";"571.0000";"";"";""
-"0000033";"base";"iPad Mini 2 WiFi 16Go Noir";"0885909666966";"50.0000";"1";"370.0000";"";"";""
-"0000034";"base";"iPhone 3GS reconditionné";"0885909318551";"10.0000";"1";"119.0000";"";"";""
-"0000035";"base";"Samsung Galaxy Tab 3 10 pouces 4G Brown Gold";"";"500.0000";"1";"375.0000";"";"";""
-"0000036";"base";"Samsung Galaxy Tab 3.10 pouces 4G Blanc";"8806085718876";"495.0000";"0";"368.0000";"";"";""
-"0000037";"base";"Samsung galaxy note 2 blanc (n7100)";"8806085265882";"200.0000";"1";"385.0000";"";"";""
-"0000038";"base";"Samsung i8190 Galaxy S III mini noir";"8806085471832";"199.0000";"1";"205.0000";"";"";""
-"0000039";"base";"Galaxy Tab 3 7 pouces WiFi Gold Brown";"";"50.0000";"1";"155.0000";"";"";""
-"0000040";"base";"Google Nexus 7 2 4G";"4716659552468";"50.0000";"0";"500.0000";"";"";""
-"0000041";"base";"iPhone 4 8GB Noir reconditionné";"5055147572946";"300.0000";"1";"137.0000";"";"";""
-"0000042";"base";"Samsung N9005 32GB Galaxy Note 3 LTE Noir";"8806085759114";"50.0000";"1";"559.0000";"";"";""
+sku,_store,_attribute_set,_type,_category,_root_category,_product_websites,battery_capacity,color,compatible,cost,country_of_manufacture,created_at,custom_design,custom_design_from,custom_design_to,custom_layout_update,description,ean,em_deal,em_featured,em_hot,gallery,gift_message_available,has_options,image,image_label,internal_memory_size,keyboard_type,lengow_product,manufacturer,media_gallery,merchant,meta_description,meta_keyword,meta_title,minimal_price,mobile_network,msrp,msrp_display_actual_price_type,msrp_enabled,name,news_from_date,news_to_date,options_container,page_layout,price,required_options,screen_size,short_description,small_image,small_image_label,special_from_date,special_price,special_to_date,status,tax_class_id,thumbnail,thumbnail_label,updated_at,url_key,url_path,visibility,weight,qty,min_qty,use_config_min_qty,is_qty_decimal,backorders,use_config_backorders,min_sale_qty,use_config_min_sale_qty,max_sale_qty,use_config_max_sale_qty,is_in_stock,notify_stock_qty,use_config_notify_stock_qty,manage_stock,use_config_manage_stock,stock_status_changed_auto,use_config_qty_increments,qty_increments,use_config_enable_qty_inc,enable_qty_increments,is_decimal_divided,_links_related_sku,_links_related_position,_links_crosssell_sku,_links_crosssell_position,_links_upsell_sku,_links_upsell_position,_associated_sku,_associated_default_qty,_associated_position,_tier_price_website,_tier_price_customer_group,_tier_price_qty,_tier_price_price,_group_price_website,_group_price_customer_group,_group_price_price,_media_attribute_id,_media_image,_media_lable,_media_position,_media_is_disabled,_super_products_sku,_super_attribute_code,_super_attribute_option,_super_attribute_price_corr
+10000012,,Mobile,simple,Mobile,French,base,,Black,,,,"2013/11/26 15:31:22",,2013/12/18,,,"Plus performant, l'
+  <strong>iPhone 5</strong>
+   d'Apple intègre un écran encore plus lumineux et un processeur plus rapide.
+  <br>
+  <br>
+  <strong>Une conception fine et légère</strong>
+  <br>
+  Toute la puissance de l'
+  <strong>iPhone 5</strong>
+   est contenue dans un boîtier en alumininium de 7,6 mm d'épaisseur pour 112 grammes. Plus fin et plus léger, cet iPhone propose un encombrement réduit de 12% par rapport à la version précédente. Même son connecteur a été revu. Sa connectique Lightning qui se veut réversible propose une conception à 8 signaux numériques plus durable que ceux du connecteur 30 broches.
+  <br>
+  <br>
+  <strong>Ecran Retina</strong>
+  <br>
+  L'
+  <strong>iPhone 5</strong>
+   est le premier téléphone d'Apple à profiter de la technologie Retina. Avec un écran plus grand, 4 pouces et un niveau de détail supérieur, l'
+  <strong>iPhone 5</strong>
+   se transforme en moniteur sur le monde extérieur. Les pixels sont si denses avec l'écran Retina qu'ils sont pratiquement invisibles à l'oeil nu. l'
+  <strong>iPhone 5</strong>
+   vous offre 18% de pixels en plus et un résolution spectaculaire de 1136 x 640 pixels.
+  <br>
+  <br>
+  <strong>Ultraconnecté</strong>
+  <br>
+  Ce smartphone Apple prend en charge de nombreux réseaux comme la 3G+ ou le WiFi. Où que vous soyez, l'iPhone 5 reste connecté en permanence. Ce téléphone navigue sur Internet, télécharge, actualise votre profil et vous facilite le quotidien. Compatible AirPlay et Bluetooth, ce smartphone communique avec vos autres appareils et peut même se substituer à la télécommande votre téléviseur. L'iPhone 5 sert également de GPS.
+  <br>
+  <br>
+  <strong>Processeur A6</strong>
+  <br>
+  La puce A6 de l'
+  <strong>iPhone 5</strong>
+   offre des graphismes jusqu'à deux fois plus rapides que la puce A5. Ce processeur a été optimisé pour une utilisation avec le système iOS 6. Peu gourmand en énergie, l'A6 peut fonctionner à pleine vitesse sans impact sur la batterie de l'
+  <strong>iPhone 5</strong>
+  . L'autonomie de ce téléphone portable est estimé à 8 heures en conversation et navigation Internet et jusqu'à 10 heures en lecture vidéo.
+  <br>
+  <br>
+  <strong>Ecouteurs EarPods</strong>
+  <br>
+  L'
+  <strong>iPhone 5</strong>
+   est accompagné des écouteurs EarPods au design innovant. Les ingénieurs d'Apple ont conçu ces écouteurs en prenant en compte la morphologie particulière de l'oreille. Les EarPods sont volontairement ovales pour épouser l'intérieur de l'oreille humaine et rester parfaitement en place. Ces écouteurs intègrent trois micros, un à l'avant, un à l'arrière et un en bas pour restituer un son plus clair.
+  <br>
+  <br>
+  <strong>Caméra iSight</strong>
+  <br>
+  Le capteur de 8 mégapixels de l'
+  <strong>iPhone 5</strong>
+   enregistre des photographies panoramiques, mais aussi des vidéos HD 1080p avec stabilisation vidéo. Les appels en FaceTime HD sont également possibles en 720p via le capteur avant de 1,2 mégapixels.",,1,1,0,,,0,/l/_/l_21026709_1.jpg,,16GB,,1,Apple,,,,"APPLE iPhone 5 16 Go - blanc","APPLE iPhone 5 16 Go - blanc",,,,"Utiliser la config","Utiliser la config","iPhone 5 16 Go – blanc debloqué",2013/12/18,,"Bloc après la colonne d'information",,750,0,,"Plus performant, l'iPhone 5 d'Apple intègre un écran encore plus lumineux et un processeur plus rapide.",/l/_/l_21026709_1.jpg,,,,,2,5,/l/_/l_21026709_1.jpg,,"2014/01/29 11:09:42",apple-iphone-5-16-go-blanc,apple-iphone-5-16-go-blanc.html,4,0.412,48,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/l/_/l_21026709_1.jpg,,1,0,,,,
+,,,,Apple,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/l/_/l_21026709_001_1.jpg,,2,0,,,,
+,,,,"Apple/Iphone 5",French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/l/_/l_21026709_002_1.jpg,,3,0,,,,
+10000013,,Mobile,simple,Mobile,French,base,,White,,,Chine,"2013/12/19 10:47:26",,,,,"<h1>Le t&eacute;l&eacute;phone portable HTC One Silver</h1>
+<p>Le HTC One Silver est sans conteste un t&eacute;l&eacute;phone pens&eacute; <strong>pour une utilisation professionnelle</strong>. Pour une utilisation personnelle, ce t&eacute;l&eacute;phone portable ne se destine pas aux d&eacute;butants. T&eacute;moignent de cette utilisation exp&eacute;riment&eacute;e, l&rsquo;agenda, les r&eacute;seaux sociaux, l&rsquo;InFeed, les diff&eacute;rentes possibilit&eacute;s de param&eacute;trages, les nombreux widgets beaucoup plus modernes, parlants et &eacute;pur&eacute;s, sa surcouche logiciels.</p>
+<h2>Nos premi&egrave;res constatations face au HTC One Silver</h2>
+<p>Concernant cette pr&eacute;sence logicielle plut&ocirc;t convaincante, il faut noter une <strong>suite logicielle compatible MAC</strong>, m&ecirc;me s&rsquo;il est vrai qu&rsquo;il existe quelques ralentissements sur ce point.</p>
+<p>Bien &eacute;videmment, la prise en main est aussi agr&eacute;able qu&rsquo;est le visuel du HTC One Silver. L&rsquo;assemblage est pr&eacute;cis, et le confort s&rsquo;applique aussi bien au design dans l&rsquo;ensemble qui est tr&egrave;s VIP. La performance &agrave; l&rsquo;usage, avec une utilisation mixte (internet, t&eacute;l&eacute;phone et autres utilisations) est plut&ocirc;t fluide.</p>
+<h2>De la personnalisation du t&eacute;l&eacute;phone</h2>
+<p>Si l<strong>&rsquo;aspect monobloc est un point fort</strong>, le HTC One Silver souffre peut-&ecirc;tre que tout ne soit pas personnalisable. L&rsquo;InFeed ne peut pas se d&eacute;sactiver. Et m&ecirc;me si en France ce mobile propose 200 contenus, l&rsquo;utilisateur doit se contenter de ce qui existe, il est impossible d&rsquo;en rajouter. En revanche, les menus de base sont personnalisables.</p>
+<p>Dans le cadre d&rsquo;une utilisation impeccable, l&rsquo;actualit&eacute; comme les r&eacute;seaux sociaux sont sous forme de vignettes dynamiques. Dommage que le choix des partenaires media soit restreint par d&eacute;faut.</p>
+<p>La mise &agrave; jour du flux est manuelle, en tirant l&rsquo;&eacute;cran vers le bas. Il est possible de passer en mode automatique depuis les param&egrave;tres. A noter que par d&eacute;faut le wifi est activ&eacute;, ce qui &eacute;vite bien entendu de prendre sur d&rsquo;autres ressources (data et batterie).</p>
+<p>Ce c&ocirc;t&eacute; monobloc si beau et caract&eacute;ristique du HTC One Silver est aussi son point faible, puisque la batterie n&rsquo;est pas amovible, et il est impossible de rajouter une carte m&eacute;moire suppl&eacute;mentaire. Pour autant, un utilisateur achetant <strong>tous les 2 ans un nouveau t&eacute;l&eacute;phone</strong> ne verra pas l&rsquo;utilit&eacute; de changer la batterie dont la dur&eacute;e de vie est tr&egrave;s bonne.</p>
+<h2>T&eacute;l&eacute;phone portable et aussi un bon photophone</h2>
+<p>Le HTC One Silver profite d&rsquo;une tr&egrave;s haute densit&eacute; de pixels &agrave; l&rsquo;affichage, ce qui apporte <strong>une grande pr&eacute;cision de l&rsquo;image</strong>. Les contenus sont de fait davantage mis en valeur, ce qui est un plus consid&eacute;rable. De m&ecirc;me, la technologie LCD3 offre une restitution des couleurs magnifique, et un angle de vision exceptionnel.</p>
+<p>De m&ecirc;me, la capture vid&eacute;o est excellente, et la fonction de stabilisation est grandement appr&eacute;ciable. Il est m&ecirc;me possible de s&rsquo;amuser avec le slow motion, pour visualiser une vid&eacute;o au ralenti&nbsp;: 60 images seconde &agrave; 120 images seconde. Certes, la qualit&eacute; de l&rsquo;image reste moyenne mais vraiment exploitable.</p>
+<p>Cet aspect cr&eacute;atif se retrouve aussi avec les possibilit&eacute;s de retouches d&rsquo;images, et de cr&eacute;er une sc&egrave;ne dynamique en les fusionnant. La fonction de partage est donc bienvenue&nbsp;!</p>
+<h2>Compl&eacute;ments sur le HTC One Silver</h2>
+<p>Acheter ce t&eacute;l&eacute;phone qui permet sans crainte <strong>une utilisation mixte</strong> de ses fonctions - et avec une autonomie suffisante de la batterie -, c&rsquo;est aussi pouvoir profiter d&rsquo;un son tr&egrave;s digne, avec une spatialisation du son surprenante, sauf peut-&ecirc;tre pour ce qui est des basses.</p>
+<p>Vous noterez &eacute;galement la pr&eacute;sence d&rsquo;un port infrarouge, lequel permet de prendre la main sur la box et la TV. A ce titre, le programme TV du HTC One Silver est enrichi, et nous aimons.</p>
+<p>Face &agrave; l<strong>&rsquo;esth&eacute;tique du mobile</strong>, il est presque dommage de le personnaliser avec une coque ou un &eacute;tui. En revanche, le HTC One Silver chauffe rapidement, parfois 4 degr&eacute;s de plus que d&rsquo;autres t&eacute;l&eacute;phones pour une utilisation dans des conditions identiques. Vous aurez peut-&ecirc;tre envie de palier cet exc&egrave;s de chaleur avec une protection. Quoi qu&rsquo;il en soit, il reste l&rsquo;un de nos coups de c&oelig;ur&nbsp;!</p>",4718487630493,0,1,0,,,0,/5/4/54649096_700x700min_1.jpg,,32GB,AZERTY,1,HTC,,,,,,,4G,,"Utiliser la config","Utiliser la config","HTC One Silver 32GB debloqué",,,"Bloc après la colonne d'information",,467,0,"4""","Le HTC One Silver est sans conteste un téléphone pensé pour une utilisation professionnelle.",/5/4/54649096_700x700min_1.jpg,,,,,1,5,/5/4/54649096_700x700min_1.jpg,,"2014/01/29 11:09:42",htc-one-silver-32gb,htc-one-silver-32gb.html,4,0.5,47,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/0/5/05791670-photo-htc-one-12.jpg,,2,0,,,,
+,,,,Android,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/0/5/05791672-photo-htc-one-13.jpg,,4,0,,,,
+,,,,Android/HTC,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/0/5/05791664-photo-htc-one-1.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/h/t/htc-one-max-glacial-silver-perspective-right.jpg,,1,1,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/5/4/54649096_700x700min_1.jpg,,1,0,,,,
+10000014,,Mobile,simple,Mobile,French,base,,Black,,,,"2014/01/08 08:25:03",,,,,"<h1>HTC Desire 200 (102e) Black</h1>
+<p>Mod&egrave;le d&rsquo;entr&eacute;e de gamme du constructeur taiwanais, le HTC Desire 200 pr&eacute;sente des caract&eacute;ristiques techniques basiques qui le destinent davantage &agrave; <strong>une client&egrave;le jeune ou non-technophile</strong> plut&ocirc;t qu&rsquo;aux utilisateurs exp&eacute;riment&eacute;s de smartphones Android.</p>
+<h2>Prise en main du HTC Desire 200&nbsp;est assez confortable</h2>
+<p>Qu&rsquo;on ne s&rsquo;y trompe pas, le HTC Desire 200, avec son design de &laquo;&nbsp;savonnette&nbsp;&raquo;, reste cependant bien plus <strong>agr&eacute;able &agrave; prendre en main</strong> que de nombreux smartphones haut de gamme. L&rsquo;appareil est petit - environ la taille d&rsquo;une carte de cr&eacute;dit - et tout en rondeur, ce qui lui offre une excellente ergonomie, notamment dans le cadre d&rsquo;une utilisation &agrave; une main. A ce titre, il conviendra parfaitement aux plus jeunes ou &agrave; la gent f&eacute;minine.</p>
+<p>Les boutons physiques sont en outre tr&egrave;s faciles d&rsquo;acc&egrave;s et les trois boutons situ&eacute;s sous l&rsquo;&eacute;cran offrent un excellent retour tactile.</p>
+<h2>Ecran&nbsp;: destin&eacute; aux t&acirc;ches basiques</h2>
+<p>Dot&eacute; d&rsquo;une diagonale de 3,5 pouces pour une r&eacute;solution de 320x480 pixels, le Desire 200 reste en retrait par rapport aux &eacute;crans HD des smartphones haut de gamme.</p>
+<p>Bien que lumineux et color&eacute;, la faible d&eacute;finition de cet &eacute;cran le r&eacute;serve &agrave; un usage basique. Bref, si l&rsquo;appareil est &eacute;quip&eacute; de tout ce qu&rsquo;il faut en terme de connectivit&eacute; (navigateur, Wifi, 3G), son &eacute;cran modeste ne permet pas de l&rsquo;utiliser pour surfer confortablement sur le web.</p>
+<h2>Un mobile d&rsquo;appoint c&ocirc;t&eacute; photo et son</h2>
+<p>C&rsquo;est un capteur de 5 m&eacute;gapixels qui &eacute;quipe le HTC Desire 200. Sans surprise, celui-ci d&eacute;livre des images assez bruit&eacute;es et sombres. D&egrave;s lors, la partie photo du Desire 200 conviendra davantage comme appareil d&rsquo;appoint que comme r&eacute;el substitut d&rsquo;un APN compact. Mais cela est suffisant pour des SMS, par exemple.</p>
+<p>C&ocirc;t&eacute; son, la qualit&eacute; audio reste bonne, comme &agrave; l&rsquo;accoutum&eacute;e chez HTC. Vous pourrez d&rsquo;ailleurs stocker la musique sur carte MicroSD, le Desire 200 ayant une m&eacute;moire vive de 4Go (1Go disponible pour l&rsquo;utilisateur) extensible jusqu'&agrave; 32 Go.</p>
+<h2>Des performances r&eacute;duites malgr&eacute; tout</h2>
+<p>Le Desire 200 embarque un processeur SnapDragon S1 dot&eacute; de 512Mo de m&eacute;moire vive. A l&rsquo;usage, ce dernier montre vite ses limites et une certaine lenteur se ressent lors de la navigation dans l&rsquo;interface ou dans le chargement des applications.</p>
+<h2>L&rsquo;interface&nbsp;du smartphone reste agr&eacute;able</h2>
+<p>Livr&eacute; avec Android 4.0.3, l&rsquo;appareil est &eacute;quip&eacute; de l&rsquo;interface Sense 4.0, qui n&rsquo;est pas la plus r&eacute;cente du constructeur taiwanais. Toutefois, celle-ci reste <strong>tr&egrave;s agr&eacute;able &agrave; l&rsquo;usage</strong> et b&eacute;n&eacute;ficie de raffinement graphiques et de fonctions plus riches que celles propos&eacute;es par la concurrence dans cette gamme de prix.</p>
+<h2>Une autonomie dans la moyenne basse</h2>
+<p>Pour conclure, le Desire 200 offre une batterie de 1230 mAh. A l&rsquo;usage, l&rsquo;appareil reste dans la moyenne basse et il vous faudra le recharger quotidiennement si vous le sollicitez de fa&ccedil;on r&eacute;guli&egrave;re.</p>",4710937385793,1,0,0,,,0,/h/t/htc-desire-200-102e.jpg,,4GB,AZERTY,1,HTC,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","HTC Desire 200 (102e) Black debloqué",,,"Bloc après la colonne d'information",,95,0,"4""","Le HTC Desire 200 est l’entrée de gamme de HTC. Doté d’une excellente prise en main, ce smartphone se destine davantage aux utilisateurs qui souhaitent un smartphone de taille",/h/t/htc-desire-200-102e.jpg,,,,,1,5,/h/t/htc-desire-200-102e.jpg,,"2014/01/29 11:09:42",htc-desire-200-102e-black,htc-desire-200-102e-black.html,4,0.5,20,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/h/t/htc-desire-200-102e.jpg,,1,0,,,,
+,,,,Android,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/h/t/htc-desire-200.png,,2,0,,,,
+,,,,Android/HTC,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/c/o/content_open-uri20130726-28744-tscaux.png,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/h/t/htc-102e-desire-200-black1.jpg,,4,0,,,,
+10000015,,Mobile,simple,Android,French,base,,Silver,,,,"2014/01/08 08:40:42",,,,,"<h1>HTC One Max (803s) Silver</h1>
+<p>D&eacute;clinaison du HTC One, cette version Max porte bien son nom. Ce <strong>nouveau mod&egrave;le</strong> reprend ainsi les ingr&eacute;dients qui ont fait le succ&egrave;s de son a&icirc;n&eacute; mais avec des dimensions XL, dues &agrave; la pr&eacute;sence d&rsquo;un &eacute;cran de 5,9 pouces</p>
+<h2>Prise en main du One Max.&nbsp;: smartphone ou tablette&nbsp;?</h2>
+<p>Nous retrouvons un design proche du One m&ecirc;me si les mat&eacute;riaux employ&eacute;s sont d&eacute;sormais moins nobles. En effet, si le HTC One b&eacute;n&eacute;ficiait d&rsquo;une construction unibody tout en aluminium, le HTC One Max arbore une finition plus &laquo;&nbsp;plastique&nbsp;&raquo;.</p>
+<p>En main, la sensation de smartphone premium qu&rsquo;apportait le One est donc moins perceptible. De m&ecirc;me, la fa&ccedil;ade arri&egrave;re du smartphone est d&eacute;sormais amovible et renferme un port micro SD qui permettra d&rsquo;augmenter la m&eacute;moire interne de 16Go.</p>
+<p>Au niveau de la taille, le HTC One Max conserve une bonne prise en main, malgr&eacute; ses dimensions et son poids &agrave; mi-chemin entre tablette et smartphone. Toutefois, pour une utilisation confortable l&rsquo;usage des deux mains reste n&eacute;cessaire. A ce titre, il est conseill&eacute; d&rsquo;utiliser ce One Max avec un kit main libre. De m&ecirc;me, en raison de ses dimensions imposantes, il se logera plus facilement dans un sac ou un manteau que dans une poche de pantalon.</p>
+<h2>Un sans faute pour l&rsquo;&eacute;cran et le son</h2>
+<p>A l&rsquo;instar du One, l&rsquo;&eacute;cran Super LCD Full HD du HTC One Max, est d&rsquo;excellente qualit&eacute;. Les angles de vue, les couleurs, le contraste ou encore la luminosit&eacute; sont <strong>absolument superbes</strong>. Avec sa diagonale de 5,9 pouces, le visionnage de vid&eacute;os, le surf sur le web et les jeux vid&eacute;o sont un v&eacute;ritable r&eacute;gal.</p>
+<p>C&ocirc;t&eacute; son, le constructeur taiwanais r&eacute;alise &eacute;galement un <strong>sans faute</strong>&nbsp;: la technologie BoomSound offre un rendu sonore r&eacute;aliste gr&acirc;ce &agrave; la pr&eacute;sence de deux haut-parleurs en fa&ccedil;ade avant.</p>
+<h2>Photo&nbsp;: passable</h2>
+<p>Le capteur photo est toujours l'UltraPixel de 4 M&eacute;gapixels mais d&eacute;pourvu de stabilisateur d'image optique. Comme le One, les photos manquent de d&eacute;tail mais restent excellentes en basse luminosit&eacute;, le point fort de ce capteur.</p>
+<h2>Pratique&nbsp; le lecteur biom&eacute;trique&nbsp;?</h2>
+<p>En dehors de son &eacute;cran g&eacute;ant, la <strong>nouveaut&eacute; marquante</strong> du HTC One Max est son lecteur biom&eacute;trique, &agrave; l&rsquo;image de la technologie Touch ID employ&eacute;e par Apple sur l&rsquo;iPhone 5S. Ce dernier permet de d&eacute;verrouiller le smartphone ou de lancer des applications.</p>
+<p>A l&rsquo;usage, la fonction se r&eacute;v&egrave;le toutefois peu pratique en raison de l&rsquo;emplacement du lecteur biom&eacute;trique. Ce dernier est situ&eacute; au dos l&rsquo;appareil, sous le capteur photo, ce qui rend la fonction de d&eacute;verrouillage impossible lorsque le One Max est par exemple pos&eacute; sur une table.</p>
+<h2>Des performances de haut vol</h2>
+<p>Du c&ocirc;t&eacute; des performances, le One Max h&eacute;rite du m&ecirc;me processeur que le One et de 2go de m&eacute;moire vive. Au quotidien, le terminal se montre fluide et ne souffre d&rsquo;aucune latence.</p>
+<h2>Une interface raffin&eacute;e</h2>
+<p>Le One Max tourne sur Android 4.3 muni de l&rsquo;interface HTC Sense en version 5.5. Cette surcouche offre une exp&eacute;rience utilisateur raffin&eacute;e ainsi qu&rsquo;une <strong>personnalisation du t&eacute;l&eacute;phone portable pouss&eacute;e</strong>.</p>
+<p>De m&ecirc;me, Sense 5.5 offre de nombreuses options logicielles comme BlinkFeed qui permet&nbsp;d&rsquo;agr&eacute;ger ses contenus d&rsquo;actualit&eacute;s et de r&eacute;seaux sociaux sur une page dynamique, &agrave; la mani&egrave;re de l&rsquo;application Flipboard.</p>
+<h2>Une autonomie&nbsp;excellente</h2>
+<p>Enfin, c&ocirc;t&eacute; autonomie, HTC a logiquement &eacute;quip&eacute; le one Max d&rsquo;<strong>une batterie plus puissante</strong> de 3300 mAh, contre 2300 mAh pour le One. A l&rsquo;usage, vous profiterez d&rsquo;une excellente autonomie, soit une journ&eacute;e et demie environ. A noter que cette derni&egrave;re reste cependant inamovible et ne pourra pas &ecirc;tre remplac&eacute;e par vos soins.</p>",4718487639755,0,1,0,,,0,/h/t/htc-silver-2.jpg,,16GB,AZERTY,1,HTC,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","HTC One Max (803s) Silver debloqué",,,"Bloc après la colonne d'information",,564,0,"7""","Si le HTC One vous paraissait trop petit, HTC a pensé à vous. Le One Max reprend tous les ingrédients du One en y ajoutant un écran géant",/h/t/htc-silver-2.jpg,,,,,1,5,/h/t/htc-silver-2.jpg,,"2014/01/29 11:09:43",htc-one-max-803s-silver,htc-one-max-803s-silver.html,4,0.5,35,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/1/8/18291_4.jpg,,2,0,,,,
+,,,,Android/HTC,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/h/t/htc-silver.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/h/t/htc-silver-3.jpg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/h/t/htc-silver-2.jpg,,1,0,,,,
+10000016,,Mobile,simple,Apple,French,base,,White,,,,"2014/01/08 08:49:11",,,,,"<h1>Apple iPhone 5C Blanc</h1>
+<p>Outre l&rsquo;iPhone 5S, mod&egrave;le haut de gamme de la marque, Apple a pr&eacute;sent&eacute; cette ann&eacute;e <strong>une version moins on&eacute;reuse</strong> et plus color&eacute;e baptis&eacute;e iPhone 5C. Mais que vaut ce nouvel iPhone ?</p>
+<h2>Prise en main de l&rsquo;iPhone 5C : ergonomique</h2>
+<p>Contrairement &agrave; l&rsquo;aluminium blanc ou gris du 5S, l&rsquo;iPhone 5C offre quant &agrave; lui une finition en polycarbonate d&eacute;clin&eacute;e en cinq couleurs : rose, bleu, jaune, vert et blanc. En main, <strong>cet iPhone 5C d&eacute;gage une v&eacute;ritable sensation de solidit&eacute;</strong> due &agrave; un assemblage irr&eacute;prochable. Pas de plastique qui craque ou d&rsquo;impression de fragilit&eacute; comme certains smartphones Samsung, par exemple.</p>
+<p><strong>L&rsquo;ergonomie est excellente</strong> gr&acirc;ce &agrave; un design plus arrondi et une &eacute;paisseur l&eacute;g&egrave;rement plus importante que sur le 5S. Le mod&egrave;le blanc n&rsquo;est d&rsquo;ailleurs pas sans rappeler son illustre anc&ecirc;tre, l&rsquo;iPhone 3GS. De m&ecirc;me, les dimensions contenues du terminal permettent un usage &agrave; une main tr&egrave;s confortable, chose de plus en plus rare de nos jours.</p>
+<h2>Ecran : petit mais bien d&eacute;fini</h2>
+<p>Certes de taille r&eacute;duite par rapport aux standards actuels, l&rsquo;&eacute;cran Retina 4 pouces de l&rsquo;iPhone 5C offre <strong>une excellente d&eacute;finition</strong>. Cerise sur le g&acirc;teau, les performances des nouvelles dalles Retina sont en hausse par rapport aux g&eacute;n&eacute;rations pr&eacute;c&eacute;dentes. L&rsquo;&eacute;cran appara&icirc;t ainsi plus lumineux et contrast&eacute; que celui de l&rsquo;iPhone 5.</p>
+<h2>Photo et son : peut mieux faire</h2>
+<p>La partie photo de l&rsquo;iPhone 5C est quasi identique &agrave; celle de l&rsquo;iPhone 5. L&rsquo;appareil est donc toujours &eacute;quip&eacute; d&rsquo;un capteur de 8 m&eacute;gapixels. Les clich&eacute;s r&eacute;alis&eacute;s sont ainsi de bonne facture avec un excellent piqu&eacute;, m&ecirc;me dans des conditions de basse luminosit&eacute;.</p>
+<p>Quant au son, le haut parleur propos&eacute; par Apple ne fait pas de miracles et restitue un son plut&ocirc;t aigu. Dans ce domaine, l&rsquo;iPhone 5C est loin d&rsquo;&eacute;galer le HTC One et ses haut-parleurs Boomsound, bien plus agr&eacute;ables &agrave; l&rsquo;oreille.</p>
+<p>Par ailleurs, toujours pas de m&eacute;moire extensible chez Apple. Il faudra donc se contenter des 16Go de m&eacute;moire interne ou opter pour la version 32Go, malheureusement factur&eacute;e au prix fort par la marque &agrave; la pomme.</p>
+<h2>Performances : excellentes</h2>
+<p>Cot&eacute; performances, le 5C reprend &agrave; peu de choses pr&egrave;s la m&ecirc;me architecture que l&rsquo;iPhone 5, c&rsquo;est-&agrave;-dire un processeur A6 dual-core &eacute;paul&eacute; par 1Go de RAM. Si le choix de cette puce para&icirc;t d&eacute;pass&eacute; en 2013, les performances du terminal n&rsquo;en p&acirc;tissent aucunement. A l&rsquo;usage, <strong>l&rsquo;iPhone 5C se montre tr&egrave;s rapide</strong>. Compar&eacute; &agrave; l&rsquo;iPhone 5S et sa puce A7 de derni&egrave;re g&eacute;n&eacute;ration, les diff&eacute;rences de v&eacute;locit&eacute; ne se ressentent vraiment que sur certains jeux vid&eacute;o, et encore&hellip;</p>
+<h2>Interface : du nouveau avec iOS7</h2>
+<p>Le lancement de l&rsquo;iPhone 5C a &eacute;galement inaugur&eacute; la version 7 du syst&egrave;me d&rsquo;exploitation mobile d&rsquo;Apple, iOS. Au menu, <strong>une interface remani&eacute;e en profondeur</strong>, tant du point de vue graphique que fonctionnel. Plus &eacute;pur&eacute;e, celle-ci, fait place &agrave; d&rsquo;autres ic&ocirc;nes et de nouvelles options ergonomiques bienvenues, telles que le Centre de Contr&ocirc;le.</p>
+<p>Tr&egrave;s pratique au quotidien, cette fonction permet d&rsquo;<strong>acc&eacute;der rapidement aux r&eacute;glages</strong> les plus courants de l&rsquo;iPhone : mode avion, Wifi, Bluetooth, luminosit&eacute;, appareil photo. Pour ce faire, rien de plus simple, il suffit de balayer le bas de l&rsquo;&eacute;cran avec un doigt.</p>
+<h2>Le mobile gagne en autonomie en hausse</h2>
+<p>Enfin, l'iPhone 5C est &eacute;quip&eacute; d&rsquo;une batterie de 1507 mAh, contre 1440 mAh pour l'iPhone 5. Cette capacit&eacute; en hausse conf&egrave;re une autonomie en progr&egrave;s, de l&rsquo;ordre d&rsquo;une journ&eacute;e dans le cadre d&rsquo;une utilisation assez soutenue.</p>",3305912509380,0,1,0,,,0,/i/m/image009_2.jpg,,16GB,AZERTY,1,Apple,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Apple Iphone 5C blanc 16GB debloqué",,,"Bloc après la colonne d'information",,525,0,"7""","L’iPhone 5C est le nouveau smartphone d’Apple. Plus coloré et plus abordable.",/i/m/image009_2.jpg,,,,,1,5,/i/m/image009_2.jpg,,"2014/01/29 11:09:43",apple-iphone-5c-blanc-16gb,apple-iphone-5c-blanc-16gb.html,4,0.5,10,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/i/m/image006_2.png,,4,0,,,,
+,,,,"Apple/Iphone 5c",French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image003_2.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image001_2.png,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image009_2.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image007.jpg,,5,0,,,,
+EB-L1G6LLU,,battery,simple,Accessoires,French,base,"2100 mAh",,"GT- i9300",,,"2014/01/08 14:22:35",,,,,"<h1>Batterie pour SAMSUNG GALAXY S III GT-I9300</h1>
+<p>Votre t&eacute;l&eacute;phone ne tient plus la charge comme avant ou vous avez tout simplement besoin d'un suppl&eacute;ment ?</p>
+<p>Batterie neuve vendue sous blister.</p>",5711045448560,0,0,0,,,0,/g/t/gt-i9300.jpg,,,,1,Samsung,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Batterie d'origine Samsung Galaxy S3/I9300 EB-L1G6LLU",,,"Bloc après la colonne d'information",,20,0,,"Batterie pour SAMSUNG GALAXY S III GT-I9300",/g/t/gt-i9300.jpg,,,,,1,5,/g/t/gt-i9300.jpg,,"2014/01/29 11:09:43",batterie-d-origine-samsung-galaxy-s3-i9300-eb-l1g6llu,batterie-d-origine-samsung-galaxy-s3-i9300-eb-l1g6llu.html,4,0.02,497,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/g/t/gt-i9300.jpg,,1,0,,,,
+,,,,"Accessoires/Batteries pour téléphone",French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EB-F1A2GBU,,battery,simple,Accessoires,French,base,"1650 mAh",,"Samsung Galaxy S II Samsung Galaxy S2 Samsung Galaxy S2 4G",,,"2014/01/08 15:08:14",,,,,"<h1>Batterie pour Samsung Galaxy S2 origine / Galaxy S II i9100 / Galaxy S2 4G batterie - EB-F1A2GBU.</h1>
+<p>
+Cette nouvelle batterie d'origine rechargeable Samsung EB-F1A2GBU pour Samsung Galaxy S2 / Galaxy S II GT-i9100 Smartphone, d'une capacité de 1650mAh, utilisant 3.7v cellules Li-Polymer pour fournir une puissance fiable et durable pour votre téléphone Samsung Galaxy S2 Mobile. Il s'agit de la même batterie de marque Li-Polymer fournie avec votre Samsung. Idéal pour un remplacement ou en remplacement de l'original ou une deuxième batterie pour votre appareil.
+</p>
+<p>
+Compatible avec Samsung Galaxy S II Samsung Galaxy S2 Samsung Galaxy S2 4G
+</p>",8806071517919,0,1,0,,,0,/s/a/samsung_galaxy_s_ii_samsung_galaxy_s2_samsung_galaxy_s2_4g.jpg,,,,1,Samsung,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Batterie galaxy S2 (GT-i9200) EB-F1A2GBU",,,"Bloc après la colonne d'information",,20,0,,"Batterie galaxy S2 (GT-i9200) 1650 mAh EB-F1A2GBU",/s/a/samsung_galaxy_s_ii_samsung_galaxy_s2_samsung_galaxy_s2_4g.jpg,,,,,1,5,/s/a/samsung_galaxy_s_ii_samsung_galaxy_s2_samsung_galaxy_s2_4g.jpg,,"2014/01/29 11:09:43",batterie-galaxy-s2-gt-i9200-eb-f1a2gbu,batterie-galaxy-s2-gt-i9200-eb-f1a2gbu.html,4,0.02,50,0,1,0,0,1,1,1,0,1,0,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/s/a/samsung_galaxy_s_ii_samsung_galaxy_s2_samsung_galaxy_s2_4g.jpg,,1,0,,,,
+,,,,"Accessoires/Batteries pour téléphone",French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EB494358VU,,battery,simple,Accessoires,French,base,"1350 mAh",,"GT- S5850",,,"2014/01/08 15:19:40",,,,,"<h1>Batterie pour samsung galaxy ACE (GT- S5850) EB494358VU.</h1>
+<p>
+Il s'agit d'une nouvelle batterie de marque d'origine.</p>
+<ul>
+	<li>Peut être chargé par le chargeur d'origine.</li>
+	<li>Neuf</li>
+	<li>Cellules lithium-ion de haute qualité.</li>
+	<li>Pas d'effet mémoire - protection surcharge</li>
+</ul>",8806071410173,1,0,0,,,0,/g/t/gt-_s5850.jpg,,,,1,Samsung,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Batterie samsung galaxy ACE (GT- S5850)  1350 mAh",,,"Bloc après la colonne d'information",,20,0,,"Batterie samsung galaxy ACE (GT- S5850)  1350 mAh",/g/t/gt-_s5850.jpg,,,,,1,5,/g/t/gt-_s5850.jpg,,"2014/01/29 11:09:44",batterie-samsung-galaxy-ace-gt-s5850-1350-mah,batterie-samsung-galaxy-ace-gt-s5850-1350-mah.html,4,0.02,200,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/g/t/gt-_s5850.jpg,,1,0,,,,
+,,,,"Accessoires/Batteries pour téléphone",French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+10000017,,Mobile,simple,BlackBerry,French,base,,Black,,,,"2014/01/09 09:34:35",,,,,"<h1>BlackBerry Z10 4G LTE Noir</h1>
+<p>D&eacute;but 2013 marquait <strong>un tournant pour BlackBerry</strong>, en grande difficult&eacute; ces derni&egrave;res ann&eacute;es. En effet, la marque canadienne annon&ccedil;ait conjointement la sortie d&rsquo;un nouveau syst&egrave;me d&rsquo;exploitation mobile - BB10 - ainsi qu&rsquo;un nouveau terminal tactile baptis&eacute; Z10. Ce dernier a t-il les arguments pour redorer l&rsquo;image de BlackBerry&nbsp;?</p>
+<h2>Prise en main&nbsp;du BlackBerry Z10 : la sobri&eacute;t&eacute; au menu</h2>
+<p>Au d&eacute;ballage du t&eacute;l&eacute;phone, la premi&egrave;re impression est une allure de d&eacute;j&agrave; vu. Et pour cause, le Z10 rappelle &eacute;trangement l&rsquo;iPhone 5 d&rsquo;Apple. Malgr&eacute; ce manque d&rsquo;originalit&eacute;,<strong> le Z10 offre des finitions sans reproche</strong> et un design sobre qui s&eacute;duira les professionnels.</p>
+<p>La prise en main est excellente gr&acirc;ce &agrave; une fa&ccedil;ade arri&egrave;re rev&ecirc;tue d&rsquo;un rev&ecirc;tement en gomme qui &eacute;vite que l&rsquo;appareil glisse trop facilement.</p>
+<h2>L&rsquo;&eacute;cran&nbsp;est confortable malgr&eacute; une d&eacute;finition en retrait</h2>
+<p>En allumant le Z10 pour la premi&egrave;re fois, force est de constater l&rsquo;<strong>excellente qualit&eacute; de son &eacute;cran</strong>&nbsp;: contraste, couleur, luminosit&eacute;, tout y est&nbsp;! Pour arriver &agrave; ce r&eacute;sultat, BlackBerry a opt&eacute; pour une dalle IPS de 4,2 pouces pour une d&eacute;finition de 1280 x 768 pixels. Certes, ces derniers chiffres le placent en retrait face &agrave; la concurrence mais la lecture sur cet &eacute;cran s&rsquo;av&egrave;re tout de m&ecirc;me agr&eacute;able.</p>
+<p>Pour la photo, peut mieux faire</p>
+<p>C&ocirc;t&eacute; photo, le Z10 ne rejoindra pas le peloton de t&ecirc;te des meilleurs photophones. S&rsquo;il constitue tout de m&ecirc;me <strong>un bon appareil d&rsquo;appoint</strong> gr&acirc;ce &agrave; son capteur de 8 m&eacute;gapixels, le Z10 souffre toutefois de performances tr&egrave;s modestes en basse luminosit&eacute; et de clich&eacute;s trop bruit&eacute;s en conditions optimales.</p>
+<h2>L&rsquo;interface&nbsp;est intuitive et ergonomique</h2>
+<p>En rupture totale avec les interfaces pass&eacute;es, BB10 est un OS qui m&eacute;rite que l&rsquo;on s&rsquo;y attarde quelques instants. <strong>La grande nouveaut&eacute;</strong> de ce nouveau syst&egrave;me d&rsquo;exploitation est le Hub. Con&ccedil;u pour utilisateurs connect&eacute;s - cible premi&egrave;re de la marque - il s&rsquo;agit d&rsquo;un espace o&ugrave; sont regroup&eacute;s les outils de communication les plus courants. Vous retrouverez donc dans le hub vos e-mails, SMS, BlackBerry Messenger, messagerie vocale et r&eacute;seaux sociaux.</p>
+<p>Pour y acc&eacute;der, rien de plus simple, BlackBerry propose une interface bas&eacute;e sur les gestes tactiles. Exemple&nbsp;: un glissement de votre index vers la gauche fera directement appara&icirc;tre le Hub.</p>
+<h2>Des performances discutables&hellip;</h2>
+<p>Malgr&eacute; de nombreuses mises &agrave; jour destin&eacute;es &agrave; augmenter sa r&eacute;activit&eacute;, le Z10 n&rsquo;est pas une foudre de guerre. A l&rsquo;usage, de nombreux ralentissements sont &agrave; d&eacute;plorer ainsi que des lenteurs p&eacute;nibles. La faute certainement &agrave; un processeur vieillissant.</p>
+<h2>L&rsquo;autonomie&nbsp;est un point faible</h2>
+<p>Avec une batterie de seulement 1800 mAh, BlackBerry a peut &ecirc;tre sous estim&eacute; la consommation &eacute;nerg&eacute;tique du Z10. Il s&rsquo;agit l&agrave; du talon d&rsquo;Achille de ce terminal qui aura bien du mal &agrave; tenir une journ&eacute;e sans recharge si vous le sollicitez r&eacute;guli&egrave;rement. Pour un t&eacute;l&eacute;phone orient&eacute; pro, cela est plut&ocirc;t g&ecirc;nant &hellip;</p>",802975663712,0,1,0,,,0,/i/m/image001.jpg,,16GB,AZERTY,1,Blackberry,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","BlackBerry Z10 4G LTE Noir debloqué",,,"Bloc après la colonne d'information",,256,0,"7""","Avec son grand écran tactile de 4,3 pouces et son allure sobre, Le BlackBerry Z10 prétend avoir les moyens de rivaliser avec la concurrence",/i/m/image001.jpg,,,,,1,5,/i/m/image001.jpg,,"2014/01/29 11:09:44",blackberry-z10-4g-lte-noir,blackberry-z10-4g-lte-noir.html,4,0.5,22,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/i/m/image005.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image007.png,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image001.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image003_2_1.jpg,,4,0,,,,
+10000018,,Mobile,simple,BlackBerry,French,base,,Black,,,,"2014/01/09 09:47:45",,,,,"<h1>BlackBerry Z30 Noir</h1>
+<p>
+Si BlackBerry a connu des jours meilleurs, le Z30 marque cependant un renouveau pour la marque canadienne. Il s’agit en effet de son premier terminal 5 pouces entièrement tactile. Mais quels sont les atouts du Z30 face à un marché hautement concurrentiel ?
+</p>
+<h2>Prise en main : un terminal à l’allure professionnelle</h2>
+<p>
+A l’ouverture de la boîte, le premier contact avec le terminal est très bon. Le design est soigné comme en témoignent les finitions d’excellente facture et le dos façon carbone. 
+</p>
+<p>
+Les bords arrondis et la façade arrière dotée d’un revêtement en gomme offrent une excellente prise en main. Et cela malgré un poids relativement élevé de 170 grammes. 
+</p>
+<p>
+De même, les boutons d’allumage et de volume sont bien situés et facilement manipulables avec l’index.
+</p>
+<h2>Ecran : une définition en retrait</h2>
+<p>
+Le BlackBerry Z30 est équipé d’une dalle Super AMOLED de 5 pouces offrant un excellent contraste ainsi que des couleurs vives. Malheureusement cet écran n’offre qu’une résolution de 1280 x 720 pixels, ce qui reste faible pour une diagonale de 5 pouces. Un faux pas pour BlackBerry sachant que dans cette gamme la concurrence propose des dalles Full HD. 
+</p>
+<p>
+Les polices apparaissent donc moins fines que sur les smartphones concurrents tels que le HTC One ou le Samsung Galaxy S4., ce qui s’avère gênant si vous passez beaucoup de temps à lire sur votre smartphone.
+</p>
+<h2>Multimédia : Miracast</h2>
+<p>
+La capacité de stockage du Z30 est 16 Go extensibles via une carte microSD. Si les lecteurs audio et vidéo sont excellents, il est à noter que ce nouveau modèle dispose de la fonction Miracast. Celle-ci permet de retranscrire l’affichage de l’écran du Z30 sur une télévision ou tout autre écran connecté en HDMI. A l’usage, cette option s’avère pratique pour les jeux vidéo et fonctionne parfaitement. 
+</p>
+<h2>Photo : des progrès à réaliser</h2>
+<p>
+Côté photo, le Z30 apparaît également en retrait face aux meilleurs photophones. Si l’interface photo est plutôt agréable à utiliser et propose des options intéressantes telles que le mode nuit, les clichés manquent cependant de piqué. De même, l’absence de déclencheur physique est regrettable et oblige à utiliser constamment l’écran tactile. Pas très pratique …
+</p>
+<h2>Interface : intuitive et ergonomique</h2>
+<p>
+Le nouveau smartphone de BlackBerry tourne sur l’OS BB10.2 du constructeur. Ce dernier propose notamment un espace baptisé Hub où sont regroupés l’essentiel des outils de communication : e-mail, SMS, BlackBerry Messenger, messagerie vocale et réseaux sociaux. 
+</p>
+<p>
+Bien pensée et agréable à utiliser, cette interface fait la part belle aux gestes tactiles : mouvement du bas de l'écran vers le haut pour la gestion du multitâche, mouvement du haut vers le bas affiche le volet des raccourcis, telle le Centre de Contrôle d’iOS 7, glissement vers la gauche afin d’accéder au Hub …
+</p>
+<p>
+Enfin, la navigation sur le web se révèle plaisante grâce à un navigateur maison rapide et doté de nombreuses options.
+</p>
+<h2>D’excellentes performances dans l’ensemble</h2>
+<p>
+Au niveau des performances, Le Z30 offre une belle fluidité et ne souffre pas de lags particuliers, même lorsqu’il fonctionne en multitâches. Il faut là saluer le travail d’optimisation des développeurs BlackBerry, sachant que le Z30 tourne sur un processeur double coeur plutôt ancien, le Snapdragon S4.
+</p>
+<h2>Quelle autonomie pour ce téléphone portable ?<h2>
+<p>
+Doté d’une batterie conséquente de 2880 mAh, BlackBerry n’a pas lésiné sur cette partie. A l’usage, le Z30 permet donc de tenir une bonne journée sans recharge. Une performance à saluer !
+</p>",802975053506,0,1,0,,,0,/i/m/image001_1.jpg,,16GB,AZERTY,1,Blackberry,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","BlackBerry Z30 Noir debloqué",,,"Bloc après la colonne d'information",,463,0,"7""","En difficulté ces derniers temps, BlackBerry parviendra t-elle à renouer avec le succès grâce au Z30 ?",/i/m/image001_1.jpg,,,,,1,5,/i/m/image001_1.jpg,,"2014/01/29 11:09:44",blackberry-z30-noir,blackberry-z30-noir.html,4,0.5,59,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/i/m/image001_1.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image005_1.jpg,,2,0,,,,
+10000019,,Mobile,simple,Windows,French,base,,Red,,,,"2014/01/09 09:58:41",,,,,"<h1>Nokia Lumia 920 Rouge</h1>
+<p>
+Constructeur phare des terminaux Windows Phone, Nokia présente un nouveau venu dans sa gamme Lumia, baptisé 920. Présenté ici en version rouge, ce modèle est aussi réussi esthétiquement que techniquement.
+</p>
+<h2>Prise en main du Nokia Lumia 920 Red</h2>
+<p>
+Réalisé en polycarbonate - un plastique très rigide – le Lumia 920 jouit d’une finition exemplaire. Le terminal dégage une impression de solidité et revêt une coque rouge brillante du plus bel effet.
+</p>
+<p>
+A première vue, le terminal présente des dimensions relativement imposantes. Grand, épais et lourd - pas loin de 200 grammes sur la balance – sa prise en main s’avère toutefois bonne.  Son dos incurvé tombe en effet bien sous le creux de la main mais attention à le tenir fermement, le revêtement glossy de la façade se révélant quelque peu glissant.
+</p>
+<p>
+Quand aux boutons, ceux-ci sont d’excellente facture. En céramique, ils sont traités contre les rayures et ne souffrent d’aucun jeu. L’emplacement du bouton de mise en veille, sur le côté, est en outre judicieux sur cette taille de smartphone. Comme on le voit, Nokia a soigné les détails sur ce 920.
+</p>
+<h2>L’écran est splendide</h2>
+<p>
+Très fin, l’écran IPS PureMotion HD+ du Lumia 920 est un régal. Nokia n’a pas lésiné sur cette partie et vous profiterez d’une résolution de 1280×768 pixels pour une densité de 332ppp. En outre, les couleurs et la luminosité offertes par cette dalle sont remarquables. Il constitue ainsi un écrin de choix pour l’interface haute en couleur de Windows Phone. A ce titre, les « tuiles » de l’écran d’accueil ressortent particulièrement bien. Enfin, exclusivité Nokia, l’écran peut même être utilisé avec des gants ! 
+</p>
+<h2>Une navigation internet sans reproche !</h2>
+<p>
+Quant à la navigation web, le Lumia 920 embarque le navigateur Internet Explorer, qui ne souffre d’aucun réel reproche tant en terme de rapidité que de fonctionnalités.
+</p>
+<h2>Photo : un véritable photophone</h2>
+<p>
+Bénéficiant de la technologie Pureview, le Lumia 920 dispose d’un capteur de rétro-éclairé de 8,7 Mégapixels accompagné d’un objectif Carl Zeiss. L’appareil offre également une stabilisation optique.
+</p>
+<p>
+N’y allons pas par quatre chemins : la partie photo du Lumia 920 est tout simplement bluffante. Balance des blancs, respect des couleurs piqué, rendu en basse luminosité sont les points forts de ce modèle. A l’usage, le Lumia 920 produit donc d’excellents clichés et pourra constituer un excellent APN d’appoint.
+</p>
+<h2>L’interface est simple et bien pensée</h2>
+<p>
+Le Lumia 920 est présenté sous Windows Phone 8 qui a amené son lot de nouveautés avec davantage de personnalisation et un système de notifications revu.
+</p>
+<p>
+Les tuiles qui composent l’interface sont désormais déplaçables et redimensionnables en trois tailles. Par ailleurs, celles-ci sont également dynamiques, et offrent des notifications pour les réseaux sociaux (Facebook, Twitter, etc.) , les messages et autre flux d’actualité. 
+</p>
+<p>
+Bref, tout cela est bien pensé et simple à utiliser. A ce titre, l’expérience utilisateur, très ergonomique et intuitive, est plus proche de celle rencontrée sous iPhone que sur Android.
+</p>
+<h2>Les applications exclusives Nokia</h2>
+<p>
+Alors que le Windows Store souffre toujours d’un manque d’applications face à la concurrence, vous apprécierez de pouvoir profiter sur le Lumia 920 d’applications exclusives. Nokia propose ainsi Nokia Transport, Nokia Drive, Nokia Music, ou bien encore Nokia Explore. Gratuites, ces applications sont très bien intégrées à Windows Phone 8 et constituent une réelle plus value à l’usage.
+</p>
+<h2>D’excellentes performances générales</h2>
+<p>
+Avec un processeur Qualcomm Snapdragon 4S double cœur cadencé à 1,5 GHz, épaulé par une mémoire vive de 1 Go, le Lumia 920 fait tourner sans problème Windows Phone 8. Tout est fluide, rapide et sans accrocs. 
+</p>
+<h2>Autonomie : dans la moyenne haute</h2>
+<p>
+Nokia a équipé son 920 d’une batterie conséquente : 2000 mAh, avec charge sans fil à induction intégrée (chargeur en option). Avec une utilisation régulière, vous tiendrez facilement la journée sans avoir besoin de le recharger.
+</p>",6438158528505,0,1,0,,,0,/i/m/image001_2.jpg,,16GB,AZERTY,1,Nokia,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Nokia Lumia 920 Rouge debloqué",,,"Bloc après la colonne d'information",,335,0,"7""","Chef de file des terminaux Windows Phone, Nokia a frappé fort avec le Lumia 920. Ce smartphone au design soigné offre notamment une excellente partie photo",/i/m/image001_2.jpg,,,,,1,5,/i/m/image001_2.jpg,,"2014/01/29 11:09:45",nokia-lumia-920-rouge,nokia-lumia-920-rouge.html,4,0.5,0,0,1,0,0,1,1,1,0,1,0,,1,0,1,1,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/i/m/image005_2.jpg,,4,0,,,,
+,,,,Windows/Nokia,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image003_3.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image001_2.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/m/image007_1.jpg,,3,0,,,,
+10000020,,Mobile,simple,Windows,French,base,,White,,,,"2014/01/10 09:34:22",,,,,"<h1>Nokia Lumia 1020 Blanc</h1>
+<p>Avec une communication principalement ax&eacute;e sur le capteur 41 m&eacute;gapixels du Lumia 920, Nokia pr&eacute;sente un photophone qui, selon ses dires, permettrait de se passer d&rsquo;appareil photo compact. Mais qu&rsquo;en est-il dans les faits ?</p>
+<h2>Prise en main du Nokia Lumia 1020 blanc</h2>
+<p>Imposant de prime abord, ce Lumia 1020 n&rsquo;en reste pas moins tr&egrave;s &eacute;l&eacute;gant dans sa version blanche, qui rappelle d&rsquo;ailleurs celle des produits Apple.</p>
+<p>La coque est compos&eacute;e de polycarbonate et les boutons (mise en veille et appareil photo) sont situ&eacute;s sur la tranche droite du t&eacute;l&eacute;phone. Au toucher ces derniers sont agr&eacute;ables et confirment l&rsquo;<strong>excellente finition de l&rsquo;appareil</strong>. Toutefois, la prise en main globale reste quelque peu &laquo;&nbsp;sp&eacute;ciale&nbsp;&raquo;. En effet, le capteur photo situ&eacute; au dos de l&rsquo;appareil g&ecirc;ne par sa protub&eacute;rance.</p>
+<h2>Ecran&nbsp;: vivement le 1080p&nbsp;!</h2>
+<p>L&rsquo;&eacute;cran AMOLED de 4,5 pouces du Lumia 1020 offre un excellent contraste, point fort de cette technologie. Il est cependant regrettable que la d&eacute;finition de celui-ci se cantonne &agrave; 1280 x 768 pixels et souffre donc d&rsquo;un<strong> affichage moins</strong> fin que chez la concurrence.</p>
+<h2>Navigation internet et interface&nbsp;: rien &agrave; redire</h2>
+<p><strong>La navigation web</strong> est confi&eacute;e aux bons soins d&rsquo;Internet Explorer, qui reste fluide et rapide en toute occasion. A l&rsquo;instar des mod&egrave;les 920 et 925, le Lumia 1020 tourne sous Windows Phone 8. Un OS mobile qui s&rsquo;&eacute;toffe &agrave; chaque mise &agrave; jour et devient de plus en plus agr&eacute;able &agrave; utiliser.</p>
+<p>A ce titre, l&rsquo;aspect personnalisation qui faisait d&eacute;faut aux g&eacute;n&eacute;rations pr&eacute;c&eacute;dentes de Windows Phone a r&eacute;alis&eacute; de nets progr&egrave;s. Ainsi, les tuiles de l&rsquo;interface sont aujourd&rsquo;hui redimensionnables et comportent un syst&egrave;me de notifications. Gr&acirc;ce &agrave; ces derni&egrave;res, <strong>vous serez averti(e) en temps r&eacute;el</strong> de l&rsquo;actualit&eacute; de vos r&eacute;seaux sociaux (Facebook, Twitter, etc.) ou de l&rsquo;arriv&eacute;e de vos mails.</p>
+<h2>Davantage photophone qu&rsquo;appareil photo</h2>
+<p>Voici donc le test tant attendu de la partie photo du Lumia 1020. Sur le papier, ce terminal poss&egrave;de un capteur de 41 m&eacute;gapixels. Celui-ci est &eacute;paul&eacute; par six lentilles, destin&eacute;es &agrave; lui assurer un <strong>m&eacute;canisme de stabilisation optique</strong> pour pallier en temps r&eacute;el les tremblements et autres vibrations parasites. Cela permet-il au Lumia 920 de faire jeu &eacute;gal avec un compact ? Pas vraiment.</p>
+<p>Tout d&rsquo;abord, le Lumia 920 souffre d&rsquo;un manque de r&eacute;activit&eacute; et la latence de trois bonnes secondes entre le d&eacute;clenchement et l&rsquo;enregistrement d&rsquo;une photo. Par la suite, la qualit&eacute; des clich&eacute;s pris est in&eacute;gale. Dans de bonnes conditions de luminosit&eacute; le Lumia 1020 produit de superbes clich&eacute;s. Mais lorsque la luminosit&eacute; se fait plus faible, l&rsquo;appareil a beaucoup plus de mal et les photos deviennent trop bruit&eacute;es, malgr&eacute; la pr&eacute;sence d&rsquo;un flash au X&eacute;non.</p>
+<p>Qu&rsquo;on ne s&rsquo;y trompe toutefois pas, le Lumia 1020 reste &agrave; ce jour <strong>le smartphone le plus abouti</strong> du point de vue photographique. Mais de l&agrave; &agrave; d&eacute;tr&ocirc;ner un bon appareil photo compact, cela est moins s&ucirc;r &hellip;</p>",6438158606999,0,1,0,,,0,/n/o/nokia-lumia-1020-blanc.png,,32GB,AZERTY,1,Nokia,,,,,,,4G,,"Utiliser la config","Utiliser la config","Nokia Lumia 1020 Blanc debloqué",,,"Bloc après la colonne d'information",,499,0,"4""","Muni d’un capteur de 41 mégapixels, le Nokia Lumia 1020 est le premier smartphone à tenter de faire jeu égal avec les appareils photo compacts.",/n/o/nokia-lumia-1020-blanc.png,,,,,1,5,/n/o/nokia-lumia-1020-blanc.png,,"2014/01/29 11:09:45",nokia-lumia-1020-blanc,nokia-lumia-1020-blanc.html,4,0.5,47,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/z/0/z0_601387.jpg,,4,0,,,,
+,,,,Windows/Nokia,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/z/2/z2_206907.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1020-blanc-2.png,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1020-blanc.png,,1,0,,,,
+10000021,,Mobile,simple,Windows,French,base,,Black,,,,"2014/01/10 09:43:27",,,,,"<h1>Nokia Lumia 1020 Noir</h1>
+<p>Les smartphones sont-ils en passe de d&eacute;tr&ocirc;ner les appareils photos compacts&nbsp;? C&rsquo;est du moins ce que souhaite Nokia avec son Lumia 1020. Dot&eacute; d&rsquo;un capteur photo de 41 m&eacute;gapixels, ce terminal a t-il toutefois les moyens de ses ambitions&nbsp;?</p>
+<h2>Prise en main du Nokia Lumia 1020 Noir</h2>
+<p>Reprenant les formes du Nokia 920, ce nouveau mod&egrave;le offre les m&ecirc;mes lignes soign&eacute;es que son pr&eacute;d&eacute;cesseur. <strong>Tr&egrave;s sobre dans sa finition noire</strong>, il poss&egrave;de &eacute;galement une coque en polycarbonate et trois boutons lat&eacute;raux en aluminium.</p>
+<p>Mais la particularit&eacute; de ce terminal vient de sa fa&ccedil;ade arri&egrave;re o&ugrave; l&rsquo;on retrouve un capteur photo tr&egrave;s imposant. Et pour cause ce dernier est compos&eacute; d&rsquo;un objectif et d&rsquo;un flash au Xenon. A l&rsquo;usage, cette excroissance se r&eacute;v&egrave;le inhabituelle sur un smartphone et pose des probl&egrave;mes d&rsquo;ergonomie. Quelques temps peuvent donc &ecirc;tre n&eacute;cessaires avant de trouver <strong>une prise en main confortable</strong>.</p>
+<h2>Ecran&nbsp;: contrast&eacute; !</h2>
+<p>L&rsquo;&eacute;cran du Lumia 920 est compos&eacute; d&rsquo;une dalle AMOLED de 4,5 pouces qui offre <strong>un excellent contraste</strong>, comme toujours avec cette technologie. On d&eacute;plore cependant la limitation &agrave; une r&eacute;solution de 720p alors que les concurrents directs sous Android offrent tous le 1080p &hellip; Toutefois, le constructeur finlandais n&rsquo;est pas &agrave; bl&acirc;mer, cette carence &eacute;tant due &agrave; Windows Phone.</p>
+<p>Sous l&rsquo;&eacute;cran, vous retrouverez les habituels touches tactiles de Windows Phone&nbsp;: retour en arri&egrave;re, affichage de l&rsquo;&eacute;cran d&rsquo;accueil et recherche via le moteur de Microsoft, Bing. En outre, le multit&acirc;che est accessible via une pression prolong&eacute;e sur la premi&egrave;re touche.</p>
+<h2>Navigation internet et interface&nbsp;: tr&egrave;s agr&eacute;able</h2>
+<p>Le surf sur le web est assur&eacute; par le navigateur Internet Explorer, mod&egrave;le de fluidit&eacute; et de rapidit&eacute; A noter que le Nokia Lumia 1020 tourne sous <strong>la version 8 de Windows Phone</strong>, la derni&egrave;re en date.</p>
+<p>Cette mise &agrave; jour rend l&rsquo;OS encore plus agr&eacute;able &agrave; utiliser et comble des lacunes au niveau de la personnalisation et des notifications. A ce titre, les tuiles de l&rsquo;interface sont d&eacute;sormais redimensionnables et comportent un syst&egrave;me de notifications. Gr&acirc;ce &agrave; ces derni&egrave;res, vous serez par exemple pr&eacute;venu de tout ce qui se passe sur vos r&eacute;seaux sociaux (Facebook, Twitter, etc.) .</p>
+<h2>Simple Photophone ou appareil photo&nbsp;?</h2>
+<p>Avec son capteur de 41 m&eacute;gapixels et sa stabilisation optique, le Lumia 1020 est-il un concurrent direct d&rsquo;un APN compact&nbsp;? A l&rsquo;usage, la r&eacute;ponse est non. Et pour cause le temps de latence entre le d&eacute;clenchement de l&rsquo;objectif et l&rsquo;enregistrement d&rsquo;une photo est bien trop long et les clich&eacute;s n&rsquo;offrent pas le piqu&eacute; d&rsquo;un bon appareil photo num&eacute;rique compact. Il reste donc des progr&egrave;s &agrave; faire, m&ecirc;me si Nokia est sur la bonne voie.</p>",6438158606920,0,1,0,,,0,/n/o/nokia-lumia-1020-noir-3.png,,32GB,AZERTY,1,Nokia,,,,,,,4G,,"Utiliser la config","Utiliser la config","Nokia Lumia 1020 Noir debloqué",,,"Bloc après la colonne d'information",,499,0,"7""","Avec son capteur surdimensionné, le Nokia Lumia 1020 noir pourrait bien être le remplaçant idéal d’un appareil photo. Mais l’achat de ce mobile se justifie surtout pour la fluidité",/n/o/nokia-lumia-1020-noir-3.png,,,,,1,5,/n/o/nokia-lumia-1020-noir-3.png,,"2014/01/29 11:09:45",nokia-lumia-1020-noir,nokia-lumia-1020-noir.html,4,0.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1020-noir-2.png,,3,0,,,,
+,,,,Windows/Nokia,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/6/0/601383.jpg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1020-noir-3.png,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1020-noir.png,,2,0,,,,
+10000022,,Mobile,simple,Windows,French,base,,Black,,,,"2014/01/10 09:50:46",,2014/01/29,,,"<h1>Nokia Lumia 1520 Noir</h1>
+<p>A mi-chemin entre le smartphone et la tablette, Nokia pr&eacute;sente sa premi&egrave;re phablette, la Lumia 1520. Mais que vaut cet appareil hybride&nbsp;?</p>
+<h2>Premiers contacts avec le Lumia 1520 Noir</h2>
+<p>Si les amateurs de la gamme Lumia ne seront pas d&eacute;pays&eacute;s par le design de l&rsquo;appareil, force est de constater que<strong> le format surprend</strong>. Avec un &eacute;cran de 6 pouces, le terminal est grand, voire g&eacute;ant. En main, l&rsquo;impression de tenir une petite tablette plut&ocirc;t qu&rsquo;un smartphone est pr&eacute;dominante.</p>
+<p>Toutefois, la bonne r&eacute;partition du poids, ainsi que le dos bomb&eacute;, offrent une excellente ergonomie. De m&ecirc;me le polycarbonate rigide de la coque ainsi que l&rsquo;excellente finition globale respirent la qualit&eacute;.</p>
+<p>Enfin, dans sa finition noire, le 1520 offre une allure s&eacute;rieuse et sobre qui devrait s&eacute;duire les professionnels.</p>
+<h2>Lumia 1520&nbsp;: un superbe &eacute;cran</h2>
+<p>Le Lumia 1520 constitue le premier terminal Windows Phone &agrave; b&eacute;n&eacute;ficier d&rsquo;une r&eacute;solution 1080p. Et cela se voit&nbsp;! L&rsquo;affichage est excellent, tout comme le contraste, les angles de vision et la luminosit&eacute;. Nokia n&rsquo;a donc pas l&eacute;sin&eacute; sur la qualit&eacute; et l&rsquo;on prend <strong>beaucoup de plaisir</strong> &agrave; lire sur cet &eacute;cran de six pouces.</p>
+<h2>Windows Phone toujours aussi agr&eacute;able</h2>
+<p>Le surf sur le web est confi&eacute; &agrave; Internet Explorer et le Nokia Lumia 1520 b&eacute;n&eacute;ficie de la toute derni&egrave;re version 8 de Windows Phone. Tout est fluide, r&eacute;actif et sans accroc gr&acirc;ce &agrave; un processeur SnapDragon 800. Lancement d&rsquo;apps volumineuses, jeux gourmands, lecture de vid&eacute;os en HD, l&rsquo;appareil ne bronche jamais &hellip; La plateforme de Microsoft reste donc <strong>un mod&egrave;le de stabilit&eacute; et d&rsquo;optimisation</strong>.</p>
+<p>En outre Windows Phone 8 apporte de nombreuses am&eacute;liorations&nbsp;en termes de personnalisation et de notifications. A ce titre, les tuiles de l&rsquo;interface sont d&eacute;sormais redimensionnables et s&rsquo;ouvrent aux notifications. Gr&acirc;ce &agrave; ces derni&egrave;res, vous serez par exemple pr&eacute;venu de toute activit&eacute; sur vos r&eacute;seaux sociaux (Facebook, Twitter, etc.) ou de l&rsquo;arriv&eacute;e de mails et autres messages.</p>
+<h2>La partie multim&eacute;dia du Lumia 1520</h2>
+<p>C&ocirc;t&eacute; son, le Lumia 1520 ne r&eacute;volutionnera pas l&rsquo;univers des smartphones. Le rendu des haut-parleurs est en effet assez banal et l&rsquo;on souhaiterait voir se g&eacute;n&eacute;raliser des syst&egrave;mes tels que celui du HTC One qui propose un son st&eacute;r&eacute;o de qualit&eacute;.</p>
+<p>Quant &agrave; la photo, Nokia a dot&eacute; sa phablette d&rsquo;un capteur de 20 m&eacute;gapixels reprenant plusieurs &eacute;l&eacute;ments de son photophone Lumia 1020. Le rendu des clich&eacute;s est donc bon mais manque parfois un peu de piqu&eacute;.</p>
+<h2>Une autonomie record pour ce t&eacute;l&eacute;phone portable</h2>
+<p>Muni d&rsquo;une puissante batterie de 3400 mAh, le 1520 est le Lumia qui dispose &agrave; ce jour de <strong>la plus forte autonomie</strong>. Comptez donc deux jours sans recharge dans le cadre d&rsquo;une utilisation mod&eacute;r&eacute;e et une journ&eacute;e si vous sollicitez r&eacute;guli&egrave;rement l&rsquo;appareil. <strong>Une excellente performance&nbsp;!</strong></p>",6438158622067,0,1,1,,,0,/n/o/nokia-lumia-1520-noir-3.jpg,,32GB,AZERTY,1,Nokia,,,,,,,4G,,"Utiliser la config","Utiliser la config","Nokia Lumia 1520 Noir debloqué",2014/01/29,,"Bloc après la colonne d'information",,510,0,"7""","Mi-smartphone, mi-tablette, le Nokia Lumia 1520 vient aujourd’hui compléter la gamme des terminaux Windows Phone …",/n/o/nokia-lumia-1520-noir-3.jpg,,2014/01/29,450,2014/02/04,1,5,/n/o/nokia-lumia-1520-noir-3.jpg,,"2014/01/29 11:09:45",nokia-lumia-1520-noir,nokia-lumia-1520-noir.html,4,0.5,42,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1520-noir-3.jpg,,1,0,,,,
+,,,,Windows/Nokia,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1520-noir.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1520-noir-4.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/o/nokia-lumia-1520-noir-2.jpg,,4,0,,,,
+10000023,,Mobile,simple,Android,French,base,,Black,,,,"2014/01/13 09:47:16",,,,,"<h1>Samsung Galaxy S4 Mini 3G Noir (i9190)</h1>
+<p>
+Le Samsung Galaxy S4 est aujourd’hui décliné dans une version Mini destinée à occuper le segment des smartphones de taille réduite. Quelles sont les différences avec son grand frère ? S’agit-il vraiment d’un Galaxy S4 miniaturisé ?
+</p>
+<h2>Prise en main du Samsung Galaxy S4 Mini</h2>
+<p>
+Avec son écran de 4,3 pouces, le Galaxy S4 Mini n’est pas à proprement parlé un petit téléphone portable. A ce titre, il reste par exemple plus grand qu’un iPhone 5. 
+</p>
+<p>
+Au niveau de l’apparence du terminal, ce modèle est une version réduite du Galaxy S4, modèle haut de gamme du constructeur coréen. Le design et les matériaux employés sont en effet similaires entre ces deux appareils. 
+</p>
+<p>
+La prise en main du S4 Mini est excellente, en raison d’un poids plume de 107 grammes et de dimensions compactes. La finition, comme à l’accoutumée chez Samsung, fait la part belle au plastique sans que cela soit pour autant gênant.
+</p>
+<h2>L’écran du Samsung Galaxy S4 Mini : une définition décevante</h2>
+<p>
+L’écran AMOLED de ce smartphone garde d’excellentes performances. Si l’on n’atteint pas la qualité de la dalle OLED du S4 classique, celle de cette version Mini reste toutefois de bonne facture. 
+</p>
+<p>
+Mais c’est surtout du côté de la finesse d’affichage que l’on ressent une énorme différence. Avec une définition qHD de 960 x 540 pixels, l’écran souffre d’un manque flagrant de netteté. Une lacune particulièrement gênante lorsqu’on surfe sur le web. Il est d’ailleurs difficile de comprendre pourquoi Samsung n’a pas opté pour une dalle en 1280 x 720 pixels …
+</p>
+<h2>Interface : Samsung fidèle à Touchwizz</h2>
+<p>
+Fidèle à son habitude, Samsung propose ce Galaxy S4 Mini avec son interface maison nommée TouchWiz accompagnée d’Android 4.2.2 Jelly Bean. A l’usage, cette surcouche reste agréable à utiliser et riche en fonctions.
+</p>
+<p>
+Le S4 Mini affiche une belle fluidité et n’a pas à rougir face à son grand frère. Qu’il s’agisse de surfer sur internet ou de lire des vidéos en HD, tout passe sans accroc.
+</p>
+<h2>Le Multimédia est dans la moyenne</h2>
+<p>
+Le capteur 8 mégapixels de l’appareil reste dans la moyenne. Si ce S4 mini ne pourra pas prétendre au titre de meilleur photophone de l’année, le rendu des clichés est plutôt satisfaisant. De même, il est appréciable de constater que Samsung a conservé l’interface photo soignée du Galaxy S4. Cela permet par exemple de bénéficier de nombreuses fonctions de retouche très pratiques.
+</p>
+<h2>L’autonomie du téléphone Samsung</h2>
+<p>
+Avec une batterie somme toute modeste de 1800 mAh, l’autonomie reste cependant dans la bonne moyenne, avec environ une journée à une journée et demie sans recharge. La raison venant sans doute de l’écran basse définition du Mini, bien moins gourmand en énergie que celui du S4.
+</p>",5055147594863,0,1,0,,,0,/2/2/220788.jpg,,8GB,AZERTY,1,Samsung,,,,,,,3G,,"Utiliser la config","Utiliser la config","Samsung Galaxy S4 Mini 3G Noir (i9190) debloqué",,,"Bloc après la colonne d'information",,309,0,"4""","Version réduite de son smartphone haut de gamme, Samsung propose un nouveau venu dans la gamme Galaxy",/2/2/220788.jpg,,,,,1,5,/2/2/220788.jpg,,"2014/01/29 11:09:46",samsung-galaxy-s4-mini-3g-noir-i9190,samsung-galaxy-s4-mini-3g-noir-i9190.html,4,0.5,47,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/2/2/220788.jpg,,1,0,,,,
+,,,,Android/Samsung,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/2/2/220793.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy-s4-mini-noir-officiel.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/4/s4_black.jpg,,4,0,,,,
+10000024,,Mobile,simple,Android,French,base,,White,,,,"2014/01/13 09:57:20",,,,,"<h1>Samsung Galaxy S4 Blanc (i9500)</h1>
+<p>
+Fort du succès de son Galaxy S3, Samsung propose aujourd’hui une évolution de son smartphone haut de gamme. Baptisé logiquement Galaxy S4, ce nouveau modèle apporte son lot de nouveautés.
+</p>
+<h2>Prise en main du Samsung Galaxy S4</h2>
+<p>
+Au niveau de son apparence, le Samsung Galaxy S4 ne dépaysera pas les possesseurs de Galaxy S3. Le S4 garde donc la même ligne que son aîné et réussit même l’exploit d’être plus fin et plus léger. 
+</p>
+<p>
+Si Samsung a une fois de plus opté pour une finition tout plastique, la coque du S4 dégage cependant une impression de solidité plus élevée que sur le S3. Sa couleur blanche lui assure en outre de ne pas passer inaperçu.
+</p>
+<p>
+La prise en main est quant à elle très agréable pour un smartphone de cette taille grâce à design globalement arrondi. A titre comparatif, le S4 reste bien plus agréable à tenir qu’un iPhone 5S, pourtant bien plus petit et plus léger.
+</p>
+<h2>Un écran de 5 pouces somptueux</h2>
+<p>
+Point fort des smartphones Samsung haut de gamme, l’écran du Galaxy S4 impressionne. Et pour cause, doté de la technologie OLED, cette dalle de 5 pouces possède un contraste, une finesse et une restitution des couleurs absolument sans équivalents. Il s’agit à coup sûr du plus bel écran actuel offert sur smartphone.
+</p>
+<h2>Un terminal sous Android Jelly Bean 4.2.2</h2>
+<p>
+Le Galaxy S4 embarque une version récente de l’OS de Google, à savoir Android Jelly Bean 4.2.2. A cela le constructeur surajoute sa surcouche maison baptisée Touchwiz. Mieux optimisée et plus légère que par le passé, cette surcouche recèle un grand nombre de fonctions grâce à l’intégration de neuf capteurs au sein de l’appareil. Il vous sera ainsi possible de contrôler votre S4 à base de nombreux gestes tactiles.
+</p>
+<p>
+A l’usage, force est de constater que cette débauche de fonctions reste somme toute « gadget », tel le fait de décrocher un appel en balayant l'écran du S4 de la main sans le toucher. Si en théorie l’idée est bonne, elle se révèle peu pratique à utiliser au quotidien.
+</p>
+<h2>Performances globales du mobile</h2>
+<p>
+Si l’on a souvent reproché à Android son manque de fluidité face à des concurrents comme iOS, le Galaxy S4 change la donne de ce point de vue. Doté d’un processeur quadri-coeur aux performances monstrueuses, le S4 affiche une fluidité sans défaut et encaisse tout, sans ralentissement notoire. A ce titre, la navigation sur internet est un véritable régal. Les pages web se chargent en un éclair pour peu que l’on dispose d’une bonne connexion.
+</p>
+<h2>La question du Multimédia</h2>
+<p>
+La partie multimédia bénéficie également des excellentes performances de l’appareil. Jamais le Galaxy S4 n’est pris en défaut, même sur les fichiers vidéo les plus lourds. 
+</p>
+<p>
+A ce titre, vous pourrez stocker vos contenus dans la mémoire interne du téléphone de 16Go ou via carte MicroSD.
+</p>
+<h2>Le Galaxy S4 et la photo</h2>
+
+<p>
+Le Galaxy S4 est un excellent photophone, sinon le meilleur avec l’iPhone 5S et le Nokia Lumia 1520. Et pour cause, le capteur 13 mégapixels de l’appareil fait des merveilles. Netteté, précision des détails, balance des blancs, gestion des couleurs, tout y est ! A cela s’ajoute une interface ergonomique dotée de nombreuses fonctions. Un sans faute pour le constructeur coréen.
+</p>
+<h2>L’autonomie à l’usage</h2>
+<p>
+Samsung a équipé le Galaxy S4 d’une batterie conséquente de 2600 mAh, contre 2100 mAh sur le Galaxy S3. Logique, à la vue de l’écran de 5 pouces, forcément plus énergétivore. A l’usage on se retrouve donc plus ou moins avec une autonomie proche de celle du Galaxy S3, déjà très correcte à l’époque. Comptez donc une bonne journée en utilisation classique.
+</p>",8806085562042,0,1,0,,,0,/s/4/s4_white.png,,16GB,AZERTY,1,Samsung,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Samsung Galaxy S4 Blanc (i9500) debloqué",,,"Bloc après la colonne d'information",,465,0,"7""","Avec un Galaxy S3 vendu à des dizaines de millions d’exemplaires, Samsung continue sur sa lancée et présente aujourd’hui le Galaxy S4 qui, comme le montre …",/s/4/s4_white.png,,,,,1,5,/s/4/s4_white.png,,"2014/01/29 11:09:46",samsung-galaxy-s4-blanc-i9500,samsung-galaxy-s4-blanc-i9500.html,4,0.5,60,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/s/6/s654670378162363616_p17_i2_w580.jpeg,,2,0,,,,
+,,,,Android/Samsung,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/4/s4_white.png,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/4/s4_white_features_third_d.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung-galaxy-s4-thumbnail-4-png69b2875f-6656-4f7c-a548-39979398b44flarge.jpg,,4,0,,,,
+10000025,,Mobile,simple,Android,French,base,,Grey,,,,"2014/01/13 10:04:59",,,,,"<h1>Samsung Galaxy S3 4G Gris (i9305)</h1>
+<p>
+Fer de lance des opérateurs téléphoniques depuis quelques mois, la 4G débarque sur les smartphones. L’un des premiers à s’être mis mettre au diapason est le Samsung Galaxy S3. Outre cette connectivité, qu’apporte le Galaxy S3 4G en terme de nouveautés ?
+</p>
+<h2>Prise en main du Samsung Galaxy S3 4G Gris</h2>
+<p>
+Pas de surprise de ce côté, cette version 4G reste en tout point identique au design de la version 3G de l’appareil. Seule sa nouvelle robe grise le distingue des habituelles finitions blanches et bleues de l’appareil.
+</p>
+<p>
+<h2>Une mémoire vive portée à 2go pour une plus grande fluidité</h2>
+<p>
+Le constructeur coréen a revu à la hausse la mémoire vive de ce nouveau terminal. Ce dernier passe donc à 2Go contre 1Go pour son prédécesseur. A l’utilisation cette amélioration est sensible. Finis les ralentissements dont souffrait parfois le Galaxy S3 d’origine. Ici, tout est plus réactif et le smartphone bénéficie d’une fluidité accrue.
+</p>
+<h2>La 4G pour plus de rapidité du téléphone portable</h2>
+<p>
+L’argument principal de ce nouveau Galaxy S3 étant la 4G, qu’offre cette nouvelle connectivité ? Selon le constructeur, elle apporterait des débits théoriques de 100 Mbit/s, contre « seulement » 42 Mbit/s en 3G++ Dual Carrier.
+</p>
+<p>
+Dans les faits, cela se vérifie et la vitesse de téléchargement de n’importe quel fichier est en moyenne deux fois plus rapide. Impressionnant ! Cela vous permettra notamment de récupérer des applications en un clin d’œil et ou de ne pas souffrir de problèmes de ralentissements lors du visionnage de vidéos YouTube, par exemple. 
+</p>
+<p>
+Ainsi, si vous bénéficiez d’une ville couverte par le réseau 4G et d’un forfait compatible, le choix de ce modèle se justifiera pleinement.
+</p>
+<h2>Ecran du Samsung Galaxy S3 4G Gris : toujours aussi bon</h2>
+<p>
+Egalement au chapitre des similitudes entre les deux générations de Galaxy S3, l’écran. La version 4G conserve donc l’écran 4,8 pouces Super Amoled HD de 1280 x 720 pixels. 
+</p>
+<p>
+Une excellente dalle qui reste à ce jour un modèle dans son genre. Certes surpassé par des smartphones plus récents comme le Galaxy S4 ou le HTC One, cet écran offre toujours un affichage très agréable, notamment pour surfer sur le web.
+</p>
+<h2>Autonomie : le point faible du Samsung Galaxy S3 4G</h2>
+<p>
+Seule ombre au tableau, une autonomie en berne par rapport à la version 3G du mobile. La 4G est en effet très gourmande et fait fondre la batterie du smartphone comme neige au soleil. Veillez donc à garder un chargeur à portée de main et à ne pas trop vous éloigner d’une prise de courant sous peine de rencontrer rapidement une panne sèche … A ce titre, Samsung propose en option une batterie haute capacité de 3000 mAh.
+</p>",,0,0,0,,,0,/s/a/samsung-galaxy-s3-smartphone-grey-front.jpg,,16GB,AZERTY,1,Samsung,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Samsung Galaxy S3 4G Gris (i9305) debloqué",,,"Bloc après la colonne d'information",,328,0,"4""","A l’heure de la 4G, Samsung propose une version haut débit de son smartphone star. Baptisé Samsung Galaxy S3 4G, le terminal du constructeur coréen affiche des débits théoriques de …",/s/a/samsung-galaxy-s3-smartphone-grey-front.jpg,,,,,1,5,/s/a/samsung-galaxy-s3-smartphone-grey-front.jpg,,"2014/01/29 11:09:46",samsung-galaxy-s3-4g-gris-i9305,samsung-galaxy-s3-4g-gris-i9305.html,4,0.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/s/a/samsung-galaxy-s3-smartphone-grey-rear.jpg,,3,0,,,,
+,,,,Android/Samsung,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung-galaxy-s3-smartphone-grey-angle.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung-galaxy-s3-smartphone-grey-front.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung-galaxy-s3-smartphone-grey-side.jpg,,4,0,,,,
+10000026,,Mobile,simple,Android,French,base,,Black,,,,"2014/01/14 09:33:42",,,,,"<h1>C6903 Xperia Z1 4G Black</h1>
+<p>Le moins que l&rsquo;on puisse dire est que du c&ocirc;t&eacute; des smartphones, Sony ne ch&ocirc;me pas&nbsp;! Apr&egrave;s un Xperia Z sorti il y a quelques mois, le constructeur nippon propose d&eacute;j&agrave; un <strong>nouveau mod&egrave;le haut de gamme</strong>, baptis&eacute; Xperia Z1.</p>
+<h2>Premi&egrave;res impression sur Xperia Z1</h2>
+<p>Au d&eacute;ballage, l&rsquo;appareil impressionne par ses dimensions. Grand, &eacute;pais et lourd, on est loin d&rsquo;un Galaxy S4. Cela s&rsquo;explique par l&rsquo;emploi de mat&eacute;riaux plus qualitatifs que chez Samsung. Sur le Z1, le plastique est proscrit et les amateurs de beaux objets appr&eacute;cieront la <strong>finition tout en verre et aluminium</strong>.</p>
+<p>En main, cette excellente apparence se confirme. L&rsquo;appareil est agr&eacute;able au toucher et le poids est bien r&eacute;parti. Une impression de solidit&eacute; et d&rsquo;&eacute;l&eacute;gance ce d&eacute;gage donc de ce Z1. On appr&eacute;cie &eacute;galement l&rsquo;effort de Sony en terme d&rsquo;ergonomie. Les arr&ecirc;tes tranchante du Xperia Z ont ainsi laiss&eacute; place &agrave; des <strong>bords arrondis</strong>.</p>
+<h2>Un &eacute;cran qui impressionne</h2>
+<p>A l&rsquo;allumage du terminal, la qualit&eacute; de son &eacute;cran 5 pouces saute aux yeux. Si sur ce point le Xperia Z &eacute;tait d&eacute;j&agrave; un mod&egrave;le du genre, ce nouveau mod&egrave;le semble avoir encore am&eacute;lior&eacute; certains points.</p>
+<p>Les couleurs apparaissent plus chatoyantes et le contraste plus important. La finesse de l&rsquo;affichage - excellente - est similaire et de l&rsquo;ordre de 441ppp.</p>
+<p>Bref, vous prendrez beaucoup de plaisir &agrave; lire, &agrave; surfer ou encore &agrave; regarder des vid&eacute;os sur ce mobile.</p>
+<h2>Surf sur le web et qualit&eacute; de l&rsquo;interface</h2>
+<p>L&rsquo;appareil embarque la version 4.2.2 d&rsquo;Android et devrait &ecirc;tre mis &agrave; jour tr&egrave;s prochainement vers la 4.3.</p>
+<p>La surcouche habituelle de Sony est &eacute;galement de la partie. L&eacute;g&egrave;re, celle-ci ne prend pas trop le dessus et correspond plus &agrave; l&rsquo;esprit de ce qu&rsquo;on peut retrouver sur les terminaux Nexus de Google. Ici, point de fioriture &agrave; la Touchwizz de chez Samsung. La navigation est donc <strong>tr&egrave;s agr&eacute;able et intuitive</strong>.</p>
+<h2>Des performances globales au dessus de tout soup&ccedil;on</h2>
+<p>Epaul&eacute; par le processeur SnapDragon 800 - tr&egrave;s en vogue sur les terminaux haut de gamme Android &ndash; les performances sont irr&eacute;prochables et le Z1 est tr&egrave;s fluide en toute circonstance.</p>
+<h2>Une partie multim&eacute;dia soign&eacute;e</h2>
+<p>Marque de fabrique de Sony, la partie multim&eacute;dia n&rsquo;am&egrave;ne aucune critique n&eacute;gative. Le son offert par le Xperia Z1 sera un crit&egrave;re de choix pour les amateurs de musique.</p>
+<p>En vid&eacute;o, l&rsquo;appareil est <strong>compatible avec la plupart des fichiers</strong> et Sony propose m&ecirc;me un mode vid&eacute;o qui rend le visionnage tr&egrave;s confortable.</p>
+<h2>Autonomie&nbsp;: tr&egrave;s bon t&eacute;l&eacute;phone portable</h2>
+<p>Equip&eacute; d&rsquo;une batterie de 3000 mAh, le Xperia Z1 est capable de tenir deux jours en utilisation &laquo;&nbsp;normale&nbsp;&raquo;. Le constructeur nippon propose &eacute;galement un mode stamina afin d&rsquo;&eacute;conomiser au maximum la batterie du smartphone. Un excellent point&nbsp;!</p>",7311271437581,0,0,0,,,0,/x/p/xperia_z1_black_sc_large_second.jpg,,16GB,AZERTY,1,Sony,,,,,,,4G,,"Utiliser la config","Utiliser la config","C6903 Xperia Z1 4G Noir debloqué",,,"Bloc après la colonne d'information",,501,0,"4""","Revenu sur le devant de la scène avec son excellent Xperia Z, Sony propose une évolution sous les traits du Xperia Z1. Ce smartphone est équipé d’un …",/x/p/xperia_z1_black_sc_large_second.jpg,,,,,1,5,/x/p/xperia_z1_black_sc_large_second.jpg,,"2014/01/29 11:09:46",c6903-xperia-z1-4g-noir,c6903-xperia-z1-4g-noir.html,4,0.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/x/p/xperia_z1_black_sc_large_second.jpg,,1,0,,,,
+,,,,Android/Sony,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/x/p/xperia-z1-hero-black-1240x840-3c449514e1daf8b0652a5dc235530ebc.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/o/sony_xperia_z1_black_feature2_d.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/1/7/179060-xperiaz1title.jpg,,4,0,,,,
+10000027,,Mobile,simple,Android,French,base,,White,,,,"2014/01/14 09:41:00",,,,,"<h1>C6903 Xperia Z1 4G Blanc</h1>
+<p>
+Quelques mois seulement après la sortie du Xperia Z, Sony remet le couvert et nous présente un nouveau smartphone haut de gamme, le Xperia Z1. 
+</p>
+<h2>Tour du propriétaire…</h2>
+<p>
+Alors que la mode est aux téléphones fins et légers (iPhone 5S, Samsung Galaxy S4, etc.), Sony prend le chemin inverse. Le Xperia Z1 est lourd – 170 grammes sur la balance– et épais. En main, cela ne gêne pas. Si l’appareil est grand, le poids est cependant bien réparti et la finition made by Sony est absolument superbe. Les matériaux employés –verre et aluminium - sont nobles et du plus bel. 
+</p>
+<p>
+Bref, ce Z1 en impose et n’a pas à rougir face au mètre étalon que représente l’iPhone dans ce domaine. Dans sa finition blanche, cet Xperia n’est d’ailleurs pas sans rappeler les produits de la marque à la pomme.
+</p>
+<p>
+Côté ergonomie, Sony a corrigé les arrêtes abruptes du Xperia Z. Le Z1 possède désormais des bords arrondis bien plus agréables.
+</p>
+<h2>Un bel écran de smartphone</h2>
+<p>
+L’écran du Z1 a été amélioré par rapport à la génération précédente grâce à l’emploi d’une nouvelle technologie d’affichage, baptisée Triluminous. Cela se remarque d’emblée car la dalle de 5 pouces Full HD semble plus colorée et contrastée que sur le Xperia Z. De même la densité de pixels de 441 ppp est plus qu’appréciable et offre un confort de lecture parfait.
+</p>
+<p>
+En revanche, les angles de vision sont moins bons que sur le Z, abandon de la technologie IPS oblige. Rien de très grave cependant.
+</p>
+<h2>Navigation internet et interface</h2>
+<p>
+L’appareil est livré avec l’avant dernière version d’Android, c’est-à-dire la 4.2.2. A cela, Sony ajoute sa surcouche, très sobre. Comparé à TouchWiz de Samsung, celle-ci s’avère bien moins intrusive.
+</p>
+<p>
+Grâce au processeur SnapDragon 800 - très employé par les constructeurs de smartphones haut de gamme Android – les performances sont excellentes. A ce titre, la navigation internet est parfaite, notamment sous Google Chrome. 
+</p>
+<h2>Une partie multimédia soignée</h2>
+<p>
+Comme à l’accoutumée chez Sony, la partie multimédia est chouchoutée, notamment du côté audio. Le son au casque est excellent et les haut-parleurs de l’appareil produisent un son clair et puissant.
+</p>
+<p>
+En vidéo, l’appareil lit la plupart des fichiers courants et Sony propose un mode vidéo qui rend le visionnage très confortable.
+</p>
+<h2>Très bon point pour l’autonomie</h2>
+<p>
+Avec une batterie annoncée pour 3000 mAh, le Xperia Z1 est sensé être à l’abri de problèmes d’autonomie. En pratique, cela se confirme. L’appareil peut en effet tenir deux jours en utilisation normale. Le constructeur nippon propose également un mode stamina destiné à économiser au maximum la batterie. 
+</p>",7311271439141,0,1,0,,,0,/x/p/xperia-z1-white-1_low.jpg,,16GB,AZERTY,1,Sony,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","C6903 Xperia Z1 4G Blanc debloqué",,,"Bloc après la colonne d'information",,501,0,"4""","Très actif dans le domaine des smartphones, Sony continue sur sa lancée en proposant le Xperia Z1. Ce terminal Android haut de gamme bénéficie de …",/x/p/xperia-z1-white-1_low.jpg,,,,,1,5,/x/p/xperia-z1-white-1_low.jpg,,"2014/01/29 11:09:47",c6903-xperia-z1-4g-blanc,c6903-xperia-z1-4g-blanc.html,4,0.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/x/p/xperia-z1-white-1_low.jpg,,1,0,,,,
+,,,,Android/Sony,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/o/sony_xperia_z1_white_feature1_d.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/x/p/xperia-z1white.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/x/p/xperia_z1_white_sc_large_first.jpg,,4,0,,,,
+10000028,,Mobile,simple,Android,French,base,,Grey,,,,"2014/01/14 10:12:07",,,,,"<h1>N9005 16GB Galaxy Note 3 LTE Gris</h1>
+<p>En 2011, Samsung lan&ccedil;ait le Galaxy Note 2 et faisait <strong>figure de pr&eacute;curseur</strong>. A mi-chemin entre la tablette et le smartphone, ce type d&rsquo;appareil a depuis rev&ecirc;tu le nom de phablette. Aujourd&rsquo;hui le constructeur cor&eacute;en pr&eacute;sente son successeur, logiquement appel&eacute; Galaxy Note 3. Qu&rsquo;apporte ainsi ce nouveau terminal&nbsp;?</p>
+<h2>Premi&egrave;res impressions sur le design et la prise ne main</h2>
+<p>Construit tout en plastique - mat&eacute;riau cher &agrave; Samsung - le Note 3 d&eacute;gage toutefois <strong>une impression de solidit&eacute;</strong> et ses flancs chrom&eacute;s sont &eacute;l&eacute;gants. Samsung a &eacute;galement soign&eacute; la finition et l&rsquo;assemblage est sans reproche. L&rsquo;appareil ne souffre ainsi d&rsquo;aucun craquement ou de bouton mal ajust&eacute;.</p>
+<p>Au niveau de la prise en main, il faudra utiliser votre Note 3 comme une tablette, c&rsquo;est-&agrave;-dire &agrave; deux mains.</p>
+<h2>Un stylet, pour quoi faire&nbsp;?</h2>
+<p>Contrairement aux smartphones de la marque, l&rsquo;appareil est livr&eacute; avec un stylet tr&egrave;s fin d&eacute;nomm&eacute; S Pen. Celui-ci se range dans un logement pr&eacute;vu au niveau de la tranche inf&eacute;rieure de l&rsquo;appareil, &agrave; c&ocirc;t&eacute; du haut parleur. A l&rsquo;aide de ce dernier, vous pourrez <strong>interagir totalement</strong> avec le Note 3&nbsp;: prise de notes, dessins, recherche internet, actions, etc.</p>
+<p>En pratique, ce stylet est tr&egrave;s agr&eacute;able &agrave; utiliser, tout fonctionne rapidement et de fa&ccedil;on optimale. Les amateurs de dessins et autres notes manuscrites trouveront l&agrave; un excellent compagnon.</p>
+<h2>L&rsquo;&eacute;cran du Note 3&nbsp;: superbe</h2>
+<p>Dot&eacute; d&rsquo;une dalle de 5,9 pouces AMOLED en Full HD, l&rsquo;&eacute;cran du Note 3 est tr&egrave;s r&eacute;ussi. Lumineux et color&eacute;, il pr&eacute;sente en outre une finesse ch&egrave;re &agrave; la marque. Notons &eacute;galement la pr&eacute;sence de diff&eacute;rents profils d&rsquo;affichage pour optimiser le rendu de l&rsquo;&eacute;cran en fonction de vos go&ucirc;ts&nbsp;; <strong>une vraie r&eacute;ussite</strong>.</p>
+<h2>Livr&eacute; sous Android 4.3</h2>
+<p>Le Note 3 embarque la <strong>toute derni&egrave;re version de l&rsquo;OS de Google</strong>, soit Android Jelly Bean 4.3. A cela, le constructeur ajoute l&rsquo;habituelle surcouche maison Touchwiz. Parfaitement optimis&eacute;e, celle-ci rec&egrave;le un grand nombre de fonctions inaugur&eacute;es par le Galaxy S4. Vous pourrez donc contr&ocirc;ler le Note 3 gr&acirc;ce &agrave; des mouvements ou encore &agrave; l&rsquo;aide vos yeux.</p>
+<p>A l&rsquo;usage, ces derni&egrave;res pr&eacute;sentent un int&eacute;r&ecirc;t somme toute limit&eacute; mais il faut reconnaitre que le constructeur cor&eacute;en rec&egrave;le de nombreuses bonnes id&eacute;es.</p>
+<h2>Des performances globales impressionnantes</h2>
+<p>Equip&eacute; d&rsquo;un processeur quadri-c&oelig;ur SnapDragon 800 hyper-performant et de 3Go de m&eacute;moire vive, le Note 3 affiche une fluidit&eacute; sans faille. D&egrave;s lors, la navigation sur internet est un v&eacute;ritable r&eacute;gal. Les pages web se chargent instantan&eacute;ment, qui plus est si vous disposez d&rsquo;un forfait 4G avec lequel cet appareil est bien entendu compatible.</p>
+<h2>Multim&eacute;dia&nbsp;: un sans faute</h2>
+<p>Point fort de Samsung, la partie multim&eacute;dia b&eacute;n&eacute;ficie de performances au-dessus de tout soup&ccedil;on. Jamais le Note 3 ne montre de signe de faiblesse. A ce titre, la lecture de vid&eacute;os HD sur le Note 3 est un v&eacute;ritable r&eacute;gal. De m&ecirc;me, il constitue une console de jeux portable absolument parfaite&nbsp;! M&ecirc;me les jeux vid&eacute;o les plus puissants passent sans probl&egrave;me.</p>
+<h2>Photo&nbsp;: peut vraiment mieux faire</h2>
+<p>Point fable du premier Galaxy Note 2, la partie photo reste &eacute;galement en retrait sur ce mod&egrave;le. Si le Note 3 d&eacute;livre des photos globalement correctes dans des conditions de bonne luminosit&eacute;, il est loin d&rsquo;&eacute;galer le Galaxy S4 lorsque le jour d&eacute;cline. Malgr&eacute; son capteur de 13 m&eacute;gapixels, les photos en basse luminosit&eacute; offrent un rendu tr&egrave;s moyen.</p>
+<p>En revanche, bon point pour la partie vid&eacute;o. Le Note 3 vous permettra ainsi de filmer des vid&eacute;os en 1080p de <strong>bonne qualit&eacute;</strong>.</p>
+<h2>Une autonomie&nbsp;de chameau</h2>
+<p>Point fort de la gamme Note, l&rsquo;autonomie est toujours aussi impressionnante sur ce Note 3. Et pour cause, Samsung a dot&eacute; sa phablette d&rsquo;une batterie cons&eacute;quente de 3200 mAh. Celle-ci vous autorisera jusqu&rsquo;&agrave; <strong>deux jours sans recharge</strong> avec une utilisation classique.</p>",8806085759121,0,1,0,,,0,/u/p/update-galaxy-note-3-n9005-android-4-3-xxubmj1-official-firmware-guide.jpg,,32GB,AZERTY,1,Samsung,,,,,,,4G,,"Utiliser la config","Utiliser la config","N9005 32GB Galaxy Note 3 LTE Gris debloqué",,,"Bloc après la colonne d'information",,560,0,"10""","Successeur du Galaxy Note 2, Samsung continue sur sa lancée et présente le Galaxy Note 3. Cet appareil mi-tablette mi smartphone présente de nombreuses …",/u/p/update-galaxy-note-3-n9005-android-4-3-xxubmj1-official-firmware-guide.jpg,,,,,1,5,/u/p/update-galaxy-note-3-n9005-android-4-3-xxubmj1-official-firmware-guide.jpg,,"2014/01/29 11:09:47",n9005-32b-galaxy-note-3-lte-gris,n9005-32b-galaxy-note-3-lte-gris.html,4,0.6,300,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/g/a/galxy-note3_012_back-left-perspective-landscape_jet-black.jpg,,4,0,,,,
+,,,,Android/Samsung,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung-galaxy-note-3-n9005-lte.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung_galaxy_note_3_021_front_dynamic2_jet_black.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/u/p/update-galaxy-note-3-n9005-android-4-3-xxubmj1-official-firmware-guide.jpg,,1,0,,,,
+10000029,,Mobile,simple,Reconditionné,French,base,,Black,,,,"2014/01/15 09:16:34",,,,,"<h1>iPhone 3G 16Go reconditionné</h1>
+<p>
+Sorti en France en juillet 2008, l’iPhone 3G constitue la seconde génération d’iPhone. Equipé d’une mise à jour de son système d’exploitation mobile (iOS 2.0.), ce modèle adoptait également un tout nouveau design.
+</p>
+<p>
+Par rapport à l’iPhone original et sa finition en aluminium, la coque arrière du 3G revêt donc un plastique disponible en deux coloris, noir ou blanc. 
+</p>
+<p>
+Si ces deux smartphones Apple partagent beaucoup de caractéristiques techniques communes tells que le processeur, l’écran ou encore l’appareil photo, l’iPhone 3G apporte tout de même son lot de nouveautés. 
+</p>
+<p>
+Ce nouveau modèle embarque donc une puce 3G et un véritable GPS. De même l’envoi de MMS, le partage de connexion ainsi que le Bluetooth Stéréo sont désormais supportés par ce terminal.
+</p>",885909362059,0,1,0,,,0,/i/p/iphone3g.jpg,,16GB,AZERTY,1,Apple,,,,,,,3G,,"Utiliser la config","Utiliser la config","iPhone 3G 16Go reconditionné debloqué",,,"Bloc après la colonne d'information",,99,0,"4""","Sorti en France en juillet 2008, l’iPhone 3G constitue la seconde génération d’iPhone. Equipé d’une mise à jour de son système d’exploitation mobile (iOS 2.0.), ce modèle adoptait également un tout nouveau design.",/i/p/iphone3g.jpg,,,,,1,5,/i/p/iphone3g.jpg,,"2014/01/29 11:09:47",iphone-3g-16go-reconditionne,iphone-3g-16go-reconditionne.html,4,0.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/i/p/iphone3g.jpg,,1,0,,,,
+10000030,,Mobile,simple,Tablettes,French,base,,White,,,,"2014/01/15 09:48:10",,,,,"<h1>iPad Mini WiFi 16Go blanc</h1>
+<p>
+Si Steve Jobs ne voyait pas l’intérêt d’une tablette de 7 pouces, force est de constater que le succès d’appareils tels que la Nexus 7 lui ont donné tort.  Pour rester dans la compétition, Apple n’avait d’autre choix que de commercialiser un iPad de dimension réduite. 
+</p>
+<h2>Prise en main de l’iPad Mini WiFi</h2>
+<p>
+Au déballage du produit, nous nous retrouvons face à une tablette de 7,9 pouces extrêmement séduisante, particulièrement dans cette version blanche si chère à Apple.
+</p>
+<p>
+La firme de Cupertino a donc particulièrement soigné l’apparence de cette petite tablette, à commencer par une superbe finition. Face à la concurrence, l’iPad Mini apparaît ainsi beaucoup plus qualitatif. L’aluminium est employé pour le dos de l’appareil tandis que la façade avant est constituée de verre. 
+</p>
+<p>
+Si cet iPad Mini n’apparaît pas comme particulièrement fragile, on conseillera tout de même l’usage d’une protection pour éviter les rayures et autres dégradations esthétiques en tous genres.
+</p>
+<h2>Un écran décevant</h2>
+<p>
+Ces bonnes impressions sont toutefois tempérées à la vue de l‘écran embarqué. La tablette d’Apple adopte en effet une dalle IPS très moyenne, aux couleurs fades et à la résolution assez faible. Cette dernière est seulement de 1024 x 768 pixels - soit la même que celle de l’iPad 2 - pour une densité de 162ppi. C’est bien peu en comparaison des 264ppi de l’écran Retina de l’iPad 4. 
+</p>
+<p>
+Certes, l’écran de l’iPad Mini reste lisible mais les pixels sont visibles et l’affichage manque de netteté. Bref, Apple nous avait habitué à bien mieux dans ce domaine et l’iPad Mini est clairement en retrait par rapport à la concurrence. Un mauvais point.
+</p>
+<h2>Des performances en demi-teinte</h2>
+<p>
+Livré initialement avec iOS 6, l’iPad Mini tourne désormais sur iOS 7, dernière version de l’OS mobile d’Apple. Si les performances restent bonnes sous cet OS, on constate tout de même une fluidité moindre qu’à l’origine. Quelques ralentissements sont donc perceptibles ici et là ainsi que des crashs inopinés du navigateur Safari. La faute à une mémoire vive de seulement 512Mo et à un processeur A5 vieux de deux ans. 
+</p>
+<p>
+Bref, si l’on souhaite des performances sans accrocs et un écran ad hoc, le choix d’un iPad Mini de dernière génération sera plus judicieux. Doté d’un processeur A7 et d’un écran Retina, ce nouveau modèle sorti fin 2013 mérite que l’on investisse 100€ supplémentaires.
+</p>
+<h2>Photo : des performances honorables</h2>
+<p>
+Doté d’un capteur photo de 5 mégapixels, l’iPad Mini offre des performances honorables dans ce domaine. Les clichés sont certes bruités mais largement suffisant pour l’utilisation liée à cet appareil.
+</p>
+<p>
+En revanche, bon point pour la caméra frontale qui offre d’excellentes performances et vous permettra de profiter d’un excellent confort dans le cadre de conversations vidéos avec des applications telles que Skype ou FaceTime. 
+</p>
+<h2>Autonomie : excellente</h2>
+<p>
+Point fort de l’appareil : son autonomie. Apple a en effet équipé sa tablette d'une batterie conséquente de 4490 mAh. A l’usage, on profite d’une excellente autonomie, proche des dix heures. 
+</p>
+<p>
+Enfin, toujours au chapitre des qualités, la rapidité de la recharge, qui s’effectue en moins de trois heures.</p>",885909667581,0,1,0,,,0,/1/_/1.jpg,,16GB,AZERTY,1,Apple,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","iPad Mini WiFi 16Go blanc",,,"Bloc après la colonne d'information",,278,0,"7""","Plus petit, plus fin, plus léger, voici l’iPad Mini d’Apple. Un produit attendu depuis longtemps par de nombreux utilisateurs des produits de la marque à la Pomme et qui …",/1/_/1.jpg,,,,,1,5,/1/_/1.jpg,,"2014/01/29 11:09:47",ipad-mini-wifi-16go-blanc,ipad-mini-wifi-16go-blanc.html,4,0.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/2/_/2.jpg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/3/_/3.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/4/_/4.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/1/_/1.jpg,,1,0,,,,
+10000031,,Mobile,simple,Tablettes,French,base,,Black,,,,"2014/01/15 09:54:42",,2014/01/29,,,"<h1>iPad Air WiFi 16Go noir</h1>
+<p>
+Déjà trois ans qu’Apple inaugurait le tout premier iPad. Que de chemin parcouru en si peu d’années ! Pour preuve, ce nouvel iPad Air, véritable prouesse technologique que nous vous présentons aujourd’hui.
+</p>
+<h2>Prise en main de l’iPad Air WiFi : léger !</h2>
+<p>
+L’iPad Air est un iPad Mini version XL. En effet, Apple reprend le même design que le Mini, cette fois avec un écran de près de 10 pouces. La première prise en main révèle une finesse et une légèreté encore inédites sur une tablette de cette dimension. N’y allons pas par quatre chemins, l’iPad Air et son poids plume surpassent toute la concurrence en terme d’ergonomie et de confort d’usage.
+</p>
+<p>
+De même, la finition atteint ici des sommets. Matériaux nobles, pureté des lignes biseautées, il s’agit d’un travail d’orfèvre de la part du constructeur californien.
+</p>
+<h2>Un écran magnifique !</h2>
+<p>
+Pour ce nouvel iPad, Apple a opté pour la technologie IPS IGZO, qui permet d'obtenir un écran plus fin mais également plus lumineux et surtout moins gourmand en énergie. 
+</p>
+<p>
+A l’usage, l’écran de 9,7 pouces est absolument sublime : couleurs, contraste, luminosité, lisibilité, tout y est. On prend ainsi un grand plaisir à regarder des vidéos, à lire, ou à jouer sur cet iPad Air. Bref, cet écran Retina est parfait et constitue – en plus du design - le point fort de cet appareil.
+</p>
+<h2>Performances globales et navigation sous iOS 7</h2>
+<p>
+L’iPad Air est mû par un processeur dual-core A7 64 bits cadencé à 1,4 GHz. Cette architecture interne garantit une rapidité sans faille, peu importe la tâche effectuée. Mais le domaine où cet l’iPad Air excelle est celui des jeux vidéo. Vous pourrez ainsi l’utiliser comme une véritable console de jeux portable. Au passage, pour les gros consommateurs de contenus multimédia, sachez que la capacité de stockage de cet iPad Air est disponible jusqu’à 128Go.
+</p>
+<p>
+Quant à la navigation, tout est très fluide même si l’on n’en attendait pas moins à la vue des caractéristiques techniques de l’engin. Si iOS 7 a terni les performances des précédentes générations d’iPad, on ne constate pas l’once d’un ralentissement sur ce nouveau modèle.
+</p>
+<h2>Photo : plus pratique que performant</h2>
+<p>
+L’iPad n’est pas l’appareil le plus adapté à la prise de clichés, Apple l’a doté d’un capteur photo relativement basique de 5 mégapixels. Comme prévu, celui-ci n’atteint pas les performances d’un iPhone 5S. Il s’agit avant tout d’une fonction d’appoint qui pourra toutefois s’avérer utile, notamment en utilisation professionnelle.
+</p>
+<h2>Autonomie en hausse, temps de charge en baisse</h2>
+<p>
+L'iPad Air embarque une batterie plus faible que l'iPad 4. Mais la marque à la Pomme a fait des miracles et cette nouvelle tablette offre une autonomie supérieure à son prédécesseur ! 
+</p>
+<p>
+De même, le temps nécessaire à sa recharge se voit réduit. Quatre heures sont ainsi nécessaires afin de recharger l'iPad Air alors qu'il fallait plus de cinq heures pour l'iPad 4 et jusqu’à sept heures pour l'iPad 3 …
+</p>",885909464517,0,1,1,,,0,/3/_/3_1.jpg,,,AZERTY,1,Apple,,,,,,,Wifi,,"Utiliser la config","Utiliser la config","iPad Air WiFi 16Go noir",2014/01/29,,"Bloc après la colonne d'information",,458,0,"10""","Avec l’iPad Air, Apple repousse les limites. Cette tablette incroyablement fine et légère est également la plus puissante construite par Apple jusqu’alors …",/3/_/3_1.jpg,,2014/01/29,400,2014/02/04,1,5,/3/_/3_1.jpg,,"2014/01/29 11:09:48",ipad-air-wifi-16go-noir,ipad-air-wifi-16go-noir.html,4,1.5,100,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/3/_/3_1.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/2/_/2.png,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/1/_/1.png,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/4/_/4_1.jpg,,4,0,,,,
+10000032,,Mobile,simple,Tablettes,French,base,,Black,,,,"2014/01/15 10:01:50",,,,,"<h1>iPad Air 4G 16Go Noir</h1>
+<p>
+Si vous rêviez d’un iPad léger, fin, doté d’un grand écran et ultra performant, sachez qu’Apple a pensé à vous avec l’iPad Air. Cette nouvelle tablette combine ainsi tous ces avantages, comme nous allons le voir. 
+</p>
+<h2>Premiers contacts avec l’iPad Air 4G</h2>
+<p>
+L’iPad Air n’est autre qu’une version agrandie de l’iPad Mini. La marque à la pomme s’est en effet largement inspirée du design de l’iPad Mini pour concevoir sa nouvelle tablette.
+</p>
+<p>
+La prise en main confirme cette impression et offre une finesse et une légèreté encore jamais vues sur une tablette de dix pouces. A l’usage, cela permet de profiter d’un confort d’usage qui faisait défaut sur les précédentes générations d’iPad, en raison d’un poids trop élevé. 
+</p>
+<p>
+Sachez toutefois que cette version 4G – reconnaissable à son antenne située au dos de l’appareil – pèse 9 grammes de plus que la version WiFi. Un faible compromis pour qui souhaite disposer d’une connexion 4G permanente. 
+</p>
+<p>
+Enfin, comme à l’accoutumée avec Apple, la finition est impeccable et l’objet luxueux. La présence de matériaux premium et le design raffiné rendent l’appareil unique et lui confèrent une classe que l’on ne retrouve chez aucune autre tablette, Android en tête.
+</p>
+<h2>Un écran magnifique</h2>
+<p>
+Avec l’adoption de la technologie IPS IGZO, Apple a réussi à obtenir un écran plus fin, plus lumineux et surtout moins gourmand en énergie. 
+</p>
+<p>
+Si l’écran de iPad 4 était déjà un modèle du genre, celui de l’iPad Air semble encore meilleur : couleurs, contraste, luminosité, lisibilité, tout est absolument sublime.  Qu’il s’agisse de vidéos, de contenu web, ou de jeux vidéo. cet écran Retina procure un confort d’usage sans faille. Une grande réussite !
+</p>
+<h2>Performances globales et navigation sous iOS 7</h2>
+<p>
+L’iPad Air est équipé d’un processeur double-cœur A7 64 bits made by Apple et cadencé à 1,4 GHz. Ce dernier confère à l’appareil une rapidité en toutes circonstances, notamment dans le cadre d’une utilisation multitâches. 
+</p>
+<p>
+A ce titre, l’iPad Air excelle dans le domaine des jeux vidéo où ses performances en font une véritable console de jeux portable. 
+</p>
+<p>
+Côté navigation, tout est très fluide même si cela paraît logique à la vue des caractéristiques techniques de l’appareil. 
+</p>
+<p>
+Si iOS 7 a compromis les performances des précédentes générations d’iPad, on ne constate pas le moindre ralentissement sur l’iPad Air.
+</p>
+<h2>Photo : plus pratique que performant</h2>
+<p>
+Peu adapté à la prise de photos, l’iPad Air dispose cependant d’un capteur de 5 mégapixels. Si celui-ci n’offre pas des performances comparables à celles d’un iPhone 5S, gardez en tête qu’il s’agit essentiellement d’une fonction d’appoint qui peut s’avérer utile dans le cadre d’une utilisation professionnelle.
+</p>
+<h2>Autonomie en hausse, temps de charge en baisse</h2>
+<p>
+Si l'iPad Air est équipé d’une batterie moins importante que son prédécesseur, la marque à la Pomme a cependant fait des miracles. Cette nouvelle mouture offre ainsi une autonomie supérieure à l’iPad 4 et voit son temps de recharge réduit : quatre heures alors qu'il fallait plus de cinq heures pour l'iPad 4 et jusqu’à sept heures pour l'iPad 3 …
+</p>",885909657957,0,1,0,,,0,/1/_/1_1.jpg,,16GB,AZERTY,1,Apple,,,,,,,"WiFi + 3G/4G",,"Utiliser la config","Utiliser la config","iPad Air 4G 16Go Noir",,,"Bloc après la colonne d'information",,571,0,"10""","Plus fine, plus légère, plus performante, voici la nouvelle tablette d’Apple baptisée iPad Air ! Sous ses allure de grand iPad Mini, ce nouveau modèle cache des …",/1/_/1_1.jpg,,,,,1,5,/1/_/1_1.jpg,,"2014/01/29 11:09:48",ipad-air-4g-16go-noir,ipad-air-4g-16go-noir.html,4,1.7,100,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/2/_/2_1.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/1/_/1_1.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/3/_/3_2.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/5/_/5.jpg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/4/_/4_2.jpg,,5,0,,,,
+10000033,,Mobile,simple,Tablettes,French,base,,Black,,,,"2014/01/16 10:05:15",,,,,"<h1>iPad Mini 2 WiFi 16Go Noir</h1>
+<p>La fin de l&rsquo;ann&eacute;e 2012 voyait l&rsquo;apparition d&rsquo;un iPad plus petit et plus l&eacute;ger, d&eacute;nomm&eacute; iPad Mini. Si cette tablette a rencontr&eacute; un franc succ&egrave;s, l&rsquo;absence d&rsquo;&eacute;cran Retina handicapait fortement l&rsquo;appareil. Aujourd&rsquo;hui, <strong>Apple rectifie le tir</strong> et propose enfin l&rsquo;iPad Mini Retina. En dehors de son &eacute;cran haute d&eacute;finition, quels sont les apports de ce nouveau mod&egrave;le&nbsp;?</p>
+<h2>Prise en main de l&rsquo;iPad Mini Retina WiFi</h2>
+<p>C&rsquo;est bien connu, on ne change pas une &eacute;quipe qui gagne. Fort de cet adage, Apple a conserv&eacute; le m&ecirc;me design que pour l&rsquo;iPad Mini premier du nom. On retrouve donc une tablette compacte, &agrave; la <strong>finition encore in&eacute;gal&eacute;e</strong> par la concurrence.</p>
+<p>Les plus observateurs constateront tout de m&ecirc;me un tr&egrave;s l&eacute;ger &eacute;paississement et un poids en hausse&nbsp;: 331 grammes et 7,5 mm contre 301 g et 7,2 mm pour le premier iPad Mini. Toutefois, en main, aucune diff&eacute;rence per&ccedil;ue ...</p>
+<p>Changement plus notable, Apple remplace le <strong>coloris du dos</strong> de l&rsquo;iPad Mini noir. On retrouve donc le Gris Sid&eacute;ral &agrave; la place du Noir Ardoise de l&rsquo;an pass&eacute;. Une finition tr&egrave;s r&eacute;ussie car l&eacute;g&egrave;rement plus claire, ce qui permettra de rendre d&rsquo;&eacute;ventuelles rayures moins visibles.</p>
+<h2>Enfin un &eacute;cran Retina&nbsp;!</h2>
+<p>La nouveaut&eacute; majeure de cet iPad Mini 2013 r&eacute;side dans son &eacute;cran. Apple a donc &eacute;quip&eacute; <strong>sa nouvelle tablette</strong> d&rsquo;un &eacute;cran Retina d&rsquo;une d&eacute;finition de 2048 x 1536 pixels pour une densit&eacute; de 324 ppp.</p>
+<p>A l&rsquo;usage, le gain par rapport &agrave; la premi&egrave;re g&eacute;n&eacute;ration est <strong>indiscutable</strong>. Les couleurs sont plus franches et la lisibilit&eacute; incomparable. Ce dernier point permet notamment de se passer du zoom pour les textes r&eacute;dig&eacute;s en petits caract&egrave;res.</p>
+<h2>Des performances en nette hausse</h2>
+<p>L&rsquo;iPad Mini Retina n&rsquo;est pas seulement un iPad Mini 1 dot&eacute; d&rsquo;un meilleur &eacute;cran. La marque &agrave; la Pomme a en effet d&eacute;cid&eacute; d&rsquo;&eacute;quiper sa petite tablette des m&ecirc;mes composants que l&rsquo;iPad Air. A l&rsquo;int&eacute;rieur se trouve donc un processeur double-c&oelig;ur Apple A7 cadenc&eacute; &agrave; 1,3 GHz, accompagn&eacute; d&rsquo;un coprocesseur M7 et d&rsquo;une m&eacute;moire vive de 1 Go.</p>
+<p>Et le moins que l&rsquo;on puisse dire est que cela change tout. Compar&eacute; &agrave; un iPad Mini de premi&egrave;re g&eacute;n&eacute;ration, les performances sont plus que flagrantes. Ainsi, vous ne noterez pas le moindre ralentissement sur ce mod&egrave;le. De m&ecirc;me, tout va plus vite&nbsp;: ouverture d&rsquo;applications, jeux, surf web, etc.</p>
+<p>D&egrave;s lors, si l&rsquo;on souhaite des performances sans accrocs et un &eacute;cran de qualit&eacute;, le choix d&rsquo;un iPad Mini de derni&egrave;re g&eacute;n&eacute;ration est indiscutable. A seulement 100&euro; d&rsquo;&eacute;cart, ce nouvel iPad Mini reste clairement un bien meilleur investissement.</p>
+<h2>Photo&nbsp;: des performances honorables</h2>
+<p>Dot&eacute; d&rsquo;un capteur photo de 5 m&eacute;gapixels, l&rsquo;iPad Mini Retina n&rsquo;apporte quasiment aucun changement de ce c&ocirc;t&eacute; l&agrave;. Il offre toujours des <strong>performances honorables</strong> et on note m&ecirc;me un l&eacute;ger mieux. Cependant, les clich&eacute;s restent bruit&eacute;s, surtout en basse luminosit&eacute;.</p>
+<p>La cam&eacute;ra frontale reste d&rsquo;un excellent niveau et vous permettra d&rsquo;exploiter au mieux des applications de chat vid&eacute;o comme Skype ou FaceTime.</p>
+<h2>Autonomie&nbsp;: excellente</h2>
+<p>Avec un &eacute;cran Retina et<strong> un processeur plus puissant</strong>, Apple a logiquement revu la capacit&eacute; de la batterie &agrave; la hausse. Cette derni&egrave;re passe donc &agrave; 6480 mAh contre 4490 mAh pour l&rsquo;iPad Mini 1.</p>
+<p>L&rsquo;autonomie, point fort du premier mod&egrave;le, reste &eacute;galement remarquable sur l&rsquo;iPad Mini Retina 2 avec 11 h 30 min de fonctionnement. De m&ecirc;me, la recharge reste rapide et ne demande que 3 h 30 minutes.&nbsp;Bref, rien &agrave; redire&nbsp;!</p>",885909666966,0,1,0,,,0,/i/p/ipad-mini-2-retina-02.jpg,,16GB,AZERTY,1,Apple,,,,,,,Wifi,,"Utiliser la config","Utiliser la config","iPad Mini 2 WiFi 16Go Noir",,,"Bloc après la colonne d'information",,370,0,"7""","Doté d’un nouvel écran haute définition Retina, l’iPad Mini comble son retard avec la concurrence. Pour enfoncer le clou, Apple a également décidé de doter sa nouvelle tablette d’un processeur surpuissant de …",/i/p/ipad-mini-2-retina-02.jpg,,,,,1,5,/i/p/ipad-mini-2-retina-02.jpg,,"2014/01/29 11:09:48",ipad-mini-2-wifi-16go-noir,ipad-mini-2-wifi-16go-noir.html,4,1.2,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/i/p/ipad-mini-2-retina-02.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/4/4/440x330-ipad_mini_retina_35781422_01_1280x960.jpg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/a/p/apple-ipad-mini-retina-wifi-32-go-gris-sideral-ref153830.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/i/p/ipad_mini_retina.jpg,,3,0,,,,
+10000034,,Mobile,simple,Reconditionné,French,base,,Black,,,,"2014/01/16 10:10:39",,,,,"<h1>iPhone 3GS reconditionné</h1>
+<p>
+D’apparence inchangée, l’iPhone 3GS reste cependant une évolution majeure du smartphone vedette d’Apple. Bien plus rapide, ce modèle adopte un processeur puissant ARM Cortex 8 ainsi qu’un nouveau chipset graphique. A l’usage, le gain est flagrant : l’iPhone 3GS démarre beaucoup plus rapidement, il est plus réactif et les applications se lancent sans latence. 
+</p>
+<p>
+Ce modèle inaugure également iOS 3.0 et son lot de nouveautés, telles que le mode paysage pour les mails ou encore le copier/coller.  Enfin, un nouveau capteur photo équipe l’appareil. Ce dernier est bien plus performant que sur les premières générations d’iPhone et permet désormais la prise de vidéos.
+</p>",885909318551,0,0,0,,,0,/a/p/apple-iphone-3-gs.jpg,,16GB,AZERTY,1,Apple,,,,,,,3G,,"Utiliser la config","Utiliser la config","iPhone 3GS reconditionné debloqué",,,"Bloc après la colonne d'information",,119,0,"4""","D’apparence inchangée, l’iPhone 3GS reste cependant une évolution majeure du smartphone vedette d’Apple.",/a/p/apple-iphone-3-gs.jpg,,,,,1,5,/a/p/apple-iphone-3-gs.jpg,,"2014/01/29 11:09:49",iphone-3gs-reconditionne,iphone-3gs-reconditionne.html,4,0.5,10,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/a/p/apple-iphone-3-gs.jpg,,1,0,,,,
+10000035,,Mobile,simple,Tablettes,French,base,,"Brown / Gold",,,,"2014/01/16 10:55:26",,,,,"<h1>Samsung Galaxy Tab 3 10 pouces 4G Brown Gold</h1>
+<p>
+L’année 2103 marque l’arrivée d’une nouvelle tablette du constructeur Samsung. Baptisée Galaxy Tab 3, celle-ci offre t-elle suffisamment d’arguments pour rivaliser avec ses nombreux concurrents ?
+</p>
+<h2>Le design et la prise en main de la Samsung Galaxy Tab 3 10 pouces</h2>
+<p>
+Le premier contact avec cette Galaxy Tab 3 offre un air de déjà vu. Et pour cause, Samsung reprend à peu de choses près le même design que le Galaxy S4, son smartphone vedette. Toutefois, cela ne constitue pas un inconvénient mais bel et bien une véritable cohérence au niveau du design de la marque coréenne. 
+</p>
+<p>
+Les lignes arrondies sont donc de la partie et l’on se réjouit d’avoir affaire à une tablette fine et légère. En outre, le coloris marron et or de ce modèle ajoute une touche luxueuse et séduira les amateurs de beaux objets. 
+</p>
+<h2>Prise en main et ergonomie de Galaxy Tab 3 10 pouces</h2>
+<p>
+A la prise en main, la façade avant laisse apparaître un bouton physique toujours aussi pratique, ainsi que deux touches tactiles. Les boutons d’alimentation et de réglage de volume sont accessibles via la tranche supérieure de l’appareil. Enfin, on note également deux haut-parleurs, intelligemment placés sur les flancs de l’appareil.
+</p>
+<p>
+A l’usage, la tablette est très agréable à tenir en main grâce à ses dimensions bien pensées. Certes, l’on n’atteint pas le confort des petites tablettes de 7 ou 8 pouces mais cette Galaxy Tab 3 reste tout de même l’une des plus ergonomiques dans ce format.
+</p>
+<h2>Ecran : peut mieux faire</h2>
+<p>
+Si la dalle 10,1 pouces fournie par Samsung dispose d’excellents angles de vision, cette dernières est toutefois handicapée par une résolution de seulement 1.280 x 800 pixels pour une densité de 149ppi. 
+</p>
+<p>
+Les amateurs de Full HD passeront donc leur chemin ! De plus, pour les utilisateurs avides de lecture sur tablette, ce modèle ne sera pas forcément la panacée. Les textes manquent en effet de lisibilité et les contours des caractères de netteté. 
+</p>
+<h2>Performances : une honnête tablette</h2>
+<p>
+Equipé d’Android 4.2.2 et de la surcouche Touchwizz chère à Samsung, la Galaxy Tab 3 10 pouces dispose d’une réactivité correcte, même en multitâche.  Si quelques lenteurs et saccades sont à déplorer, l’expérience utilisateur est au global dans la bonne moyenne. A ce titre, le surf sur le web est très rapide, notamment sous Chrome ou à l’aide du navigateur fourni par défaut sur la machine. 
+</p>
+<h2>Multimédia : un des points forts des tablettes Samsung</h2>
+<p>
+Point fort des appareils Samsung, la partie multimédia reste un modèle du genre : lecture vidéo de la quasi totalité des fichiers (MKV, H.264, MPEG4, etc.), jeux vidéo, lecteur audio de qualité, tout est très bien géré par la Galaxy Tab 3.
+</p>
+<h2>Autonomie : un bon point</h2>
+<p>
+Avec sa batterie de 6000 mAh la Galaxy Tab 3 10 pouces dispose d’une autonomie conséquente. Comptez donc dix bonnes heures d’usage classique, ce qui est une excellente performance. 
+</p>
+<p>
+Seule la recharge de l’appareil vient ternir ce tableau avec quatre longues heures pour atteindre la pleine capacité de l’appareil.
+</p>",,0,1,0,,,0,/g/a/galaxy_tab_3_brown_10in_400_large1_hf_1.jpg,,16GB,AZERTY,1,Samsung,,,,,,,"4G WIFI",,"Utiliser la config","Utiliser la config","Samsung Galaxy Tab 3 10 pouces 4G Brown Gold",,,"Bloc après la colonne d'information",,375,0,"10""","Dans la droite lignée de ses prédécesseurs, la tablette Samsung Galaxy Tab 3 10 pouces ne manque pas d’arguments pour convaincre. Dans un secteur ultra…",/g/a/galaxy_tab_3_brown_10in_400_large1_hf_1.jpg,,,,,1,5,/g/a/galaxy_tab_3_brown_10in_400_large1_hf_1.jpg,,"2014/01/29 11:09:49",samsung-galaxy-tab-3-10-pouces-4g-brown-gold,samsung-galaxy-tab-3-10-pouces-4g-brown-gold.html,4,1.5,500,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_10in_400_large1_hb.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_10in_400_large1_hr.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_10in_400_large1_hf_1.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_10in_400_large1_s1.jpg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_10in_400_large1_hl.jpg,,5,0,,,,
+10000036,,Mobile,simple,Tablettes,French,base,,White,,,,"2014/01/16 11:03:31",,,,,"<h1>Samsung Galaxy Tab 3.10 pouces 4G Blanc</h1>
+<p>Troisi&egrave;me g&eacute;n&eacute;ration de la gamme Galaxy Tab, Samsung propose la Galaxy Tab 3 en version 10 pouces. Quels sont les arguments de cette tablette face &agrave; la concurrence&nbsp;?</p>
+<h2>Le design et la prise en main de la Samsung Galaxy Tab 3 10 pouces</h2>
+<p>Pas de surprise &agrave; l&rsquo;ouverture de l&rsquo;emballage de cette tablette, on a bien affaire &agrave; un produit Samsung. Et pour cause, cette Galaxy Tab 3 reprend <strong>les m&ecirc;mes lignes</strong> que le smartphone star de la marque, le Galaxy S4.</p>
+<p>Nous retrouvons donc de lignes arrondies ainsi qu&rsquo;une tablette globalement fine et l&eacute;g&egrave;re. La finition &ndash; hormis l&rsquo;emploi omnipr&eacute;sent du plastique &ndash; ne souffre aucune critique. Samsung a donc soign&eacute; son produit, particuli&egrave;rement dans cette <strong>jolie version blanche</strong>.</p>
+<h2>Prise en main et ergonomie de Galaxy Tab 3 10 pouces</h2>
+<p>A la prise en main, la fa&ccedil;ade avant laisse appara&icirc;tre un bouton physique toujours aussi pratique, et deux touches tactiles. Le bouton d&rsquo;alimentation ainsi que celui du r&eacute;glage du volume sont accessibles sur la tranche sup&eacute;rieure de l&rsquo;appareil. Enfin, on note deux haut-parleurs, <strong>intelligemment plac&eacute;s</strong> sur les tranches lat&eacute;rales de l&rsquo;appareil.</p>
+<p>A l&rsquo;usage, la tablette est tr&egrave;s agr&eacute;able &agrave; tenir du fait de <strong>sa finesse</strong>. Si l&rsquo;on n&rsquo;atteint pas le confort des petites tablettes de 7 ou 8 pouces, cette Galaxy Tab 3 reste tout de m&ecirc;me l&rsquo;une des plus ergonomiques dans ce format.</p>
+<h2>Ecran&nbsp;: peut mieux faire sans doute</h2>
+<p>Equip&eacute;e d&rsquo;une dalle PLS de 10.1 pouces disposant d&rsquo;<strong>excellents angles de vision</strong>, la tablette de Samsung souffre n&eacute;anmoins d&rsquo;une r&eacute;solution assez basse. On ne b&eacute;n&eacute;ficie ainsi que de 1.280 x 800 pixels pour une densit&eacute; de 149ppi.</p>
+<p><strong>Pas de Full HD ici</strong>, ce qui sera g&ecirc;nant pour les utilisateurs qui passent beaucoup de temps &agrave; lire sur leur tablette. Les caract&egrave;res manquent en effet de contour, ce qui nuit &agrave; leur lisibilit&eacute;. En 2013, le choix par les constructeurs d&rsquo;&eacute;cran de faible d&eacute;finition reste regrettable.</p>
+<h2>Performances&nbsp;: dans la bonne moyenne</h2>
+<p>Equip&eacute; d&rsquo;Android 4.2.2 et de la surcouche Touchwizz, la Galaxy Tab 3 10 pouces dispose d&rsquo;une bonne r&eacute;activit&eacute;, m&ecirc;me en multit&acirc;che. Si l&rsquo;on note par contre quelques lenteurs et saccades ici et l&agrave;, cela reste anecdotique et ne g&acirc;che pas l&rsquo;exp&eacute;rience utilisateur globale. Samsung a donc parfaitement optimis&eacute; la partie technique - processeur Atom Z2560 cadenc&eacute; &agrave; 1,6 GHz &ndash; de sa tablette.</p>
+<p>A ce titre, le surf sur le web est extr&ecirc;mement rapide, notamment sous Chrome ou &agrave; l&rsquo;aide du navigateur fourni par d&eacute;faut sur la machine.</p>
+<h2>Multim&eacute;dia&nbsp;: excellent</h2>
+<p>Point fort des appareils Samsung, la partie multim&eacute;dia reste un mod&egrave;le du genre&nbsp;: lecture vid&eacute;o de la quasi totalit&eacute; des fichiers (MKV, H.264, MPEG4, etc.), jeux vid&eacute;o, lecteur audio de qualit&eacute;, tout est tr&egrave;s bien g&eacute;r&eacute; sur la Galaxy Tab 3.</p>
+<h2>Autonomie&nbsp;: un bon point pour Samsung</h2>
+<p>Avec sa batterie de 6000 mAh la Galaxy Tab 3 10 pouces dispose d&rsquo;une excellente autonomie. Comptez dix bonnes heures d&rsquo;usage classique. Seule la recharge de l&rsquo;appareil para&icirc;t un peu longue avec <strong>4 heures au compteur</strong>.</p>",8806085718876,0,1,0,,,0,/g/a/galaxy_tab_3_white_10in_400_large1_hf_1.jpg,,16GB,AZERTY,1,Samsung,,,,,,,"4G Wifi",,"Utiliser la config","Utiliser la config","Samsung Galaxy Tab 3.10 pouces 4G Blanc",,,"Bloc après la colonne d'information",,368,0,"10""","Voici la troisième génération de Galaxy Tab, la tablette star de Samsung. Avec ce modèle 10 pouces, le constructeur coréen a …",/g/a/galaxy_tab_3_white_10in_400_large1_hf_1.jpg,,,,,1,5,/g/a/galaxy_tab_3_white_10in_400_large1_hf_1.jpg,,"2014/01/29 11:09:49",samsung-galaxy-tab-3-10-pouces-4g-blanc,samsung-galaxy-tab-3-10-pouces-4g-blanc.html,4,1.5,495,500,1,0,0,1,1,1,0,1,0,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_white_10in_400_large1_hl.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_white_10in_400_large1_s1.jpg,,5,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_white_10in_400_large1_hr.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_white_10in_400_large1_hb.jpg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_white_10in_400_large1_hf_1.jpg,,1,0,,,,
+10000037,,Mobile,simple,Android,French,base,,White,,,,"2014/01/17 09:29:17",,,,,"<h1>Samsung galaxy note 2 blanc (n7100)</h1>
+<p>Ce smartphone est davantage connu sous le simple nom Galaxy Note 2, ce qui en fait la seconde g&eacute;n&eacute;ration des t&eacute;l&eacute;phones Galaxy Note. Si <strong>des millions de ce t&eacute;l&eacute;phone se sont vendus</strong>, cela ne fait que renforcer le must have qu&rsquo;il repr&eacute;sente.</p>
+<h2>Le haut de gamme en main</h2>
+<p>Un t&eacute;l&eacute;phone tr&egrave;s puissant, c&rsquo;est une b&ecirc;te, m&ecirc;me en terme de qualit&eacute; d&rsquo;image. Nous touchons le haut de gamme.</p>
+<p>L&rsquo;&eacute;cran permet de se placer entre le smartphone et celui des tablettes, puisqu&rsquo;il est plus grand que 5 pouces et plus petit que 7 pouces. C&rsquo;est d&rsquo;ailleurs pourquoi la communaut&eacute; high-tech le range dans la cat&eacute;gorie des phablettes, contraction de t&eacute;l&eacute;phone et tablette.</p>
+<p>Grande diagonale d&rsquo;&eacute;cran (14 cm de diagonale) qui poss&egrave;de une grande finesse d&rsquo;&eacute;cran ce qui permet du 16 9&egrave;me avec du super AMOLED HD. En bref, c&rsquo;est la technologie phare de Samsung qui ma&icirc;trise tr&egrave;s bien sa technologie d&rsquo;&eacute;cran, malgr&eacute; 367 ppi, ce qui n&rsquo;est pourtant pas si mal.</p>
+<p>Belle dalle, beau processeur et bonne m&eacute;moire vive en font <strong>un affichage d&rsquo;une grande rapidit&eacute;</strong>. Et pour rester sur l&rsquo;&eacute;cran, il est l&rsquo;un des plus r&eacute;sistants aux rayures et &agrave; la casse. Petit b&eacute;mol, la carrosserie du Galaxy Note 2 n7100 est plut&ocirc;t fragile. C&rsquo;est donc un t&eacute;l&eacute;phone qu&rsquo;il faut absolument prot&eacute;ger des chocs.</p>
+<h2>Autres points dignes d&rsquo;int&eacute;r&ecirc;t</h2>
+<p>Pour la vid&eacute;o, m&ecirc;me pour celles qui sont exigeantes en qualit&eacute; de r&eacute;solution, la qualit&eacute; est exceptionnelle. Et l&rsquo;acc&eacute;l&eacute;rom&egrave;tre est sans latence, ce qui tr&egrave;s confortable.</p>
+<p>Le stylet - le S Pen - trouve son emplacement dans le mobile m&ecirc;me et non &agrave; c&ocirc;t&eacute;. D&egrave;s qu&rsquo;on le retire, l&rsquo;acc&egrave;s au S Note est imm&eacute;diat. Ce syst&egrave;me d&rsquo;exploitation est l&rsquo;un des points fort de Samsung.</p>
+<p>La batterie est de 3300 Ma, ce qui accorde plusieurs jours d&rsquo;autonomie. C&rsquo;est encore un point fort de ce t&eacute;l&eacute;phone.</p>
+<h2>Pour le c&ocirc;t&eacute; performance&nbsp;?</h2>
+<p>L&rsquo;un des plus performants. Notamment gr&acirc;ce au processeur qui est de la maison m&egrave;re. Ils s&rsquo;agit d&rsquo;un 4 c&oelig;urs de 4,6 G, &eacute;paul&eacute; de 2 Giga de m&eacute;moire vive. C&rsquo;est donc un monstre de puissance. Lancer un jeu exigeant en ressources est une partie de plaisir, car le galaxy note 2 n7100 tourne vite et bien. Il est possible de jouer avec tous les jeux 3D du moment sans probl&egrave;me.</p>
+<p>Pour le stockage, il y a 10 Go exploitables, et il est possible de rajouter de la m&eacute;moire suppl&eacute;mentaire avec une micro SD de 64 Giga. L&rsquo;application DropBox est fournie pour l&rsquo;archivage en ligne gratuit.</p>
+<p>Pour la connectivit&eacute;, 3G+, quadribande, tr&egrave;s complet avec du wifi et des ports pouvant s&rsquo;adapter aux futures &eacute;volutions du monde du high-tech. Bon, il manquerait la 4G, mais ce smartphone tourne d&eacute;j&agrave; tr&egrave;s vite.</p>
+<p>Un tr&egrave;s bon t&eacute;l&eacute;phone qui nous am&egrave;ne &agrave; &ecirc;tre &eacute;logieux &agrave; son &eacute;gard.</p>",8806085265882,0,1,0,,,0,/b/e/be-fr_gt-n7100vsdpro_001_dynamic_white.jpg,,16GB,AZERTY,1,Samsung,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Samsung galaxy note 2 blanc (n7100)",,,"Bloc après la colonne d'information",,385,0,"7""","Ce smartphone est le haut de gamme, avec toutes les ressources possibles d’attendre quelles que soient les utilisations, même les plus gourmandes. Si le point fort reste bien sûr …",/b/e/be-fr_gt-n7100vsdpro_001_dynamic_white.jpg,,,,,1,5,/b/e/be-fr_gt-n7100vsdpro_001_dynamic_white.jpg,,"2014/01/29 11:09:50",samsung-galaxy-note-2-blanc-n7100,samsung-galaxy-note-2-blanc-n7100.html,4,0.7,200,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/s/a/samsung_galaxy_note_ii_n7100_white_110_1.jpg,,3,0,,,,
+,,,,Android/Samsung,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/7/n7100-galaxy-note-ii.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/b/e/be-fr_gt-n7100vsdpro_001_dynamic_white.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung-galaxy-note-ii-n7100-1.jpg,,4,0,,,,
+10000038,,Mobile,simple,Android,French,base,,Black,,,,"2014/01/17 09:41:07",,,,,"<h1>Samsung i8190 Galaxy S III mini noir</h1>
+<p>
+Ce téléphone portable est très proche d’un point de vue graphique du S3, ce qui en fait d’apparence un smartphone haut de gamme. A l’usage, il s’avère cependant qu’il se situe davantage dans un milieu de gamme.
+</p>
+<p>
+C’est un smartphone 100 % tactile, malgré un bouton physique qui permet le retour à la Home. La version noire du Galaxy S III mini est vraiment très classe, même sa forme compacte. L’esthétique est toujours un point fort de Samsung. 
+</p>
+<p>
+<h2>Appréciation spontanée de ce téléphone : le design</h2>
+A première vue, ce qui le différencie de son grand frère S3, est principalement le capteur ici frontal ici à gauche, mais à l’usage, ses performances sont également différentes (2 fois moins élevées environ). 
+</p>
+<p>
+Le design est donc très valorisant, et le téléphone tien bien en main. Son poids de 111 grammes est d’ailleurs une agréable surprise, ce qui en fait e plus léger de sa catégorie. 
+</p>
+<h2>Pour l’écran, assez bien mais peu mieux faire</h2>
+<p>
+Pour l’écran, le i8190 Galaxy S III mini noir est sur du 4 pouces, et non pas sur de la HD. Pourtant le visionnage de vidéos Youtube par exemple, est très bon. L’écran est donc tactile capacitif multipoints, mais nous pouvions nous attendre à mieux. 
+</p>
+<p>
+A noter toutefois une qualité d’image impeccable, avec une gestion des couleurs, des contrastes et de la luminosité très bonne. Dommage que son PPI (pixel par pouce) soit inférieur à 300, ce qui est une faiblesse. Il aurait été parfait avec la HD…
+</p>
+<h2>Le système d’exploitation de ce Samsung mini</h2>
+<p>
+Son système d’exploitation est Android 4.1, l’un des meilleurs Android. Il s’agit donc d’un univers Google bien connu, auquel Samsung a voulu rajouter une surcouche graphique : la TouchWiz. Elle est très bien faite, notamment au niveau du lecteur MP3. 
+</p>
+<p>
+Le TouchWiz apporte une plus-value à la photo, puisqu’il suffit, à titre d’illustration, de mettre sur l’image nos 2 pouces et d’avancer à soi avec une rapide inclinaison vers le bas, ou de repousser en avant en pointant rapidement vers le bas pour zoomer ou dézoomer. 
+</p>
+<h2>Les caractéristiques d’un bon milieu de gamme</h2>
+<p>
+Le Samsung i8190 Galaxy S III mini noir est complet pour le divertissement, avec des jeux graphiquement non pixelisés malgré un ppi de moins de 300, et permet une utilisation un peu plus professionnelle avec la gestion de vos mails, etc.  Il se dédie peu au web, la résolution étant vite limitée, à l’exception des vidéos. 
+</p>
+<p>
+Côté stockage, les 8 Go de mémoire sont un peu faibles, mais une micro SD est possible. Retenons que précisément seuls 4,6 Go de mémoire sont destinés au stockage. 
+</p>
+<p>
+La batterie dispose d’une autonomie correcte, avec 150 Ma. Pour une utilisation classique –un peu de téléphone, lecture des mails, un peu de vidéo et de web- le mobile tient jusqu’à 2 jours sans besoin de recharger la batterie. C’est donc un point positif. 
+</p>
+<p>
+C’est d’ailleurs ce que nous retenons : le Samsung i8190 Galaxy S III mini noir a peu de points négatifs, et reste un appareil puissant dans l’ensemble pour un milieu de gamme. 
+</p>",8806085471832,0,0,0,,,0,/s/a/samsung_galaxy_s3_mini_case_black.jpg,,8GB,AZERTY,1,Samsung,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Samsung i8190 Galaxy S III mini noir debloqué",,,"Bloc après la colonne d'information",,205,0,"4""","Ce téléphone portable est très proche d’un point de vue graphique de son grand frère le S3, ce qui le place dans le haut de gamme pour le design. Côté performances, même s’il reste dans le …",/s/a/samsung_galaxy_s3_mini_case_black.jpg,,,,,1,5,/s/a/samsung_galaxy_s3_mini_case_black.jpg,,"2014/01/29 11:09:50",samsung-i8190-galaxy-s-iii-mini-noir,samsung-i8190-galaxy-s-iii-mini-noir.html,4,0.5,199,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/c/m/cmobsam00049.jpg,,3,0,,,,
+,,,,Android/Samsung,French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsunggalaxysiiiminii8190.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung_galaxy_s3_mini_case_black.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/s/a/samsung-i8190-galaxy-s3-mini-rock-nakedshell-case-black-1212-1-p.jpg,,4,0,,,,
+10000039,,Mobile,simple,Tablettes,French,base,,"Brown / Gold",,,,"2014/01/20 13:42:02",,,,,"<h1>Galaxy Tab 3 7 pouces WiFi Gold Brown</h1>
+<p>Tr&egrave;s populaires aupr&egrave;s du public, les <strong>tablettes de petite taille</strong> constituent un secteur hautement concurrentiel pour les fabricants. Samsung est &eacute;videmment bien plac&eacute; sur ce cr&eacute;neau avec sa Galaxy Tab 7 pouces. Aujourd&rsquo;hui, le constructeur cor&eacute;en nous propose la troisi&egrave;me g&eacute;n&eacute;ration de ce produit.</p>
+<h2>Une prise en main ergonomique</h2>
+<p>Avec ses formes tout en rondeur, voil&agrave; une tablette tr&egrave;s agr&eacute;able &agrave; prendre en main&nbsp;! On retrouve ainsi un design proche du smartphone vedette de la marque, le Galaxy S4 et une <strong>excellente finition</strong>.</p>
+<p>En fa&ccedil;ade avant, deux touches tactiles ainsi qu&rsquo;un bouton physique sont pr&eacute;sents. A noter que Samsung a plac&eacute; ce dernier de fa&ccedil;on &agrave; privil&eacute;gier l&rsquo;utilisation de sa tablette en mode portrait, tel un livre.</p>
+<p>Les boutons de mise en marche, de r&eacute;glage de volume et le port MicroSD occupent les parties lat&eacute;rales de l&rsquo;appareil. Enfin, au dos, on rel&egrave;ve la pr&eacute;sence d&rsquo;un capteur photo et d&rsquo;une prise jack sur la tranche haute.</p>
+<h2>Ecran&nbsp;: des progr&egrave;s &agrave; r&eacute;aliser</h2>
+<p>Avec une d&eacute;finition de seulement 1024 x 600 pixels pour 170ppi, il reste <strong>des efforts &agrave; accomplir</strong> de la part de Samsung. Par rapport &agrave; ce qui se fait ailleurs &ndash; Nexus 7 en t&ecirc;te - il est clair qu&rsquo;il s&rsquo;agit d&rsquo;un point n&eacute;gatif pour cette Galaxy Tab 3.</p>
+<p>De m&ecirc;me les couleurs manquent de fid&eacute;lit&eacute; et les rouges tirent sur le rose. Seul point positif, les angles de vision tr&egrave;s bons, technologie IPS oblige.</p>
+<h2>Des performances correctes</h2>
+<p>La Galaxy Tab 3 7 pouces est livr&eacute;e sous Android Jelly Bean 4.1.2 et int&egrave;gre la surcouche habituelle du constructeur cor&eacute;en, TouchWizz.</p>
+<p>La r&eacute;activit&eacute; de la tablette est bonne m&ecirc;me si tout n&rsquo;est pas aussi fluide qu&rsquo;on le souhaiterait. L&agrave; encore, cette Galaxy Tab 3 marque le pas en comparaison d&rsquo;autres mod&egrave;les comme la Nexus 7 de Google ou l&rsquo;iPad Mini d&rsquo;Apple &hellip;</p>
+<p>De m&ecirc;me, ce manque de v&eacute;locit&eacute; entache quelque peu la navigation sur internet, ainsi que la r&eacute;solution trop juste de l&rsquo;&eacute;cran.</p>
+<h2>Multim&eacute;dia&nbsp;: du bon et du moins bon</h2>
+<p>Comme &agrave; l&rsquo;accoutum&eacute;e chez Samsung, le lecteur vid&eacute;o qui &eacute;quipe la tablette vous permettra de lire tout type de fichier.</p>
+<p>En revanche, la partie jeu vid&eacute;o n&rsquo;est pas aussi agr&eacute;able que sur d&rsquo;autres tablettes, la faute &agrave; un processeur graphique un peu trop juste &hellip;</p>
+<p>Enfin, c&ocirc;t&eacute; photo, Samsung assure le strict minimum et il faudra vous contenter de photos d&rsquo;appoint tant le capteur d&eacute;livre des clich&eacute;s bruit&eacute;s.</p>
+<h2>Une excellente autonomie de batterie</h2>
+<p>Bon point sur le plan de l&rsquo;autonomie, avec pr&egrave;s de neuf heures d&rsquo;utilisation sans recharge. Bref, rien &agrave; redire de ce c&ocirc;t&eacute; l&agrave;&nbsp;!</p>",,0,1,0,,,0,/g/a/galaxy_tab_3_brown_7in_400_large1_vf.jpg,,16GB,AZERTY,1,Apple,,,,,,,WIFI,,"Utiliser la config","Utiliser la config","Galaxy Tab 3 7 pouces WiFi Gold Brown",,,"Bloc après la colonne d'information",,155,0,"7""","Format populaire, le 7 pouces reste très pratique pour utiliser une tablette. Samsung l’a bien compris et propose aujourd’hui la troisième génération de sa tablette Galaxy Tab et …",/g/a/galaxy_tab_3_brown_7in_400_large1_vf.jpg,,,,,1,5,/g/a/galaxy_tab_3_brown_7in_400_large1_vf.jpg,,"2014/01/29 11:09:50",galaxy-tab-3-7-pouces-wifi-gold-brown,galaxy-tab-3-7-pouces-wifi-gold-brown.html,4,1.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_7in_400_large1_vb.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_7in_400_large1_vf.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_7in_400_large1_hr_1.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/g/a/galaxy_tab_3_brown_7in_400_large1_s1_1.jpg,,4,0,,,,
+10000040,,Mobile,simple,Tablettes,French,base,,Black,,,,"2014/01/20 14:02:05",,,,,"<h1>Google Nexus 7 2 4G</h1>
+<p>Sortie il y a un peu plus d&rsquo;un an, la Nexus 7, premi&egrave;re tablette sign&eacute;e Google et Asus, est vite devenue un best seller. Et pour cause, cette petite tablette de 7 pouces proposait jusqu&rsquo;alors le <strong>meilleur rapport qualit&eacute; prix</strong> de son secteur. Aujourd&rsquo;hui, le duo Google / Asus rempile et nous propose une nouvelle version de cette derni&egrave;re.</p>
+<h2>Prise en main de la Nexus 7 version 2013</h2>
+<p>La premi&egrave;re prise en main de cette nouvelle Nexus 7 se r&eacute;v&egrave;le excellente. La tablette est en effet plus l&eacute;g&egrave;re et plus compacte que l&rsquo;ancienne g&eacute;n&eacute;ration&nbsp;: 200 &times; 114 &times; 8,65&nbsp;mm contre 198,5 &times; 120 &times; 10,45&nbsp;mm.</p>
+<p>De m&ecirc;me, le rev&ecirc;tement arri&egrave;re en plastique perfor&eacute; laisse la place &agrave; un plastique mat &agrave; l&rsquo;aspect gomm&eacute; plus classique. En main, la sensation est plus agr&eacute;able. Ce premier contact est donc un sans faute&nbsp;: la tablette est l&eacute;g&egrave;re, bien finie et ergonomique.</p>
+<h2>Ecran&nbsp;: le meilleur sur une tablette 7 pouces</h2>
+<p>Ne tergiversons pas, l&rsquo;&eacute;cran de la Nexus 7 2013 est <strong>absolument splendide.</strong> Asus a peaufin&eacute; sa dalle pour nous d&eacute;livrer un mod&egrave;le de colorim&eacute;trie, de contraste et de d&eacute;finition. Sur ce dernier point, avec 1920 x 1200 pixels, la Nexus 7 est un r&eacute;gal pour lire des contenus textuels&nbsp;!</p>
+<p>Le seul (petit) regret vient du ratio de l&rsquo;&eacute;cran. Google a ainsi opt&eacute; pour le 16:10, qui reste <strong>moins pratique</strong> pour la navigation sur internet qu&rsquo;un iPad Mini, par exemple.</p>
+<h2>Performances de haute vol&eacute;e</h2>
+<p>La gamme Nexus de Google offre l&rsquo;avantage d&rsquo;un Android en version stock, c&rsquo;est-&agrave;-dire sans surcouche ni fioritures, telles que l&rsquo;on peut en trouver chez Samsung avec TouchWiz, par exemple.</p>
+<p>Dans ces conditions, rien d&rsquo;&eacute;tonnant &agrave; ce que cette Nexus 7 soit d&rsquo;une r&eacute;activit&eacute; sans faille sous Jelly Bean 4.3. <strong>Tout est fluide, &eacute;pur&eacute; et ergonomique</strong>.</p>
+<h2>Navigation internet et multim&eacute;dia sans faute</h2>
+<p>Google oblige, la navigation sur le web ne souffre pas la critique. Le navigateur Chrome reste d&rsquo;ailleurs l&rsquo;un des plus agr&eacute;ables et la v&eacute;locit&eacute; de la machine contribue &agrave; une <strong>exp&eacute;rience utilisateur irr&eacute;prochable</strong>.</p>
+<p>De m&ecirc;me, vous pourrez profiter sans r&eacute;serve de la lecture de vid&eacute;os HD et de fichiers en tous genres ou encore des jeux vid&eacute;o sur votre Nexus 7. En revanche, c&ocirc;t&eacute; stockage, il faudra vous contenter des 16 ou 32Go propos&eacute;s par Google, la firme ayant d&eacute;cid&eacute; de faire l&rsquo;impasse sur un port MicroSD.</p>
+<p>Enfin, la partie photo (capteur de 5 Mpx) reste correcte, dans la moyenne de ce que l&rsquo;on retrouve chez les concurrents. Pour des clich&eacute;s d&rsquo;appoint, cela reste suffisant.</p>
+<h2>Autonomie&nbsp;: toujours bonne</h2>
+<p>En raison de la finesse de sa tablette, Asus a fait le choix d&rsquo;une batterie de plus faible capacit&eacute; par rapport &agrave; la version 2012. A l&rsquo;usage, cela se ressent et la Nexus 7 2013 offre une autonomie moindre que la g&eacute;n&eacute;ration pr&eacute;c&eacute;dente. Toutefois, rien d&rsquo;alarmant&nbsp;: vous pourrez tenir facilement <strong>une journ&eacute;e compl&egrave;te sans recharge</strong>, dans le cadre d&rsquo;une utilisation classique.</p>",4716659552468,0,1,0,,,0,/n/e/nexus-7-300701-2.jpg,,16GB,AZERTY,1,LG,,,,,,,"WIFI / 4G",,"Utiliser la config","Utiliser la config","Google Nexus 7 2 4G",,,"Bloc après la colonne d'information",,500,0,,"Après une première tablette 7 pouces très réussie, Google ne se repose pas sur ses lauriers ! Ainsi, la firme californienne lance en partenariat avec Asus la Nexus 7 version 2013. Cette petite tablette de 7 pouces a …",/n/e/nexus-7-300701-2.jpg,,,,,1,5,/n/e/nexus-7-300701-2.jpg,,"2014/01/29 11:09:50",google-nexus-7-2-4g,google-nexus-7-2-4g.html,4,1.5,50,0,1,0,0,1,1,1,0,1,0,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/1/3/137555.jpeg,,4,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/1/3/137550.jpeg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/e/nexus7.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/n/e/nexus-7-300701-2.jpg,,1,0,,,,
+10000041,,Mobile,simple,Reconditionné,French,base,,Black,,,,"2014/01/20 14:08:28",,2014/01/29,,,"<h1>iPhone 4 8GB Noir reconditionn&eacute;</h1>
+<p>Sorti en 2010, l&rsquo;iPhone 4 marquait une v&eacute;ritable rupture par rapport aux g&eacute;n&eacute;rations pr&eacute;c&eacute;dentes.</p>
+<p>Tout d&rsquo;abord au niveau du design&nbsp;: le plastique laisse la place au verre et &agrave; l&rsquo;aluminium et la forme globale de l&rsquo;appareil devient rectangulaire. La finition fait <strong>un bond en avant spectaculaire&nbsp;!</strong></p>
+<p>L&rsquo;autre diff&eacute;rence marquante est constitu&eacute;e par l&rsquo;&eacute;cran de ce terminal. Baptis&eacute; Retina, ce dernier offre une d&eacute;finition encore jamais vue sur un smartphone Apple, soit le double de l&rsquo;iPhone 3GS. Les couleurs sont vives, le contraste excellent et la lisibilit&eacute; est incomparable.</p>
+<p>Enfin, l&rsquo;iPhone 4 <strong>est tr&egrave;s rapide</strong> gr&acirc;ce &agrave; son processeur de 1GHz. Pas &eacute;tonnant qu&rsquo;&agrave; ce jour, les mod&egrave;les en circulation soient toujours nombreux&nbsp;!</p>",5055147572946,0,0,1,,,0,/i/p/iphone_4.jpg,,8GB,AZERTY,1,Apple,,,,,,,"WIFI / 3G",,"Utiliser la config","Utiliser la config","iPhone 4 8GB Noir debloqué reconditionné",2014/01/29,,"Bloc après la colonne d'information",,137,0,"4""","Sorti en 2010, l’iPhone 4 marquait une véritable rupture par rapport aux générations précédentes.",/i/p/iphone_4.jpg,,2014/01/29,99,2014/02/04,1,5,/i/p/iphone_4.jpg,,"2014/01/29 11:09:50",iphone-4-8gb-noir,iphone-4-8gb-noir.html,4,0.5,299,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/i/p/iphone_4.jpg,,1,0,,,,
+10000042,,Mobile,simple,Tablettes,French,base,,Black,,,,"2014/01/21 13:35:37",,,,,"<h1>Samsung N9005 32GB Galaxy Note 3 LTE Noir</h1>
+<p>A mi-chemin entre tablette et smartphone, le Galaxy Note 3 est l&rsquo;&eacute;volution du Galaxy Note 2, l&rsquo;un des grand succ&egrave;s de Samsung. D&egrave;s lors, qu&rsquo;apporte cette nouvelle g&eacute;n&eacute;ration&nbsp;?</p>
+<h2>Premi&egrave;res impressions sur le Galaxy Note 3</h2>
+<p>Exit le design arrondi du Galaxy Note 2&nbsp;! Ce nouveau mod&egrave;le arbore <strong>un look bien &agrave; lui</strong> et plus rectangulaire. L&rsquo;ensemble fait d&rsquo;ailleurs plus pro que l&rsquo;ancienne version.</p>
+<p>C&ocirc;t&eacute; finition, Samsung a soign&eacute; son produit, malgr&eacute; l&rsquo;emploi omnipr&eacute;sent du plastique. Sur un produit de ce prix, l&rsquo;ajout de mat&eacute;riaux nobles serait en effet souhaitable. L'assemblage reste cependant excellent et <strong>respire la qualit&eacute;</strong>.</p>
+<h2>Prise en main du Galaxy Note 3</h2>
+<p>Avec son &eacute;cran de 5.7 pouces, ce Galaxy Note 3 poss&egrave;de des dimensions imposantes. Toutefois, Samsung a affin&eacute; et all&eacute;g&eacute; cette nouvelle mouture.</p>
+<p>La pr&eacute;hension &agrave; une main n&rsquo;est <strong>pas des plus faciles</strong> mais cela reste le cas de toutes les phablettes. Enfin, toujours du c&ocirc;t&eacute; de l&rsquo;ergonomie, la Note 3 est dot&eacute;e d&rsquo;un rev&ecirc;tement arri&egrave;re en simili-cuir qui rend l&rsquo;appareil tr&egrave;s agr&eacute;able &agrave; tenir en main et moins glissant qu&rsquo;un Galaxy S4, par exemple.</p>
+<h2>Un superbe &eacute;cran</h2>
+<p>Le Galaxy Note 3 est &eacute;quip&eacute; d'une dalle AMOLED Full HD. Tr&egrave;s lumineux, cet &eacute;cran reste un mod&egrave;le du genre.</p>
+<p>A noter que le constructeur cor&eacute;en propose plusieurs profils afin d&rsquo;optimiser l&rsquo;affichage : Standard,&nbsp;Photo Professionnelle, Dynamique, Vid&eacute;o et Optimiser l'Affichage.</p>
+<h2>Interface&nbsp;: un stylet tr&egrave;s efficace&nbsp;!</h2>
+<p>C&ocirc;t&eacute; interface, le Note 3 reprend toutes les fonctionnalit&eacute;s du Galaxy S4 via l'interface TouchWiz pr&eacute;sente en surcouche d'Android 4.3.</p>
+<p>De plus, d&egrave;s que l&rsquo;on utilise le stylet S-Pen, un menu tr&egrave;s pratique, sous forme de roue et nomm&eacute; ""Air Command"" appara&icirc;t. En approchant le S-Pen de l&rsquo;&eacute;cran du Note 3, on peut acc&eacute;der &agrave; <strong>diverses applications sign&eacute;es Samsung</strong>. On retrouve ainsi Action Memo (notes manuscrites associ&eacute;es &agrave; une action sp&eacute;cifique), Album (s&eacute;lection d&rsquo;une zone de l'&eacute;cran avec le stylet pour l'ajouter &agrave; un l'album), Capture (capture d'&eacute;cran et annotations manuscrites), S Finder (fonction de recherche tr&egrave;s pouss&eacute;e) et Applis flottantes (application affich&eacute; via un rectangle manuscrit).</p>
+<p>Enfin, la navigation web est extr&ecirc;mement rapide, en Wi-Fi, 4G ainsi qu&rsquo;en 3G.</p>
+<h2>Une autonomie record</h2>
+<p>Avec 3200 mAh de batterie, le Galaxy Note 3 est un v&eacute;ritable chameau. Dans le cadre d&rsquo;une utilisation classique, le Note 3 est ainsi capable de tenir deux jours d&rsquo;affil&eacute;e. En utilisation plus soutenue, il r&eacute;ussit &eacute;galement <strong>une belle performance</strong>, soit une journ&eacute;e et demie sans recharge.</p>",8806085759114,0,1,0,,,0,no_selection,,32GB,AZERTY,1,Samsung,,,,,,,,,"Utiliser la config","Utiliser la config","Samsung N9005 32GB Galaxy Note 3 LTE Noir debloqué",,,"Bloc après la colonne d'information",,559,0,"4""","Avec cette évolution du Galaxy Note 2, Samsung confirme sa place de leader dans le domaine des phablettes. En effet, le Galaxy Note 3 est un appareil …",no_selection,,,,,1,5,no_selection,,"2014/01/29 11:09:51",samsung-n9005-32gb-galaxy-note-3-lte-noir,samsung-n9005-32gb-galaxy-note-3-lte-noir.html,4,0.5,50,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/product.,,1,0,,,,
+10000074,,Mobile,configurable,Reconditionné,French,base,,,,,,"2014/02/21 10:20:08",,,,,"<h1>Apple iPhone 5s Or 16 Go</h1>
+<p>Apple innove en proposant la nouvelle couleur Or de l'iPhone 5s qui vient compl&eacute;ter la gamme classique du 5s blanc et 5s noir. Un bijou de technologie pr&eacute;sent&eacute; dans son bo&icirc;tier blanc imprim&eacute; au logo blason de la &laquo; pomme dor&eacute;e &raquo;. La <strong>version Gold</strong> a provoqu&eacute; un v&eacute;ritable enthousiasme dans le monde des technophiles, si bien que c'est la premi&egrave;re fois qu'un iPhone 5s tombe en rupture de stock.</p>
+<h2>Un design l&eacute;ger &laquo; &agrave; croquer &raquo;</h2>
+<p>Croquez vous aussi dans la pomme d'Or d'Apple ! Ce smartphone est un vrai exploit technique, avec un bo&icirc;tier de 7,6 millim&egrave;tres d&rsquo;&eacute;paisseur, pour un poids fitness total de 112 grammes. Il pr&eacute;sente <strong>une ligne futuriste</strong>, une silhouette &agrave; faire bl&ecirc;mir les plus grands mannequins et une couleur dor&eacute;e finement cisel&eacute;e. Il a tout pour plaire !</p>
+<p>Le smartphone devient un <strong>objet de valeur</strong>, un accessoire bijou qui vous suit partout. Dans une poche, dans un sac, la puissance est &agrave; port&eacute;e de main. Comment les concepteurs ont pu r&eacute;aliser une telle prouesse ? L'explication vient des composants ultra-l&eacute;gers, miniaturis&eacute;s, qui pulsent de la puissance sans alourdir l'ensemble. Les atouts de l'iPhone 5s Or sont l&eacute;g&egrave;ret&eacute;, discr&eacute;tion, &eacute;l&eacute;gance et puissance, on en n'attendait pas moins d'Apple !</p>
+<h2>Un mini ordinateur au creux de la main</h2>
+<p>La marque Apple marque un tournant en dotant la 7&egrave;me g&eacute;n&eacute;ration de mobile d'un processeur de 64 bits. Ce mod&egrave;le high-tech aux fonctions avanc&eacute;es offre de <strong>hautes performances</strong> gr&acirc;ce au tout nouveau coprocesseur A7 / M7, 2 fois plus rapide que la 6&egrave;me g&eacute;n&eacute;ration. Visuels, jeux, internet, graphismes, tout est plus performant tout en restant &eacute;conomique au niveau &eacute;nergie, pour maximiser l'autonomie de la batterie. L'appareil photo num&eacute;rique miniaturis&eacute; n'est pas moins performant avec ses 8 m&eacute;gapixesls et sa fonction prise de photos en mode rafale.</p>
+<h2>La touch' nouveaut&eacute;</h2>
+<p>Outre la couleur version Gold, l'innovation passe aussi par le doigt. Plus besoin de mot de passe pour d&eacute;verrouiller l'iPhone, une simple pression du doigt sur le <strong>capteur Touch ID</strong> suffit. Ce capteur par empreinte digitale prend votre empreinte, et le tour est jou&eacute;. Personne ne pourra utiliser votre mot de passe et user de votre mobile sans votre autorisation. Cela permet plus de confidentialit&eacute; et un maximum de s&eacute;curit&eacute; si votre t&eacute;l&eacute;phone est vol&eacute; ou perdu. Le seul bouton principal tactile est constitu&eacute; de cristal de saphir taill&eacute; au micron pr&egrave;s au laser, entour&eacute; d'un cercle en acier inoxydable. Une finesse agr&eacute;able &agrave; la vue comme au toucher.</p>",885909784981,0,0,0,,,0,/2/_/2_photo_iphone_5s_or_16_gb.jpg,,16GB,,,,,,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Apple iPhone 5s Or 16 Go",,,"Bloc après la colonne d'information",,599,0,,"Apple décline le haut de gamme en Or ! Pourtant sans effet bling bling,  l'iPhone 5s Or 16 Go offre une technologie à la hauteur de sa ligne qui …",no_selection,,,,,1,5,no_selection,,"2014/02/21 10:31:37",apple-iphone-5s-or-16-go,apple-iphone-5s-or-16-go.html,4,,0,0,1,0,0,1,1,1,0,1,1,,1,1,0,0,1,0,0,1,0,,,,,,,,,,,,,,,,,88,/1/_/1_photo_iphone_5s_or_16_gb.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/2/_/2_photo_iphone_5s_or_16_gb.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/3/_/3_photo_iphone_5s_or_16_gb.jpg,,3,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/4/_/4_photo_iphone_5s_or_16_gb.jpg,,4,0,,,,
+10000074-Chahid,,Mobile,simple,Reconditionné,French,base,,,,,,"2014/02/21 10:54:12",,,,,"<h1>Apple iPhone 5s Or 16 Go</h1>
+<p>Apple innove en proposant la nouvelle couleur Or de l'iPhone 5s qui vient compl&eacute;ter la gamme classique du 5s blanc et 5s noir. Un bijou de technologie pr&eacute;sent&eacute; dans son bo&icirc;tier blanc imprim&eacute; au logo blason de la &laquo; pomme dor&eacute;e &raquo;. La <strong>version Gold</strong> a provoqu&eacute; un v&eacute;ritable enthousiasme dans le monde des technophiles, si bien que c'est la premi&egrave;re fois qu'un iPhone 5s tombe en rupture de stock.</p>
+<h2>Un design l&eacute;ger &laquo; &agrave; croquer &raquo;</h2>
+<p>Croquez vous aussi dans la pomme d'Or d'Apple ! Ce smartphone est un vrai exploit technique, avec un bo&icirc;tier de 7,6 millim&egrave;tres d&rsquo;&eacute;paisseur, pour un poids fitness total de 112 grammes. Il pr&eacute;sente <strong>une ligne futuriste</strong>, une silhouette &agrave; faire bl&ecirc;mir les plus grands mannequins et une couleur dor&eacute;e finement cisel&eacute;e. Il a tout pour plaire !</p>
+<p>Le smartphone devient un <strong>objet de valeur</strong>, un accessoire bijou qui vous suit partout. Dans une poche, dans un sac, la puissance est &agrave; port&eacute;e de main. Comment les concepteurs ont pu r&eacute;aliser une telle prouesse ? L'explication vient des composants ultra-l&eacute;gers, miniaturis&eacute;s, qui pulsent de la puissance sans alourdir l'ensemble. Les atouts de l'iPhone 5s Or sont l&eacute;g&egrave;ret&eacute;, discr&eacute;tion, &eacute;l&eacute;gance et puissance, on en n'attendait pas moins d'Apple !</p>
+<h2>Un mini ordinateur au creux de la main</h2>
+<p>La marque Apple marque un tournant en dotant la 7&egrave;me g&eacute;n&eacute;ration de mobile d'un processeur de 64 bits. Ce mod&egrave;le high-tech aux fonctions avanc&eacute;es offre de <strong>hautes performances</strong> gr&acirc;ce au tout nouveau coprocesseur A7 / M7, 2 fois plus rapide que la 6&egrave;me g&eacute;n&eacute;ration. Visuels, jeux, internet, graphismes, tout est plus performant tout en restant &eacute;conomique au niveau &eacute;nergie, pour maximiser l'autonomie de la batterie. L'appareil photo num&eacute;rique miniaturis&eacute; n'est pas moins performant avec ses 8 m&eacute;gapixesls et sa fonction prise de photos en mode rafale.</p>
+<h2>La touch' nouveaut&eacute;</h2>
+<p>Outre la couleur version Gold, l'innovation passe aussi par le doigt. Plus besoin de mot de passe pour d&eacute;verrouiller l'iPhone, une simple pression du doigt sur le <strong>capteur Touch ID</strong> suffit. Ce capteur par empreinte digitale prend votre empreinte, et le tour est jou&eacute;. Personne ne pourra utiliser votre mot de passe et user de votre mobile sans votre autorisation. Cela permet plus de confidentialit&eacute; et un maximum de s&eacute;curit&eacute; si votre t&eacute;l&eacute;phone est vol&eacute; ou perdu. Le seul bouton principal tactile est constitu&eacute; de cristal de saphir taill&eacute; au micron pr&egrave;s au laser, entour&eacute; d'un cercle en acier inoxydable. Une finesse agr&eacute;able &agrave; la vue comme au toucher.</p>",,0,0,0,,,0,no_selection,,16GB,,,,,Chahid,,,,,Réseaux,,"Utiliser la config","Utiliser la config","Apple iPhone 5s Or 16 Go-Chahid",,,"Bloc après la colonne d'information",,599,0,,"Apple décline le haut de gamme en Or ! Pourtant sans effet bling bling,  l'iPhone 5s Or 16 Go offre une technologie à la hauteur de sa ligne qui …",no_selection,,,,,1,5,no_selection,,"2014/02/21 10:55:39",apple-iphone-5s-or-16-go-chahid,apple-iphone-5s-or-16-go-chahid.html,4,0.5,30,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,,,,,,,,,
+10000085,,Mobile,simple,Apple,French,base,,,,,,"2014/03/11 16:25:42",,,,,"<h1>Apple iPhone 5c 32Gb Jaune</h1>
+<p>Alliant design, originalit&eacute; et performance, l&rsquo;iPhone 5c 32gb Jaune, poss&egrave;de tous les <strong>atouts de charme</strong> pour s&eacute;duire les fans de smartphone : couleur, ergonomie, fonctionnalit&eacute;, puissance et grande capacit&eacute; de stockage de 32Gb.</p>
+<h2>Apple passe &agrave; la couleur</h2>
+<p>Plus qu&rsquo;un simple effet de d&eacute;co, la couleur est ici <strong>un moyen d&rsquo;expression</strong> et un support permettant &agrave; son propri&eacute;taire d'affirmer sa personnalit&eacute;. L&rsquo;iPhone d'une belle couleur jaune, vive et &eacute;clatante, est l&rsquo;une des 5 versions de l&rsquo;iPhone 5c. Les autres coloris de la collection Apple se d&eacute;clinent en vert, rose, blanc et bleu, des couleurs tout aussi fun et lumineuses que pour le 5c jaune.</p>
+<p>Le 5c est un mobile monobloc, muni d&rsquo;un <strong>bo&icirc;tier en polycarbonate</strong> jaune glac&eacute; qui assure une bonne prise en main. La mati&egrave;re est belle, luisante et r&eacute;sistante aux rayures. Avantage selon certains utilisateurs ou inconv&eacute;nient pour d'autres, il p&egrave;se132g, soit 20g de plus que son petit fr&egrave;re, l'iPhone 5s.</p>
+<h2>La performance toujours au rendez-vous</h2>
+<p>Dot&eacute; d&rsquo;une grande capacit&eacute; de 32 Gb, cet iPhone 5c reprend toutes les sp&eacute;cificit&eacute;s techniques qui plaisent chez l&rsquo;iPhone 5 dont le processeur A6, l'&eacute;cran 4 pouces Retina avec une r&eacute;solution de 1136 x 640 pixels et un appareil photo iSight 8 m&eacute;gapixels. L&rsquo;iPhone 5c 32gb int&egrave;gre en plus <strong>des nouveaut&eacute;s</strong>, compar&eacute; &agrave; son a&icirc;n&eacute;, &agrave; savoir un capteur avant am&eacute;lior&eacute; pour une colorim&eacute;trie et une luminosit&eacute; nettement sup&eacute;rieures. Apple a effectivement revu &agrave; la hausse les performances de ses dalles Retina depuis la derni&egrave;re version.</p>
+<h2>Des fonctionnalit&eacute;s prometteuses</h2>
+<p>A ces diff&eacute;rentes innovations s&rsquo;ajoutent les <strong>hautes performances</strong> du nouveau syst&egrave;me d&rsquo;exploitation iOS7. Il &eacute;tait temps que l&rsquo;ancienne version sortie en 2007 trouve un rempla&ccedil;ant. Par son interface plus &eacute;pur&eacute;e et ses nouvelles fonctionnalit&eacute;s plus pratiques et plus avanc&eacute;es, l&rsquo;iOS7 est r&eacute;ellement le syst&egrave;me d&rsquo;exploitation 7eme g&eacute;n&eacute;ration qu&rsquo;il fallait &agrave; cette nouvelle lign&eacute;e d&rsquo;iPhone.</p>
+<p>Dans la liste des <strong>nouvelles fonctionnalit&eacute;s</strong> int&eacute;gr&eacute;es figurent l&rsquo;ajout d&rsquo;un centre de contr&ocirc;le accessible comme l&rsquo;AirDrop pour iOs et un mode multit&acirc;che plus performant. Il ne faut pas non plus oublier d&rsquo;ajouter la compatibilit&eacute; avec le r&eacute;seau 4G LTE qui est un vrai plus pour ce nouveau t&eacute;l&eacute;phone portable.</p>
+<p>Malgr&eacute; des images am&eacute;lior&eacute;es, de nouvelles fonctionnalit&eacute;s qui poussent &agrave; l&rsquo;utilisation, la batterie qui embarque 1507mAh offre <strong>une autonomie longue dur&eacute;e</strong> r&eacute;ellement satisfaisante. Avec une utilisation normale, celle-ci peut tenir une journ&eacute;e enti&egrave;re sans recharge. Voici des atouts qui vont s&eacute;duire de nombreux addict &agrave; la high-technologie !</p>",3305912509298,0,0,0,,,0,no_selection,,32GB,AZERTY,,Apple,,Vente-groupée,,,,,4G,,"Utiliser la config","Utiliser la config","Apple iPhone 5c 32Gb Jaune",,,"Bloc après la colonne d'information",,548,0,"4""","Avec l'iPhone 5c 32Gb Yellow, Apple se met en couleur et innove avec cette version relookée dotée d'une puissance boostée avec la …",no_selection,,,,,1,5,no_selection,,"2014/03/11 16:25:42",apple-iphone-5c-32gb-jaune,apple-iphone-5c-32gb-jaune.html,4,0.5,56,0,1,0,0,1,1,1,0,1,1,,1,0,1,0,1,0,1,0,0,,,,,,,,,,,,,,,,,88,/4/_/4_photo_iphone_5c_32gb_yellow.jpg,,3,0,,,,
+,,,,"Apple/Iphone 5c",French,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/3/_/3_photo_iphone_5c_32gb_yellow.jpg,,2,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/1/_/1_photo_iphone_5c_32gb_yellow.jpg,,1,0,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,88,/2/_/2_photo_iphone_5c_32gb_yellow.jpg,,4,0,,,,

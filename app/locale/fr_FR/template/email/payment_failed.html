@@ -1,25 +1,22 @@
-{* This is a comment block
-
-Use vars: {{var var_name}}
-*}<!--@subject Rappel d'échec de transaction de paiement @-->
+<!--@subject Payment Transaction Failed Reminder @-->
 <!--@vars
-{"var reason":"Raison de l'échec de la transaction",
-"var checkoutType":"Type de passage de commande",
-"var customerEmail":"Email du client",
-"var customer":"Nom du client",
-"var items":"Articles du panier",
+{"var reason":"Transaction Failed Reason",
+"var checkoutType":"Checkout Type",
+"var customerEmail":"Customer Email",
+"var customer":"Customer Name",
+"var items":"Shopping Cart Items",
 "var total":"Total",
-"var billingAddress.format('html')":"Adresse de facturation",
-"var shippingAddress.format('html')":"Adresse de livraison",
-"var shippingMethod":"Mode de livraison",
-"var paymentMethod":"Mode de paiement",
-"var dateAndTime":"Date et heure de la transaction"}
+"var billingAddress.format('html')":"Billing Address",
+"var shippingAddress.format('html')":"Shipping Address",
+"var shippingMethod":"Shipping Method",
+"var paymentMethod":"Payment Method",
+"var dateAndTime":"Date and Time of Transaction"}
 @-->
 
 <table>
     <thead>
         <tr>
-            <th>Une transaction de paiement a échoué.</th>
+            <th>La transaction de paiement a échouée.</th>
         </tr>
     </thead>
     <tbody>
@@ -29,18 +26,20 @@ Use vars: {{var var_name}}
                     <b>Raison</b><br />
                     {{var reason}}
                 </p>
-                <p><b>Type de passage de commande</b><br />
+                <p>
+                    <b>Type de paiement</b><br />
                     {{var checkoutType}}
                 </p>
                 <p>
-                  <b>Client:</b><br />
+                    <b>Client:</b><br />
                     <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
                 </p>
-                <p><b>Articles:</b><br />
+                <p>
+                    <b>Articles</b><br />
                     {{var items}}
                 </p>
                 <p>
-                  <b>Total:</b><br />
+                    <b>Total:</b><br />
                     {{var total}}
                 </p>
                 <p>
@@ -48,19 +47,19 @@ Use vars: {{var var_name}}
                     {{var billingAddress.format('html')}}
                 </p>
                 <p>
-                  <b>Adresse de livraison:</b><br />
+                    <b>Adresse d'expédition:</b><br />
                     {{var shippingAddress.format('html')}}
                 </p>
                 <p>
-                  <b>Mode de livraison:</b><br />
+                    <b>Mode d'expédition:</b><br />
                     {{var shippingMethod}}
                 </p>
                 <p>
-                  <b>Mode de paiement:</b><br />
+                    <b>Mode de paiement:</b><br />
                     {{var paymentMethod}}
                 </p>
                 <p>
-                  <b>Date & Heure:</b><br />
+                    <b>Date et heure:</b><br />
                     {{var dateAndTime}}
                 </p>
             </td>
