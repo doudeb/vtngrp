@@ -1,4 +1,5 @@
 .svn
+.git
 app/etc/local.xml
 app/etc/config.xml
 var/cache/*
